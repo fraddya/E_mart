@@ -43,21 +43,21 @@ namespace E_mart
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Home = new System.Windows.Forms.PictureBox();
             this.panelTitleBar = new System.Windows.Forms.Panel();
-            this.iconCurrentForm = new FontAwesome.Sharp.IconPictureBox();
+            this.btn_Maximize = new FontAwesome.Sharp.IconPictureBox();
+            this.btn_Minimize = new FontAwesome.Sharp.IconPictureBox();
+            this.btn_Exit = new FontAwesome.Sharp.IconPictureBox();
             this.lablTitle = new System.Windows.Forms.Label();
+            this.iconCurrentForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.btn_Exit = new FontAwesome.Sharp.IconPictureBox();
-            this.btn_Minimize = new FontAwesome.Sharp.IconPictureBox();
-            this.btn_Maximize = new FontAwesome.Sharp.IconPictureBox();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Home)).BeginInit();
             this.panelTitleBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentForm)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Exit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Minimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Maximize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Minimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Exit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentForm)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -295,6 +295,64 @@ namespace E_mart
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
+            // btn_Maximize
+            // 
+            this.btn_Maximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Maximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btn_Maximize.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_Maximize.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
+            this.btn_Maximize.IconColor = System.Drawing.SystemColors.ControlText;
+            this.btn_Maximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_Maximize.IconSize = 21;
+            this.btn_Maximize.Location = new System.Drawing.Point(1062, 0);
+            this.btn_Maximize.Name = "btn_Maximize";
+            this.btn_Maximize.Size = new System.Drawing.Size(22, 21);
+            this.btn_Maximize.TabIndex = 3;
+            this.btn_Maximize.TabStop = false;
+            this.btn_Maximize.Click += new System.EventHandler(this.btn_Maximize_Click);
+            // 
+            // btn_Minimize
+            // 
+            this.btn_Minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Minimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btn_Minimize.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_Minimize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.btn_Minimize.IconColor = System.Drawing.SystemColors.ControlText;
+            this.btn_Minimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_Minimize.IconSize = 21;
+            this.btn_Minimize.Location = new System.Drawing.Point(1034, 0);
+            this.btn_Minimize.Name = "btn_Minimize";
+            this.btn_Minimize.Size = new System.Drawing.Size(22, 21);
+            this.btn_Minimize.TabIndex = 2;
+            this.btn_Minimize.TabStop = false;
+            this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
+            // 
+            // btn_Exit
+            // 
+            this.btn_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btn_Exit.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_Exit.IconChar = FontAwesome.Sharp.IconChar.X;
+            this.btn_Exit.IconColor = System.Drawing.SystemColors.ControlText;
+            this.btn_Exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_Exit.IconSize = 21;
+            this.btn_Exit.Location = new System.Drawing.Point(1090, 0);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(22, 21);
+            this.btn_Exit.TabIndex = 0;
+            this.btn_Exit.TabStop = false;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
+            // lablTitle
+            // 
+            this.lablTitle.AutoSize = true;
+            this.lablTitle.ForeColor = System.Drawing.Color.MediumPurple;
+            this.lablTitle.Location = new System.Drawing.Point(65, 42);
+            this.lablTitle.Name = "lablTitle";
+            this.lablTitle.Size = new System.Drawing.Size(35, 13);
+            this.lablTitle.TabIndex = 1;
+            this.lablTitle.Text = "Home";
+            // 
             // iconCurrentForm
             // 
             this.iconCurrentForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
@@ -309,16 +367,6 @@ namespace E_mart
             this.iconCurrentForm.Size = new System.Drawing.Size(39, 44);
             this.iconCurrentForm.TabIndex = 0;
             this.iconCurrentForm.TabStop = false;
-            // 
-            // lablTitle
-            // 
-            this.lablTitle.AutoSize = true;
-            this.lablTitle.ForeColor = System.Drawing.Color.MediumPurple;
-            this.lablTitle.Location = new System.Drawing.Point(65, 42);
-            this.lablTitle.Name = "lablTitle";
-            this.lablTitle.Size = new System.Drawing.Size(35, 13);
-            this.lablTitle.TabIndex = 1;
-            this.lablTitle.Text = "Home";
             // 
             // panelShadow
             // 
@@ -338,54 +386,6 @@ namespace E_mart
             this.panelDesktop.Size = new System.Drawing.Size(1112, 637);
             this.panelDesktop.TabIndex = 3;
             // 
-            // btn_Exit
-            // 
-            this.btn_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btn_Exit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_Exit.IconChar = FontAwesome.Sharp.IconChar.X;
-            this.btn_Exit.IconColor = System.Drawing.SystemColors.ControlText;
-            this.btn_Exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_Exit.IconSize = 21;
-            this.btn_Exit.Location = new System.Drawing.Point(1090, 0);
-            this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(22, 21);
-            this.btn_Exit.TabIndex = 0;
-            this.btn_Exit.TabStop = false;
-            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
-            // 
-            // btn_Minimize
-            // 
-            this.btn_Minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Minimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btn_Minimize.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_Minimize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-            this.btn_Minimize.IconColor = System.Drawing.SystemColors.ControlText;
-            this.btn_Minimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_Minimize.IconSize = 21;
-            this.btn_Minimize.Location = new System.Drawing.Point(1034, 0);
-            this.btn_Minimize.Name = "btn_Minimize";
-            this.btn_Minimize.Size = new System.Drawing.Size(22, 21);
-            this.btn_Minimize.TabIndex = 2;
-            this.btn_Minimize.TabStop = false;
-            this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
-            // 
-            // btn_Maximize
-            // 
-            this.btn_Maximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Maximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btn_Maximize.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_Maximize.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
-            this.btn_Maximize.IconColor = System.Drawing.SystemColors.ControlText;
-            this.btn_Maximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_Maximize.IconSize = 21;
-            this.btn_Maximize.Location = new System.Drawing.Point(1062, 0);
-            this.btn_Maximize.Name = "btn_Maximize";
-            this.btn_Maximize.Size = new System.Drawing.Size(22, 21);
-            this.btn_Maximize.TabIndex = 3;
-            this.btn_Maximize.TabStop = false;
-            this.btn_Maximize.Click += new System.EventHandler(this.btn_Maximize_Click);
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -403,10 +403,10 @@ namespace E_mart
             ((System.ComponentModel.ISupportInitialize)(this.btn_Home)).EndInit();
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentForm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Exit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Minimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Maximize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Minimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Exit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentForm)).EndInit();
             this.ResumeLayout(false);
 
         }

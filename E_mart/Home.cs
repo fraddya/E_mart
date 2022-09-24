@@ -147,6 +147,9 @@ namespace E_mart
         private void btn_setings_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
+            DialogResult result = FDDMessageBox.Show("This is a sample Text message Box");
+            
+
         }
 
         private void btn_report_Click(object sender, EventArgs e)
