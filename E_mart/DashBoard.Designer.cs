@@ -114,13 +114,6 @@ namespace E_mart
             this.label21 = new System.Windows.Forms.Label();
             this.panel33 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
-            this.panel34 = new System.Windows.Forms.Panel();
-            this.panel35 = new System.Windows.Forms.Panel();
-            this.label23 = new System.Windows.Forms.Label();
-            this.panel36 = new System.Windows.Forms.Panel();
-            this.label24 = new System.Windows.Forms.Label();
-            this.panel37 = new System.Windows.Forms.Panel();
-            this.label25 = new System.Windows.Forms.Label();
             btn_pay = new FontAwesome.Sharp.IconButton();
             this.panal_Invoice.SuspendLayout();
             this.panel_invoice_footer.SuspendLayout();
@@ -162,10 +155,6 @@ namespace E_mart
             this.panel31.SuspendLayout();
             this.panel32.SuspendLayout();
             this.panel33.SuspendLayout();
-            this.panel34.SuspendLayout();
-            this.panel35.SuspendLayout();
-            this.panel36.SuspendLayout();
-            this.panel37.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_pay
@@ -693,7 +682,6 @@ namespace E_mart
             // 
             // panel13
             // 
-            this.panel13.Controls.Add(this.panel34);
             this.panel13.Controls.Add(this.panel30);
             this.panel13.Controls.Add(this.panel26);
             this.panel13.Controls.Add(this.panel22);
@@ -1042,73 +1030,6 @@ namespace E_mart
             this.label22.TabIndex = 0;
             this.label22.Text = "Apple";
             // 
-            // panel34
-            // 
-            this.panel34.Controls.Add(this.panel35);
-            this.panel34.Controls.Add(this.panel36);
-            this.panel34.Controls.Add(this.panel37);
-            this.panel34.Location = new System.Drawing.Point(15, 393);
-            this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(309, 57);
-            this.panel34.TabIndex = 7;
-            // 
-            // panel35
-            // 
-            this.panel35.Controls.Add(this.label23);
-            this.panel35.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel35.Location = new System.Drawing.Point(229, 0);
-            this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(77, 57);
-            this.panel35.TabIndex = 5;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(15, 20);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(45, 17);
-            this.label23.TabIndex = 2;
-            this.label23.Text = "label8";
-            // 
-            // panel36
-            // 
-            this.panel36.Controls.Add(this.label24);
-            this.panel36.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel36.Location = new System.Drawing.Point(189, 0);
-            this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(40, 57);
-            this.panel36.TabIndex = 4;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(6, 18);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(25, 20);
-            this.label24.TabIndex = 1;
-            this.label24.Text = "10";
-            // 
-            // panel37
-            // 
-            this.panel37.Controls.Add(this.label25);
-            this.panel37.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel37.Location = new System.Drawing.Point(0, 0);
-            this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(189, 57);
-            this.panel37.TabIndex = 3;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(37, 17);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(50, 21);
-            this.label25.TabIndex = 0;
-            this.label25.Text = "Apple";
-            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1186,13 +1107,6 @@ namespace E_mart
             this.panel32.PerformLayout();
             this.panel33.ResumeLayout(false);
             this.panel33.PerformLayout();
-            this.panel34.ResumeLayout(false);
-            this.panel35.ResumeLayout(false);
-            this.panel35.PerformLayout();
-            this.panel36.ResumeLayout(false);
-            this.panel36.PerformLayout();
-            this.panel37.ResumeLayout(false);
-            this.panel37.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1247,13 +1161,6 @@ namespace E_mart
         private FontAwesome.Sharp.IconButton btn_suadd2;
         private FontAwesome.Sharp.IconButton btn_suadd1;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Panel panel34;
-        private System.Windows.Forms.Panel panel35;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Panel panel36;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Panel panel37;
-        private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Panel panel30;
         private System.Windows.Forms.Panel panel31;
         private System.Windows.Forms.Label label20;
