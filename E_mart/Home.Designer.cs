@@ -31,9 +31,6 @@ namespace E_mart
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btn_mang_Re = new FontAwesome.Sharp.IconButton();
-            this.btn_emp_Re = new FontAwesome.Sharp.IconButton();
-            this.btn_view_stock = new FontAwesome.Sharp.IconButton();
             this.btn_report = new FontAwesome.Sharp.IconButton();
             this.btn_setings = new FontAwesome.Sharp.IconButton();
             this.btn_customer = new FontAwesome.Sharp.IconButton();
@@ -50,6 +47,7 @@ namespace E_mart
             this.iconCurrentForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.btn_manager = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Home)).BeginInit();
@@ -63,9 +61,7 @@ namespace E_mart
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelMenu.Controls.Add(this.btn_mang_Re);
-            this.panelMenu.Controls.Add(this.btn_emp_Re);
-            this.panelMenu.Controls.Add(this.btn_view_stock);
+            this.panelMenu.Controls.Add(this.btn_manager);
             this.panelMenu.Controls.Add(this.btn_report);
             this.panelMenu.Controls.Add(this.btn_setings);
             this.panelMenu.Controls.Add(this.btn_customer);
@@ -79,69 +75,9 @@ namespace E_mart
             this.panelMenu.Size = new System.Drawing.Size(220, 721);
             this.panelMenu.TabIndex = 0;
             // 
-            // btn_mang_Re
-            // 
-            this.btn_mang_Re.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_mang_Re.FlatAppearance.BorderSize = 0;
-            this.btn_mang_Re.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_mang_Re.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_mang_Re.ForeColor = System.Drawing.Color.White;
-            this.btn_mang_Re.IconChar = FontAwesome.Sharp.IconChar.AddressBook;
-            this.btn_mang_Re.IconColor = System.Drawing.Color.White;
-            this.btn_mang_Re.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_mang_Re.IconSize = 43;
-            this.btn_mang_Re.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_mang_Re.Location = new System.Drawing.Point(0, 556);
-            this.btn_mang_Re.Name = "btn_mang_Re";
-            this.btn_mang_Re.Size = new System.Drawing.Size(220, 52);
-            this.btn_mang_Re.TabIndex = 9;
-            this.btn_mang_Re.Text = "Manager Re";
-            this.btn_mang_Re.UseVisualStyleBackColor = true;
-            this.btn_mang_Re.Click += new System.EventHandler(this.btn_mang_Re_Click);
-            // 
-            // btn_emp_Re
-            // 
-            this.btn_emp_Re.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_emp_Re.FlatAppearance.BorderSize = 0;
-            this.btn_emp_Re.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_emp_Re.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_emp_Re.ForeColor = System.Drawing.Color.White;
-            this.btn_emp_Re.IconChar = FontAwesome.Sharp.IconChar.UserFriends;
-            this.btn_emp_Re.IconColor = System.Drawing.Color.White;
-            this.btn_emp_Re.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_emp_Re.IconSize = 43;
-            this.btn_emp_Re.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_emp_Re.Location = new System.Drawing.Point(0, 504);
-            this.btn_emp_Re.Name = "btn_emp_Re";
-            this.btn_emp_Re.Size = new System.Drawing.Size(220, 52);
-            this.btn_emp_Re.TabIndex = 8;
-            this.btn_emp_Re.Text = "Employer Re";
-            this.btn_emp_Re.UseVisualStyleBackColor = true;
-            this.btn_emp_Re.Click += new System.EventHandler(this.btn_emp_Re_Click);
-            // 
-            // btn_view_stock
-            // 
-            this.btn_view_stock.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_view_stock.FlatAppearance.BorderSize = 0;
-            this.btn_view_stock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_view_stock.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_view_stock.ForeColor = System.Drawing.Color.White;
-            this.btn_view_stock.IconChar = FontAwesome.Sharp.IconChar.PeopleRoof;
-            this.btn_view_stock.IconColor = System.Drawing.Color.White;
-            this.btn_view_stock.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_view_stock.IconSize = 43;
-            this.btn_view_stock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_view_stock.Location = new System.Drawing.Point(0, 452);
-            this.btn_view_stock.Name = "btn_view_stock";
-            this.btn_view_stock.Size = new System.Drawing.Size(220, 52);
-            this.btn_view_stock.TabIndex = 7;
-            this.btn_view_stock.Text = "view stock";
-            this.btn_view_stock.UseVisualStyleBackColor = true;
-            this.btn_view_stock.Click += new System.EventHandler(this.btn_view_stock_Click);
-            // 
             // btn_report
             // 
-            this.btn_report.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_report.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btn_report.FlatAppearance.BorderSize = 0;
             this.btn_report.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_report.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -151,7 +87,7 @@ namespace E_mart
             this.btn_report.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_report.IconSize = 43;
             this.btn_report.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_report.Location = new System.Drawing.Point(0, 400);
+            this.btn_report.Location = new System.Drawing.Point(0, 617);
             this.btn_report.Name = "btn_report";
             this.btn_report.Size = new System.Drawing.Size(220, 52);
             this.btn_report.TabIndex = 6;
@@ -161,7 +97,7 @@ namespace E_mart
             // 
             // btn_setings
             // 
-            this.btn_setings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_setings.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btn_setings.FlatAppearance.BorderSize = 0;
             this.btn_setings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_setings.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -171,11 +107,11 @@ namespace E_mart
             this.btn_setings.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_setings.IconSize = 43;
             this.btn_setings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_setings.Location = new System.Drawing.Point(0, 348);
+            this.btn_setings.Location = new System.Drawing.Point(0, 669);
             this.btn_setings.Name = "btn_setings";
             this.btn_setings.Size = new System.Drawing.Size(220, 52);
             this.btn_setings.TabIndex = 5;
-            this.btn_setings.Text = "Setings";
+            this.btn_setings.Text = "Log Out";
             this.btn_setings.UseVisualStyleBackColor = true;
             this.btn_setings.Click += new System.EventHandler(this.btn_setings_Click);
             // 
@@ -386,6 +322,25 @@ namespace E_mart
             this.panelDesktop.Size = new System.Drawing.Size(1112, 637);
             this.panelDesktop.TabIndex = 3;
             // 
+            // btn_manager
+            // 
+            this.btn_manager.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_manager.FlatAppearance.BorderSize = 0;
+            this.btn_manager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_manager.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_manager.ForeColor = System.Drawing.Color.White;
+            this.btn_manager.IconChar = FontAwesome.Sharp.IconChar.ChalkboardTeacher;
+            this.btn_manager.IconColor = System.Drawing.Color.White;
+            this.btn_manager.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_manager.IconSize = 43;
+            this.btn_manager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_manager.Location = new System.Drawing.Point(0, 348);
+            this.btn_manager.Name = "btn_manager";
+            this.btn_manager.Size = new System.Drawing.Size(220, 52);
+            this.btn_manager.TabIndex = 7;
+            this.btn_manager.Text = "Manager";
+            this.btn_manager.UseVisualStyleBackColor = true;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -421,9 +376,6 @@ namespace E_mart
         private FontAwesome.Sharp.IconButton btn_customer;
         private FontAwesome.Sharp.IconButton btn_history;
         private FontAwesome.Sharp.IconButton btn_product;
-        private FontAwesome.Sharp.IconButton btn_mang_Re;
-        private FontAwesome.Sharp.IconButton btn_emp_Re;
-        private FontAwesome.Sharp.IconButton btn_view_stock;
         private System.Windows.Forms.PictureBox btn_Home;
         private System.Windows.Forms.Panel panelTitleBar;
         private System.Windows.Forms.Label lablTitle;
@@ -433,5 +385,6 @@ namespace E_mart
         private FontAwesome.Sharp.IconPictureBox btn_Maximize;
         private FontAwesome.Sharp.IconPictureBox btn_Minimize;
         private FontAwesome.Sharp.IconPictureBox btn_Exit;
+        private FontAwesome.Sharp.IconButton btn_manager;
     }
 }
