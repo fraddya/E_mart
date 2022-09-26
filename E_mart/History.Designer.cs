@@ -32,7 +32,12 @@ namespace E_mart
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_viewH = new FontAwesome.Sharp.IconButton();
+            this.combox_H = new System.Windows.Forms.ComboBox();
+            this.txt_invoiceidH = new System.Windows.Forms.TextBox();
+            this.dtp_H = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -58,11 +63,54 @@ namespace E_mart
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.dtp_H);
+            this.panel1.Controls.Add(this.txt_invoiceidH);
+            this.panel1.Controls.Add(this.combox_H);
+            this.panel1.Controls.Add(this.btn_viewH);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(311, 598);
             this.panel1.TabIndex = 2;
+            // 
+            // btn_viewH
+            // 
+            this.btn_viewH.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_viewH.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn_viewH.IconColor = System.Drawing.Color.Black;
+            this.btn_viewH.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_viewH.Location = new System.Drawing.Point(61, 356);
+            this.btn_viewH.Name = "btn_viewH";
+            this.btn_viewH.Size = new System.Drawing.Size(180, 37);
+            this.btn_viewH.TabIndex = 0;
+            this.btn_viewH.Text = "View History";
+            this.btn_viewH.UseVisualStyleBackColor = true;
+            // 
+            // combox_H
+            // 
+            this.combox_H.FormattingEnabled = true;
+            this.combox_H.Items.AddRange(new object[] {
+            "By Invoice ID",
+            "By Date"});
+            this.combox_H.Location = new System.Drawing.Point(61, 189);
+            this.combox_H.Name = "combox_H";
+            this.combox_H.Size = new System.Drawing.Size(180, 21);
+            this.combox_H.TabIndex = 1;
+            // 
+            // txt_invoiceidH
+            // 
+            this.txt_invoiceidH.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_invoiceidH.Location = new System.Drawing.Point(61, 281);
+            this.txt_invoiceidH.Name = "txt_invoiceidH";
+            this.txt_invoiceidH.Size = new System.Drawing.Size(180, 33);
+            this.txt_invoiceidH.TabIndex = 2;
+            // 
+            // dtp_H
+            // 
+            this.dtp_H.Location = new System.Drawing.Point(61, 255);
+            this.dtp_H.Name = "dtp_H";
+            this.dtp_H.Size = new System.Drawing.Size(180, 20);
+            this.dtp_H.TabIndex = 3;
             // 
             // History
             // 
@@ -75,6 +123,8 @@ namespace E_mart
             this.Name = "History";
             this.Text = "History";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -84,5 +134,9 @@ namespace E_mart
         private System.Windows.Forms.DataGridView dataGridView1;
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DateTimePicker dtp_H;
+        private System.Windows.Forms.TextBox txt_invoiceidH;
+        private System.Windows.Forms.ComboBox combox_H;
+        private FontAwesome.Sharp.IconButton btn_viewH;
     }
 }

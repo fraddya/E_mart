@@ -232,6 +232,12 @@
     <Compile Include="DashBoard.Designer.cs">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="employer_reg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employer_reg.Designer.cs">
+      <DependentUpon>employer_reg.cs</DependentUpon>
+    </Compile>
     <Compile Include="History.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -250,11 +256,11 @@
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
-    <Compile Include="manager.cs">
+    <Compile Include="Manage_emp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="manager.Designer.cs">
-      <DependentUpon>manager.cs</DependentUpon>
+    <Compile Include="Manage_emp.Designer.cs">
+      <DependentUpon>Manage_emp.cs</DependentUpon>
     </Compile>
     <Compile Include="messagebox.cs">
       <SubType>Form</SubType>
@@ -270,11 +276,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock.Designer.cs">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employer_reg.resx">
+      <DependentUpon>employer_reg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="History.resx">
       <DependentUpon>History.cs</DependentUpon>
@@ -284,6 +299,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_emp.resx">
+      <DependentUpon>Manage_emp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="messagebox.resx">
       <DependentUpon>messagebox.cs</DependentUpon>
@@ -301,6 +319,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Stock.resx">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

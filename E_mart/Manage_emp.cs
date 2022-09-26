@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace E_mart
 {
-    public partial class manager : Form
+    public partial class Manage_emp : Form
     {
-        public manager()
+        public Manage_emp()
         {
             InitializeComponent();
+        }
+
+        private void btn_addemp_Click(object sender, EventArgs e)
+        {
+            //OpenChildForm(new employer_reg());
         }
     }
 }
