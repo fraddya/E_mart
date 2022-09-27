@@ -32,3 +32,7 @@ C:\Users\natha\Documents\GitHub\E_mart\E_mart\obj\Debug\E_mart.csproj.CoreCompil
 C:\Users\natha\Documents\GitHub\E_mart\E_mart\obj\Debug\E_mart.csproj.CopyComplete
 C:\Users\natha\Documents\GitHub\E_mart\E_mart\obj\Debug\E_mart.exe
 C:\Users\natha\Documents\GitHub\E_mart\E_mart\obj\Debug\E_mart.pdb
+F:\ehub\E_mart\E_mart\obj\Debug\E_mart.employer_reg.resources
+F:\ehub\E_mart\E_mart\obj\Debug\E_mart.Manage_emp.resources
+F:\ehub\E_mart\E_mart\obj\Debug\E_mart.messagebox.resources
+F:\ehub\E_mart\E_mart\obj\Debug\E_mart.Stock.resources
