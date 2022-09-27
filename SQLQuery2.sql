@@ -9,3 +9,4 @@ Client_NIC char(15),
 Client_Email varchar(20)
 PRIMARY KEY(Client_ID)
 );
+
