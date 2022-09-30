@@ -85,5 +85,10 @@ namespace E_mart
             }
           
         }
+
+        private void txt_CName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
