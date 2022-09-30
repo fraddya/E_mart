@@ -11,7 +11,7 @@ using System.Data;
 
 namespace E_mart
 {
-     class DataBase
+    class DataBase
     {
         private SqlConnection con;
         private SqlCommand cmd;

@@ -36,3 +36,7 @@ F:\ehub\E_mart\E_mart\obj\Debug\E_mart.employer_reg.resources
 F:\ehub\E_mart\E_mart\obj\Debug\E_mart.Manage_emp.resources
 F:\ehub\E_mart\E_mart\obj\Debug\E_mart.messagebox.resources
 F:\ehub\E_mart\E_mart\obj\Debug\E_mart.Stock.resources
+C:\Users\natha\Documents\GitHub\E_mart\E_mart\obj\Debug\E_mart.employer_reg.resources
+C:\Users\natha\Documents\GitHub\E_mart\E_mart\obj\Debug\E_mart.Manage_emp.resources
+C:\Users\natha\Documents\GitHub\E_mart\E_mart\obj\Debug\E_mart.messagebox.resources
+C:\Users\natha\Documents\GitHub\E_mart\E_mart\obj\Debug\E_mart.Stock.resources
