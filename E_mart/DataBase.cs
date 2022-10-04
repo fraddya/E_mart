@@ -21,7 +21,7 @@ namespace E_mart
         {
             con = new SqlConnection("Data Source=e-mart.database.windows.net;Initial Catalog=E_mart;User ID=madse212f-010;Password=********;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         }
-        public void openConnection()
+        public void OpenConnection()
         {
             con.Open();
         }
@@ -31,7 +31,7 @@ namespace E_mart
         }
         public int save_update_delete(string a)
         {
-            openConnection();
+            OpenConnection();
             cmd = new SqlCommand(a, con);
             int i = cmd.ExecuteNonQuery();
             closeConnection();
@@ -39,7 +39,7 @@ namespace E_mart
         }
         public DataTable getData(string a)
         {
-            openConnection();
+            OpenConnection();
             da = new SqlDataAdapter(a, con);
             DataTable dt = new DataTable();
             da.Fill(dt);
