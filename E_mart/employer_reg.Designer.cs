@@ -59,7 +59,7 @@ namespace E_mart
             this.btn_regE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_regE.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_regE.Location = new System.Drawing.Point(592, 628);
-            this.btn_regE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_regE.Margin = new System.Windows.Forms.Padding(4);
             this.btn_regE.Name = "btn_regE";
             this.btn_regE.Size = new System.Drawing.Size(236, 54);
             this.btn_regE.TabIndex = 32;
@@ -72,7 +72,7 @@ namespace E_mart
             this.txt_Eemail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
             this.txt_Eemail.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Eemail.Location = new System.Drawing.Point(811, 482);
-            this.txt_Eemail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Eemail.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Eemail.Name = "txt_Eemail";
             this.txt_Eemail.Size = new System.Drawing.Size(260, 45);
             this.txt_Eemail.TabIndex = 29;
@@ -82,7 +82,7 @@ namespace E_mart
             this.txt_Etel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
             this.txt_Etel.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Etel.Location = new System.Drawing.Point(425, 482);
-            this.txt_Etel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Etel.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Etel.Name = "txt_Etel";
             this.txt_Etel.Size = new System.Drawing.Size(260, 45);
             this.txt_Etel.TabIndex = 28;
@@ -92,7 +92,7 @@ namespace E_mart
             this.txt_Enic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
             this.txt_Enic.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Enic.Location = new System.Drawing.Point(811, 356);
-            this.txt_Enic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Enic.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Enic.Name = "txt_Enic";
             this.txt_Enic.Size = new System.Drawing.Size(260, 45);
             this.txt_Enic.TabIndex = 27;
@@ -102,7 +102,7 @@ namespace E_mart
             this.txt_Eaddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
             this.txt_Eaddress.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Eaddress.Location = new System.Drawing.Point(425, 356);
-            this.txt_Eaddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Eaddress.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Eaddress.Name = "txt_Eaddress";
             this.txt_Eaddress.Size = new System.Drawing.Size(260, 45);
             this.txt_Eaddress.TabIndex = 26;
@@ -112,7 +112,7 @@ namespace E_mart
             this.txt_EName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
             this.txt_EName.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_EName.Location = new System.Drawing.Point(425, 230);
-            this.txt_EName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_EName.Margin = new System.Windows.Forms.Padding(4);
             this.txt_EName.Name = "txt_EName";
             this.txt_EName.Size = new System.Drawing.Size(260, 45);
             this.txt_EName.TabIndex = 25;
@@ -228,9 +228,10 @@ namespace E_mart
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Registration);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "employer_reg";
             this.Text = "employer_reg";
+            this.Load += new System.EventHandler(this.employer_reg_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

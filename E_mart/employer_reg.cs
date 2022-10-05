@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
@@ -20,7 +20,7 @@ namespace E_mart
         }
 
 
-        DataBase db = new DataBase(); 
+        DataBase db = new DataBase();
 
         private void btn_regE_Click(object sender, EventArgs e)
         {
@@ -31,30 +31,34 @@ namespace E_mart
                     MessageBox.Show("Name can not be empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_EName.Focus();
                 }
-                else if (txt_EName.Text.Any(char.IsDigit))
+               
+                if (!Regex.Match(txt_EName.Text, "^[A-Z][a-zA-Z]*$").Success)
                 {
-                    MessageBox.Show("First Name cannot have numbers", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                   
+                     MessageBox.Show ("Invalid first name", "Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_EName.Focus();
+                    return;
                 }
 
-                else if (string.IsNullOrEmpty(txt_Eaddress.Text))
+                if (string.IsNullOrEmpty(txt_Eaddress.Text))
                 {
                     MessageBox.Show("Address can not be empty or can not have numbers", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_Eaddress.Focus();
                 }
-                /*
-                else if (!Regex.IsMatch(txt_tel.Text, @"^\+\d{1,7}$"))
+                if (!Regex.Match(txt_Eaddress.Text, @"^[0-9]+\s+([a-zA-Z]+|[a-zA-Z]+\s[a-zA-Z]+)$").Success)
                 {
-                    MessageBox.Show("Enter Valid Telephone number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txt_tel.Focus();
+
+                    MessageBox.Show("Invalid address", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txt_Eaddress.Focus();
+                    return;
                 }
-                */
-                else if (txt_Eemail.Text.Length == 0)
+
+                if (txt_Eemail.Text.Length == 0)
                 {
                     MessageBox.Show("Please Enter Email Address", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_Eemail.Focus();
                 }
-                else if (!Regex.IsMatch(txt_Eemail.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
+                if (!Regex.IsMatch(txt_Eemail.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
                 {
                     MessageBox.Show("Enter a valid email. Ex:name@gmail.com", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_Eemail.Focus();
@@ -74,6 +78,11 @@ namespace E_mart
             {
                 MessageBox.Show(this, "Please check again", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void employer_reg_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
