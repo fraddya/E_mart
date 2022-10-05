@@ -19,7 +19,7 @@ namespace E_mart
             InitializeComponent();
         }
 
-        DataBase db = new DataBase();
+        //DataBase db = new DataBase();
 
 
         private void Customer_Load(object sender, EventArgs e)
@@ -29,7 +29,7 @@ namespace E_mart
 
         private void btn_reg_Click(object sender, EventArgs e)
         {
-
+            /*
             try
             {
 
@@ -55,7 +55,7 @@ namespace E_mart
                     MessageBox.Show("Enter Valid Telephone number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_tel.Focus();
                 }
-                */
+                
                 else if (txt_email.Text.Length == 0)
                 {
                     MessageBox.Show("Please Enter Email Address", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -82,7 +82,7 @@ namespace E_mart
             catch (Exception)
             {
                 MessageBox.Show(this, "Please check again", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            }*/
           
         }
 
