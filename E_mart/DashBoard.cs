@@ -23,7 +23,8 @@ namespace E_mart
         SqlConnection con;
         SqlCommand cmd1;
         SqlCommand cmd2;
-        
+        SqlDataReader rh;
+
         SqlDataAdapter da;
       
 
@@ -64,11 +65,12 @@ namespace E_mart
                     panal_Invoice.Visible = false;
                 }
 
-                con = new SqlConnection("Data Source=LAPTOP-FK0M22U2;Initial Catalog=Product;Integrated Security=True");
+                //con = new SqlConnection(""); enter your string
+                con = new SqlConnection("Data Source=LAPTOP-FK0M22U2;Initial Catalog=Product;Integrated Security=True");//my
                 con.Open();
                 cmd1 = new SqlCommand("SELECT Product_queantity,Product_Price,Product_Name,Product_category FROM Product WHERE Product_ID='" + txt_pid.Text + "'", con);
                 cmd1.Parameters.AddWithValue("Product_ID", txt_pid.Text);
-                SqlDataReader rh;
+                
                 rh = cmd1.ExecuteReader();
                 if (rh.Read())
                 {
@@ -112,11 +114,10 @@ namespace E_mart
             {
 
             }
-<<<<<<< HEAD
-=======
 
-            //con = new SqlConnection("Data Source=LAPTOP-FK0M22U2;Initial Catalog=Product;Integrated Security=True");  //Nadiya
-            con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=Bank;Integrated Security=True");   //fraddya
+
+           
+            con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=Bank;Integrated Security=True");   
             con.Open();
             cmd1 = new SqlCommand("SELECT Product_queantity FROM Product WHERE Product_ID='" + txt_pid.Text+"'", con);
             cmd1.Parameters.AddWithValue("Product_ID", txt_pid.Text);
@@ -124,7 +125,7 @@ namespace E_mart
             rh = cmd1.ExecuteReader();
             if(rh.Read())
             {
-                //txt_pname.Text= rh["PNAME"].ToString();
+                
                 string c= rh["Product_queantity"].ToString();
                 txt_qun.Text = c;
 
@@ -134,7 +135,7 @@ namespace E_mart
                 MessageBox.Show("No Data Found");
             }
             con.Close();
->>>>>>> 9520300a690117dd2413fbe82cdeba57b4b91add
+
            
             
            
@@ -158,11 +159,11 @@ namespace E_mart
             }
             catch(Exception)
             {
-<<<<<<< HEAD
+
                 MessageBox.Show("");
-=======
+
                 MessageBox.Show("error");
->>>>>>> 9520300a690117dd2413fbe82cdeba57b4b91add
+
             }
        
 ;
