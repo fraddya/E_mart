@@ -23,7 +23,7 @@ namespace E_mart
         SqlConnection con;
         SqlCommand cmd1;
         SqlCommand cmd2;
-        SqlDataReader rh;
+        
 
         SqlDataAdapter da;
       
@@ -70,34 +70,35 @@ namespace E_mart
                 con.Open();
                 cmd1 = new SqlCommand("SELECT Product_queantity,Product_Price,Product_Name,Product_category FROM Product WHERE Product_ID='" + txt_pid.Text + "'", con);
                 cmd1.Parameters.AddWithValue("Product_ID", txt_pid.Text);
-                
-                rh = cmd1.ExecuteReader();
-                if (rh.Read())
+                SqlDataReader rj;
+
+                rj = cmd1.ExecuteReader();
+                if (rj.Read())
                 {
 
 
-                    txt_qun.Text = rh["Product_queantity"].ToString();
+                    txt_qun.Text = rj["Product_queantity"].ToString();
                     lbl_quan1.Text = txt_qun.Text;
-                    lbl_price1.Text = rh["Product_Price"].ToString();
-                    txt_pname.Text = rh["Product_Name"].ToString();
+                    lbl_price1.Text = rj["Product_Price"].ToString();
+                    txt_pname.Text = rj["Product_Name"].ToString();
                     lbl_bill1.Text = txt_pname.Text;
-                    string c = rh["Product_category"].ToString();
+                    string c = rj["Product_category"].ToString();
                     cmd2 = new SqlCommand("Product_Name,Product_Price FROM Product WHERE Product_category=c");
                     cmd2.Parameters.AddWithValue("Product_ID",txt_pid.Text);
                     SqlDataReader ab;
                     ab = cmd2.ExecuteReader();
                     if(ab.Read())
                     {
-                        su_itemlable1.Text = rh["Product_Name"].ToString();
-                        su_itemlable2.Text = rh["Product_Name"].ToString();
-                        su_itemlable3.Text = rh["Product_Name"].ToString();
-                        su_itemlable4.Text = rh["Product_Name"].ToString();
-                        su_itemlable5.Text = rh["Product_Name"].ToString();
-                        su_pricelable1.Text = rh["Product_Price"].ToString();
-                        su_pricelable2.Text = rh["Product_Price"].ToString();
-                        su_pricelable3.Text = rh["Product_Price"].ToString();
-                        su_pricelable4.Text = rh["Product_Price"].ToString();
-                        su_pricelable5.Text = rh["Product_Price"].ToString();
+                        su_itemlable1.Text = ab["Product_Name"].ToString();
+                        su_itemlable2.Text = ab["Product_Name"].ToString();
+                        su_itemlable3.Text = ab["Product_Name"].ToString();
+                        su_itemlable4.Text = ab["Product_Name"].ToString();
+                        su_itemlable5.Text = ab["Product_Name"].ToString();
+                        su_pricelable1.Text = ab["Product_Price"].ToString();
+                        su_pricelable2.Text = ab["Product_Price"].ToString();
+                        su_pricelable3.Text = ab["Product_Price"].ToString();
+                        su_pricelable4.Text = ab["Product_Price"].ToString();
+                        su_pricelable5.Text = ab["Product_Price"].ToString();
                         
                     }
                      
