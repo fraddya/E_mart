@@ -96,3 +96,6 @@ C:\Users\HP\Documents\GitHub\E_mart\E_mart\obj\Debug\E_mart.csproj.Fody.CopyLoca
 C:\Users\HP\Documents\GitHub\E_mart\E_mart\obj\Debug\E_mart.csproj.CopyComplete
 C:\Users\HP\Documents\GitHub\E_mart\E_mart\obj\Debug\E_mart.exe
 C:\Users\HP\Documents\GitHub\E_mart\E_mart\obj\Debug\E_mart.pdb
+F:\ehub\E_mart\E_mart\obj\Debug\E_mart.employer_reg.resources
+F:\ehub\E_mart\E_mart\obj\Debug\E_mart.Manage_emp.resources
+F:\ehub\E_mart\E_mart\obj\Debug\E_mart.Stock.resources
