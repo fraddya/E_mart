@@ -22,6 +22,7 @@ namespace E_mart
         }
         SqlConnection con;
         SqlCommand cmd1;
+        SqlCommand cmd2;
         
         SqlDataAdapter da;
       
@@ -38,47 +39,79 @@ namespace E_mart
 
         private void btn_enter_Click(object sender, EventArgs e)
         {
-            panel1.Visible = true;
-            panal_Invoice.Visible = true;
+            try
+            {
+                panel1.Visible = true;
+                panal_Invoice.Visible = true;
 
-            if (txt_pid.Text.Length == 0)
-            {
-                lbl_1.Text = "Cannot be null or Cannot be greater than 6 value for product id";
-                panel1.Visible = false;
-                panal_Invoice.Visible = false;
+                if (txt_pid.Text.Length == 0)
+                {
+                    lbl_1.Text = "Cannot be null or Cannot be greater than 6 value for product id";
+                    panel1.Visible = false;
+                    panal_Invoice.Visible = false;
+                }
+                else if (txt_pname.Text.Length == 0 || txt_pname.Text.Any(char.IsDigit))
+                {
+                    lbl_2.Text = "Cannot be null or Cannot be insert number for product name";
+                    panel1.Visible = false;
+                    panal_Invoice.Visible = false;
+                }
+                else if ( txt_qun.Text.Any(char.IsLetter))
+                {
+
+                    lbl_3.Text = "Cannot be null or Cannot be insert letter for quantity";
+                    panel1.Visible = false;
+                    panal_Invoice.Visible = false;
+                }
+
+                con = new SqlConnection("Data Source=LAPTOP-FK0M22U2;Initial Catalog=Product;Integrated Security=True");
+                con.Open();
+                cmd1 = new SqlCommand("SELECT Product_queantity,Product_Price,Product_Name,Product_category FROM Product WHERE Product_ID='" + txt_pid.Text + "'", con);
+                cmd1.Parameters.AddWithValue("Product_ID", txt_pid.Text);
+                SqlDataReader rh;
+                rh = cmd1.ExecuteReader();
+                if (rh.Read())
+                {
+
+
+                    txt_qun.Text = rh["Product_queantity"].ToString();
+                    lbl_quan1.Text = txt_qun.Text;
+                    lbl_price1.Text = rh["Product_Price"].ToString();
+                    txt_pname.Text = rh["Product_Name"].ToString();
+                    lbl_bill1.Text = txt_pname.Text;
+                    string c = rh["Product_category"].ToString();
+                    cmd2 = new SqlCommand("Product_Name,Product_Price FROM Product WHERE Product_category=c");
+                    cmd2.Parameters.AddWithValue("Product_ID",txt_pid.Text);
+                    SqlDataReader ab;
+                    ab = cmd2.ExecuteReader();
+                    if(ab.Read())
+                    {
+                        su_itemlable1.Text = rh["Product_Name"].ToString();
+                        su_itemlable2.Text = rh["Product_Name"].ToString();
+                        su_itemlable3.Text = rh["Product_Name"].ToString();
+                        su_itemlable4.Text = rh["Product_Name"].ToString();
+                        su_itemlable5.Text = rh["Product_Name"].ToString();
+                        su_pricelable1.Text = rh["Product_Price"].ToString();
+                        su_pricelable2.Text = rh["Product_Price"].ToString();
+                        su_pricelable3.Text = rh["Product_Price"].ToString();
+                        su_pricelable4.Text = rh["Product_Price"].ToString();
+                        su_pricelable5.Text = rh["Product_Price"].ToString();
+                        
+                    }
+                     
+
+
+                }
+                else
+                {
+                    MessageBox.Show("No Data Found");
+                }
+                con.Close();
             }
-            else if (txt_pname.Text.Length == 0 || txt_pname.Text.Any(char.IsDigit))
-            {
-                lbl_2.Text = "Cannot be null or Cannot be insert number for product name";
-                panel1.Visible = false;
-                panal_Invoice.Visible = false;
-            }
-            else if (txt_qun.Text.Length == 0 || txt_qun.Text.Any(char.IsLetter))
+            catch (Exception)
             {
 
-                lbl_3.Text = "Cannot be null or Cannot be insert letter for quantity";
-                panel1.Visible = false;
-                panal_Invoice.Visible = false;
             }
-
-            con = new SqlConnection("Data Source=LAPTOP-FK0M22U2;Initial Catalog=Product;Integrated Security=True");
-            con.Open();
-            cmd1 = new SqlCommand("SELECT QUN FROM Product WHERE PID='"+txt_pid.Text+"'", con);
-            cmd1.Parameters.AddWithValue("PID", txt_pid.Text);
-            SqlDataReader rh;
-            rh = cmd1.ExecuteReader();
-            if(rh.Read())
-            {
-                //txt_pname.Text= rh["PNAME"].ToString();
-                string c= rh["QUN"].ToString();
-                txt_qun.Text = c;
-
-            }
-            else
-            {
-                MessageBox.Show("No Data Found");
-            }
-            con.Close();
            
             
            
@@ -102,7 +135,7 @@ namespace E_mart
             }
             catch(Exception)
             {
-                MessageBox.Show("")
+                MessageBox.Show("");
             }
        
 ;
@@ -158,201 +191,41 @@ namespace E_mart
 
         private void btn_suadd1_Click(object sender, EventArgs e)
         {
-            if(txt_pid.Text == "1")
-            {
-                lbl_bill2.Text = su_itemlable1.Text;
-                lbl_quan2.Text = "1";
-                lbl_price2.Text = su_pricelable1.Text;
-                
-            }
-            else if (txt_pid.Text == "2")
-            {
-                lbl_bill2.Text = su_itemlable1.Text;
-                lbl_quan2.Text = "1";
-                lbl_price2.Text = su_pricelable1.Text;
-
-            }
-            else if (txt_pid.Text == "3")
-            {
-                lbl_bill2.Text = su_itemlable1.Text;
-                lbl_quan2.Text = "1";
-                lbl_price2.Text = su_pricelable1.Text;
-
-            }
-            else if (txt_pid.Text == "4")
-            {
-                lbl_bill2.Text = su_itemlable1.Text;
-                lbl_quan2.Text = "1";
-                lbl_price2.Text = su_pricelable1.Text;
-
-            }
-            else if (txt_pid.Text == "5")
-            {
-                lbl_bill2.Text = su_itemlable1.Text;
-                lbl_quan2.Text = "1";
-                lbl_price2.Text = su_pricelable1.Text;
-
-            }
+            lbl_bill2.Text = su_itemlable1.Text;
+            lbl_price1.Text = su_pricelable1.Text;
+            lbl_quan2.Text = Convert.ToString(1);
 
         }
 
         private void btn_suadd2_Click(object sender, EventArgs e)
         {
-            if (txt_pid.Text == "1")
-            {
-                lbl_bill3.Text = su_itemlable2.Text;
-                lbl_quan3.Text = "1";
-                lbl_price3.Text = su_pricelable2.Text;
-
-            }
-            else if (txt_pid.Text == "2")
-            {
-                lbl_bill3.Text = su_itemlable2.Text;
-                lbl_quan3.Text = "1";
-                lbl_price3.Text = su_pricelable2.Text;
-
-            }
-            else if (txt_pid.Text == "3")
-            {
-                lbl_bill3.Text = su_itemlable2.Text;
-                lbl_quan3.Text = "1";
-                lbl_price3.Text = su_pricelable2.Text;
-
-            }
-            else if (txt_pid.Text == "4")
-            {
-                lbl_bill3.Text = su_itemlable2.Text;
-                lbl_quan3.Text = "1";
-                lbl_price3.Text = su_pricelable2.Text;
-
-            }
-            else if (txt_pid.Text == "5")
-            {
-                lbl_bill3.Text = su_itemlable2.Text;
-                lbl_quan3.Text = "1";
-                lbl_price3.Text = su_pricelable2.Text;
-
-            }
+            lbl_bill3.Text = su_itemlable2.Text;
+            lbl_price3.Text = su_pricelable2.Text;
+            lbl_quan3.Text = Convert.ToString(1);
 
         }
 
         private void btn_suadd3_Click(object sender, EventArgs e)
         {
-            if (txt_pid.Text == "1")
-            {
-                lbl_bill4.Text = su_itemlable3.Text;
-                lbl_quan4.Text = "1";
-                lbl_price4.Text = su_pricelable3.Text;
-
-            }
-            else if (txt_pid.Text == "2")
-            {
-                lbl_bill4.Text = su_itemlable3.Text;
-                lbl_quan4.Text = "1";
-                lbl_price4.Text = su_pricelable3.Text;
-
-            }
-            else if (txt_pid.Text == "3")
-            {
-                lbl_bill4.Text = su_itemlable3.Text;
-                lbl_quan4.Text = "1";
-                lbl_price4.Text = su_pricelable3.Text;
-
-            }
-            else if (txt_pid.Text == "4")
-            {
-                lbl_bill4.Text = su_itemlable3.Text;
-                lbl_quan4.Text = "1";
-                lbl_price4.Text = su_pricelable3.Text;
-
-            }
-            else if (txt_pid.Text == "5")
-            {
-                lbl_bill4.Text = su_itemlable3.Text;
-                lbl_quan4.Text = "1";
-                lbl_price4.Text = su_pricelable3.Text;
-
-            }
+            lbl_bill4.Text = su_itemlable3.Text;
+            lbl_price4.Text = su_pricelable3.Text;
+            lbl_quan4.Text = Convert.ToString(1);
 
         }
 
         private void btn_suadd4_Click(object sender, EventArgs e)
         {
-            if (txt_pid.Text == "1")
-            {
-                lbl_bill5.Text = su_itemlable4.Text;
-                lbl_quan5.Text = "1";
-                lbl_price5.Text = su_pricelable4.Text;
-
-            }
-            else if (txt_pid.Text == "2")
-            {
-                lbl_bill5.Text = su_itemlable4.Text;
-                lbl_quan5.Text = "1";
-                lbl_price5.Text = su_pricelable4.Text;
-
-            }
-            else if (txt_pid.Text == "3")
-            {
-                lbl_bill5.Text = su_itemlable4.Text;
-                lbl_quan5.Text = "1";
-                lbl_price5.Text = su_pricelable4.Text;
-
-            }
-            else if (txt_pid.Text == "4")
-            {
-                lbl_bill5.Text = su_itemlable4.Text;
-                lbl_quan5.Text = "1";
-                lbl_price5.Text = su_pricelable4.Text;
-
-            }
-            else if (txt_pid.Text == "5")
-            {
-                lbl_bill5.Text = su_itemlable4.Text;
-                lbl_quan5.Text = "1";
-                lbl_price5.Text = su_pricelable4.Text;
-
-            }
+            lbl_bill5.Text = su_itemlable4.Text;
+            lbl_price5.Text = su_pricelable4.Text;
+            lbl_quan5.Text = Convert.ToString(1);
 
         }
 
         private void btn_suadd5_Click(object sender, EventArgs e)
         {
-            if (txt_pid.Text == "1")
-            {
-                lbl_bill6.Text = su_itemlable5.Text;
-                lbl_quan6.Text = "1";
-                lbl_price6.Text = su_pricelable5.Text;
-
-            }
-            else if (txt_pid.Text == "2")
-            {
-                lbl_bill6.Text = su_itemlable5.Text;
-                lbl_quan6.Text = "1";
-                lbl_price6.Text = su_pricelable5.Text;
-
-            }
-            else if (txt_pid.Text == "3")
-            {
-                lbl_bill6.Text = su_itemlable5.Text;
-                lbl_quan6.Text = "1";
-                lbl_price6.Text = su_pricelable5.Text;
-
-            }
-            else if (txt_pid.Text == "4")
-            {
-                lbl_bill6.Text = su_itemlable5.Text;
-                lbl_quan6.Text = "1";
-                lbl_price6.Text = su_pricelable5.Text;
-
-            }
-            else if (txt_pid.Text == "5")
-            {
-                lbl_bill6.Text = su_itemlable5.Text;
-                lbl_quan6.Text = "1";
-                lbl_price6.Text = su_pricelable5.Text;
-
-            }
+            lbl_bill6.Text = su_itemlable5.Text;
+            lbl_price6.Text = su_pricelable5.Text;
+            lbl_quan6.Text = Convert.ToString(1);
 
         }
 
@@ -375,6 +248,7 @@ namespace E_mart
             double tot = rs - dis;
             lbl_dis.Text = Convert.ToString(dis);
             lbl_tot.Text = Convert.ToString(tot);
+            
 
         }
 
