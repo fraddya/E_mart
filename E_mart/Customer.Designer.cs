@@ -38,7 +38,6 @@ namespace E_mart
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_CName = new System.Windows.Forms.TextBox();
-            this.txt_DOB = new System.Windows.Forms.TextBox();
             this.txt_address = new System.Windows.Forms.TextBox();
             this.txt_nic = new System.Windows.Forms.TextBox();
             this.txt_tel = new System.Windows.Forms.TextBox();
@@ -46,6 +45,7 @@ namespace E_mart
             this.label7 = new System.Windows.Forms.Label();
             this.checkBox_email = new System.Windows.Forms.CheckBox();
             this.btn_reg = new System.Windows.Forms.Button();
+            this.DOB_picker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // Registration
@@ -141,16 +141,7 @@ namespace E_mart
             this.txt_CName.Size = new System.Drawing.Size(196, 37);
             this.txt_CName.TabIndex = 7;
             this.txt_CName.Text = "test";
-            // 
-            // txt_DOB
-            // 
-            this.txt_DOB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
-            this.txt_DOB.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_DOB.Location = new System.Drawing.Point(867, 201);
-            this.txt_DOB.Name = "txt_DOB";
-            this.txt_DOB.Size = new System.Drawing.Size(196, 37);
-            this.txt_DOB.TabIndex = 8;
-            this.txt_DOB.Text = "test";
+            this.txt_CName.TextChanged += new System.EventHandler(this.txt_CName_TextChanged);
             // 
             // txt_address
             // 
@@ -228,6 +219,15 @@ namespace E_mart
             this.btn_reg.TabIndex = 15;
             this.btn_reg.Text = "Registration";
             this.btn_reg.UseVisualStyleBackColor = false;
+            this.btn_reg.Click += new System.EventHandler(this.btn_reg_Click);
+            // 
+            // DOB_picker
+            // 
+            this.DOB_picker.Location = new System.Drawing.Point(867, 206);
+            this.DOB_picker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DOB_picker.Name = "DOB_picker";
+            this.DOB_picker.Size = new System.Drawing.Size(196, 20);
+            this.DOB_picker.TabIndex = 17;
             // 
             // Customer
             // 
@@ -236,6 +236,7 @@ namespace E_mart
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1096, 598);
+            this.Controls.Add(this.DOB_picker);
             this.Controls.Add(this.btn_reg);
             this.Controls.Add(this.checkBox_email);
             this.Controls.Add(this.label7);
@@ -243,7 +244,6 @@ namespace E_mart
             this.Controls.Add(this.txt_tel);
             this.Controls.Add(this.txt_nic);
             this.Controls.Add(this.txt_address);
-            this.Controls.Add(this.txt_DOB);
             this.Controls.Add(this.txt_CName);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -255,6 +255,7 @@ namespace E_mart
             this.DoubleBuffered = true;
             this.Name = "Customer";
             this.Text = "Customer";
+            this.Load += new System.EventHandler(this.Customer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,7 +271,6 @@ namespace E_mart
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txt_CName;
-        private System.Windows.Forms.TextBox txt_DOB;
         private System.Windows.Forms.TextBox txt_address;
         private System.Windows.Forms.TextBox txt_nic;
         private System.Windows.Forms.TextBox txt_tel;
@@ -278,5 +278,6 @@ namespace E_mart
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.CheckBox checkBox_email;
         private System.Windows.Forms.Button btn_reg;
+        private System.Windows.Forms.DateTimePicker DOB_picker;
     }
 }
