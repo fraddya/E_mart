@@ -23,7 +23,9 @@ namespace E_mart
         SqlConnection con;
         SqlCommand cmd1;
         SqlCommand cmd2;
-        
+        SqlCommand cmd3;
+
+
 
         SqlDataAdapter da;
       
@@ -40,10 +42,10 @@ namespace E_mart
 
         private void btn_enter_Click(object sender, EventArgs e)
         {
-            try
-            {
-                panel1.Visible = true;
-                panal_Invoice.Visible = true;
+                 string c;
+            
+                panel3.Visible = true;
+                
 
                 if (txt_pid.Text.Length == 0)
                 {
@@ -65,43 +67,40 @@ namespace E_mart
                     panal_Invoice.Visible = false;
                 }
 
+                
+
                 //con = new SqlConnection(""); enter your string
-                con = new SqlConnection("Data Source=LAPTOP-FK0M22U2;Initial Catalog=Product;Integrated Security=True");//my
+                con = new SqlConnection("Data Source=LAPTOP-FK0M22U2;Initial Catalog=e_martlocalhost;Integrated Security=True");//my
                 con.Open();
-                cmd1 = new SqlCommand("SELECT Product_queantity,Product_Price,Product_Name,Product_category FROM Product WHERE Product_ID='" + txt_pid.Text + "'", con);
+                cmd1 = new SqlCommand("SELECT Product_queantity,Product_Price,Product_Name,Product_category FROM Product1 WHERE Product_ID='" + txt_pid.Text + "'", con);
                 cmd1.Parameters.AddWithValue("Product_ID", txt_pid.Text);
                 SqlDataReader rj;
+                
 
-                rj = cmd1.ExecuteReader();
+            rj = cmd1.ExecuteReader();
                 if (rj.Read())
                 {
 
-
+                    String s = txt_qun.Text;
+                    txt_qun.Clear();
                     txt_qun.Text = rj["Product_queantity"].ToString();
-                    lbl_quan1.Text = txt_qun.Text;
+                    string g = txt_qun.Text;
+                    
+                if(Convert.ToInt32(s) < Convert.ToInt32(g))
+                {
+                    lbl_quan1.Text = s ;
+
+                }
+
+                    
+                
+                   
                     lbl_price1.Text = rj["Product_Price"].ToString();
                     txt_pname.Text = rj["Product_Name"].ToString();
                     lbl_bill1.Text = txt_pname.Text;
-                    string c = rj["Product_category"].ToString();
-                    cmd2 = new SqlCommand("Product_Name,Product_Price FROM Product WHERE Product_category=c");
-                    cmd2.Parameters.AddWithValue("Product_ID",txt_pid.Text);
-                    SqlDataReader ab;
-                    ab = cmd2.ExecuteReader();
-                    if(ab.Read())
-                    {
-                        su_itemlable1.Text = ab["Product_Name"].ToString();
-                        su_itemlable2.Text = ab["Product_Name"].ToString();
-                        su_itemlable3.Text = ab["Product_Name"].ToString();
-                        su_itemlable4.Text = ab["Product_Name"].ToString();
-                        su_itemlable5.Text = ab["Product_Name"].ToString();
-                        su_pricelable1.Text = ab["Product_Price"].ToString();
-                        su_pricelable2.Text = ab["Product_Price"].ToString();
-                        su_pricelable3.Text = ab["Product_Price"].ToString();
-                        su_pricelable4.Text = ab["Product_Price"].ToString();
-                        su_pricelable5.Text = ab["Product_Price"].ToString();
-                        
-                    }
-                     
+                    c = rj["Product_category"].ToString();
+                    lbl_get.Text = c;
+                   
 
 
                 }
@@ -110,62 +109,44 @@ namespace E_mart
                     MessageBox.Show("No Data Found");
                 }
                 con.Close();
-            }
-            catch (Exception)
-            {
+                con.Open();
+                SqlDataReader ab;
+                cmd2 = new SqlCommand("SELECT Product_Name,Product_Price FROM Product1 WHERE Product_category = '"+lbl_get.Text+"'", con);
+                cmd2.Parameters.AddWithValue("Product_ID", txt_pid.Text);
 
-            }
+               ab = cmd2.ExecuteReader();
+              if (ab.Read())
+              {
+                  su_itemlable1.Text = ab["Product_Name"].ToString();
+                  su_itemlable2.Text = ab["Product_Name"].ToString();
+                  su_itemlable3.Text = ab["Product_Name"].ToString();
+                  su_itemlable4.Text = ab["Product_Name"].ToString();
+                  su_itemlable5.Text = ab["Product_Name"].ToString();
+                 su_pricelable1.Text = ab["Product_Price"].ToString();
+                 su_pricelable2.Text = ab["Product_Price"].ToString();
+                 su_pricelable3.Text = ab["Product_Price"].ToString();
+                 su_pricelable4.Text = ab["Product_Price"].ToString();
+                 su_pricelable5.Text = ab["Product_Price"].ToString();
 
-
-           
-            con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=Bank;Integrated Security=True");   
-            con.Open();
-            cmd1 = new SqlCommand("SELECT Product_queantity FROM Product WHERE Product_ID='" + txt_pid.Text+"'", con);
-            cmd1.Parameters.AddWithValue("Product_ID", txt_pid.Text);
-            SqlDataReader rh;
-            rh = cmd1.ExecuteReader();
-            if(rh.Read())
-            {
                 
-                string c= rh["Product_queantity"].ToString();
-                txt_qun.Text = c;
 
-            }
-            else
-            {
-                MessageBox.Show("No Data Found");
-            }
-            con.Close();
-
-           
-            
-           
-            
-           
+              }
+              con.Close();
            
 
-          
-           
-            
-        
+
+
         }
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-            try
-            {
+           
+            
                 int a;
                 a = 1 + Convert.ToInt32(txt_qun.Text);
                 txt_qun.Text = Convert.ToString(a);
-            }
-            catch(Exception)
-            {
-
-                MessageBox.Show("");
-
-                MessageBox.Show("error");
-
-            }
+            
+           
        
 ;
         }
@@ -180,13 +161,8 @@ namespace E_mart
 
         private void DashBoard_Load(object sender, EventArgs e)
         {
-            
-
-            
-
-            
-            panel1.Visible = false;
-            panal_Invoice.Visible = false;
+            panel3.Visible = false;
+           
 
         }
 
@@ -212,16 +188,13 @@ namespace E_mart
             su_pricelable5.Text = " ";
             lbl_dis.Text = " ";
             lbl_tot.Text = " ";
-            
-
-
-
+           
         }
 
         private void btn_suadd1_Click(object sender, EventArgs e)
         {
             lbl_bill2.Text = su_itemlable1.Text;
-            lbl_price1.Text = su_pricelable1.Text;
+            lbl_price2.Text = su_pricelable1.Text;
             lbl_quan2.Text = Convert.ToString(1);
 
         }

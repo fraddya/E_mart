@@ -123,6 +123,7 @@ namespace E_mart
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.lbl_get = new System.Windows.Forms.Label();
             btn_pay = new FontAwesome.Sharp.IconButton();
             this.panal_Invoice.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -1070,6 +1071,7 @@ namespace E_mart
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
+            this.panel2.Controls.Add(this.lbl_get);
             this.panel2.Controls.Add(this.btn_clear);
             this.panel2.Controls.Add(this.lbl_3);
             this.panel2.Controls.Add(this.lbl_2);
@@ -1220,6 +1222,16 @@ namespace E_mart
             this.label2.Size = new System.Drawing.Size(141, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Product Name";
+            // 
+            // lbl_get
+            // 
+            this.lbl_get.AutoSize = true;
+            this.lbl_get.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_get.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_get.Location = new System.Drawing.Point(995, 9);
+            this.lbl_get.Name = "lbl_get";
+            this.lbl_get.Size = new System.Drawing.Size(0, 4);
+            this.lbl_get.TabIndex = 13;
             // 
             // DashBoard
             // 
@@ -1398,5 +1410,6 @@ namespace E_mart
         private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.Label lbl_tot;
         private System.Windows.Forms.Label lbl_dis;
+        private System.Windows.Forms.Label lbl_get;
     }
 }
