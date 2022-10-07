@@ -61,16 +61,17 @@ namespace E_mart
                 panal_Invoice.Visible = false;
             }
 
-            con = new SqlConnection("Data Source=LAPTOP-FK0M22U2;Initial Catalog=Product;Integrated Security=True");
+            //con = new SqlConnection("Data Source=LAPTOP-FK0M22U2;Initial Catalog=Product;Integrated Security=True");  //Nadiya
+            con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=Bank;Integrated Security=True");   //fraddya
             con.Open();
-            cmd1 = new SqlCommand("SELECT QUN FROM Product WHERE PID='"+txt_pid.Text+"'", con);
-            cmd1.Parameters.AddWithValue("PID", txt_pid.Text);
+            cmd1 = new SqlCommand("SELECT Product_queantity FROM Product WHERE Product_ID='" + txt_pid.Text+"'", con);
+            cmd1.Parameters.AddWithValue("Product_ID", txt_pid.Text);
             SqlDataReader rh;
             rh = cmd1.ExecuteReader();
             if(rh.Read())
             {
                 //txt_pname.Text= rh["PNAME"].ToString();
-                string c= rh["QUN"].ToString();
+                string c= rh["Product_queantity"].ToString();
                 txt_qun.Text = c;
 
             }
@@ -102,7 +103,7 @@ namespace E_mart
             }
             catch(Exception)
             {
-                MessageBox.Show("")
+                MessageBox.Show("error");
             }
        
 ;
