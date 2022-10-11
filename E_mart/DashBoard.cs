@@ -67,10 +67,11 @@ namespace E_mart
                     panal_Invoice.Visible = false;
                 }
 
-                
+
 
                 //con = new SqlConnection(""); enter your string
-                con = new SqlConnection("Data Source=LAPTOP-FK0M22U2;Initial Catalog=e_martlocalhost;Integrated Security=True");//my
+                con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=Bank;Integrated Security=True");
+                //con = new SqlConnection("Data Source=LAPTOP-FK0M22U2;Initial Catalog=e_martlocalhost;Integrated Security=True");//my
                 con.Open();
                 cmd1 = new SqlCommand("SELECT Product_queantity,Product_Price,Product_Name,Product_category FROM Product1 WHERE Product_ID='" + txt_pid.Text + "'", con);
                 cmd1.Parameters.AddWithValue("Product_ID", txt_pid.Text);
