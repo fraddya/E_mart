@@ -110,6 +110,21 @@ namespace E_mart
             this.su_itemlable1 = new System.Windows.Forms.Label();
             this.img_1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbl_data = new System.Windows.Forms.Label();
+            this.lbl_qunset6 = new System.Windows.Forms.Label();
+            this.lbl_qunset5 = new System.Windows.Forms.Label();
+            this.lbl_qunset3 = new System.Windows.Forms.Label();
+            this.lbl_qunset4 = new System.Windows.Forms.Label();
+            this.lbl_qunget3 = new System.Windows.Forms.Label();
+            this.lbl_qunset2 = new System.Windows.Forms.Label();
+            this.lbl_qunget6 = new System.Windows.Forms.Label();
+            this.lbl_qunget5 = new System.Windows.Forms.Label();
+            this.lbl_qunget4 = new System.Windows.Forms.Label();
+            this.lbl_qunget2 = new System.Windows.Forms.Label();
+            this.lbl_qunset1 = new System.Windows.Forms.Label();
+            this.lbl_qunget1 = new System.Windows.Forms.Label();
+            this.lbl_unit = new System.Windows.Forms.Label();
+            this.lbl_get = new System.Windows.Forms.Label();
             this.btn_clear = new System.Windows.Forms.Button();
             this.lbl_3 = new System.Windows.Forms.Label();
             this.lbl_2 = new System.Windows.Forms.Label();
@@ -123,7 +138,6 @@ namespace E_mart
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lbl_get = new System.Windows.Forms.Label();
             btn_pay = new FontAwesome.Sharp.IconButton();
             this.panal_Invoice.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -240,13 +254,13 @@ namespace E_mart
             // lbl_price6
             // 
             this.lbl_price6.AutoSize = true;
-            this.lbl_price6.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_price6.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_price6.Location = new System.Drawing.Point(20, 25);
             this.lbl_price6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_price6.Name = "lbl_price6";
-            this.lbl_price6.Size = new System.Drawing.Size(45, 23);
+            this.lbl_price6.Size = new System.Drawing.Size(19, 23);
             this.lbl_price6.TabIndex = 2;
-            this.lbl_price6.Text = "0.00";
+            this.lbl_price6.Text = "0";
             // 
             // panel32
             // 
@@ -314,13 +328,13 @@ namespace E_mart
             // lbl_price5
             // 
             this.lbl_price5.AutoSize = true;
-            this.lbl_price5.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_price5.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_price5.Location = new System.Drawing.Point(20, 25);
             this.lbl_price5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_price5.Name = "lbl_price5";
-            this.lbl_price5.Size = new System.Drawing.Size(45, 23);
+            this.lbl_price5.Size = new System.Drawing.Size(19, 23);
             this.lbl_price5.TabIndex = 2;
-            this.lbl_price5.Text = "0.00";
+            this.lbl_price5.Text = "0";
             // 
             // panel28
             // 
@@ -388,13 +402,13 @@ namespace E_mart
             // lbl_price4
             // 
             this.lbl_price4.AutoSize = true;
-            this.lbl_price4.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_price4.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_price4.Location = new System.Drawing.Point(20, 25);
             this.lbl_price4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_price4.Name = "lbl_price4";
-            this.lbl_price4.Size = new System.Drawing.Size(45, 23);
+            this.lbl_price4.Size = new System.Drawing.Size(19, 23);
             this.lbl_price4.TabIndex = 2;
-            this.lbl_price4.Text = "0.00";
+            this.lbl_price4.Text = "0";
             // 
             // panel24
             // 
@@ -462,13 +476,13 @@ namespace E_mart
             // lbl_price3
             // 
             this.lbl_price3.AutoSize = true;
-            this.lbl_price3.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_price3.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_price3.Location = new System.Drawing.Point(20, 25);
             this.lbl_price3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_price3.Name = "lbl_price3";
-            this.lbl_price3.Size = new System.Drawing.Size(45, 23);
+            this.lbl_price3.Size = new System.Drawing.Size(19, 23);
             this.lbl_price3.TabIndex = 2;
-            this.lbl_price3.Text = "0.00";
+            this.lbl_price3.Text = "0";
             // 
             // panel20
             // 
@@ -536,13 +550,13 @@ namespace E_mart
             // lbl_price2
             // 
             this.lbl_price2.AutoSize = true;
-            this.lbl_price2.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_price2.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_price2.Location = new System.Drawing.Point(20, 25);
             this.lbl_price2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_price2.Name = "lbl_price2";
-            this.lbl_price2.Size = new System.Drawing.Size(45, 23);
+            this.lbl_price2.Size = new System.Drawing.Size(19, 23);
             this.lbl_price2.TabIndex = 2;
-            this.lbl_price2.Text = "0.00";
+            this.lbl_price2.Text = "0";
             // 
             // panel16
             // 
@@ -619,13 +633,13 @@ namespace E_mart
             // lbl_price1
             // 
             this.lbl_price1.AutoSize = true;
-            this.lbl_price1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_price1.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_price1.Location = new System.Drawing.Point(20, 25);
             this.lbl_price1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_price1.Name = "lbl_price1";
-            this.lbl_price1.Size = new System.Drawing.Size(45, 23);
+            this.lbl_price1.Size = new System.Drawing.Size(19, 23);
             this.lbl_price1.TabIndex = 2;
-            this.lbl_price1.Text = "0.00";
+            this.lbl_price1.Text = "0";
             // 
             // panel11
             // 
@@ -1071,6 +1085,20 @@ namespace E_mart
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
+            this.panel2.Controls.Add(this.lbl_data);
+            this.panel2.Controls.Add(this.lbl_qunset6);
+            this.panel2.Controls.Add(this.lbl_qunset5);
+            this.panel2.Controls.Add(this.lbl_qunset3);
+            this.panel2.Controls.Add(this.lbl_qunset4);
+            this.panel2.Controls.Add(this.lbl_qunget3);
+            this.panel2.Controls.Add(this.lbl_qunset2);
+            this.panel2.Controls.Add(this.lbl_qunget6);
+            this.panel2.Controls.Add(this.lbl_qunget5);
+            this.panel2.Controls.Add(this.lbl_qunget4);
+            this.panel2.Controls.Add(this.lbl_qunget2);
+            this.panel2.Controls.Add(this.lbl_qunset1);
+            this.panel2.Controls.Add(this.lbl_qunget1);
+            this.panel2.Controls.Add(this.lbl_unit);
             this.panel2.Controls.Add(this.lbl_get);
             this.panel2.Controls.Add(this.btn_clear);
             this.panel2.Controls.Add(this.lbl_3);
@@ -1092,6 +1120,167 @@ namespace E_mart
             this.panel2.Size = new System.Drawing.Size(998, 367);
             this.panel2.TabIndex = 9;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // lbl_data
+            // 
+            this.lbl_data.AutoSize = true;
+            this.lbl_data.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_data.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_data.Location = new System.Drawing.Point(982, 20);
+            this.lbl_data.Name = "lbl_data";
+            this.lbl_data.Size = new System.Drawing.Size(13, 4);
+            this.lbl_data.TabIndex = 27;
+            this.lbl_data.Text = "label7";
+            // 
+            // lbl_qunset6
+            // 
+            this.lbl_qunset6.AutoSize = true;
+            this.lbl_qunset6.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunset6.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_qunset6.Location = new System.Drawing.Point(758, 63);
+            this.lbl_qunset6.Name = "lbl_qunset6";
+            this.lbl_qunset6.Size = new System.Drawing.Size(15, 4);
+            this.lbl_qunset6.TabIndex = 26;
+            this.lbl_qunset6.Text = "label10";
+            // 
+            // lbl_qunset5
+            // 
+            this.lbl_qunset5.AutoSize = true;
+            this.lbl_qunset5.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunset5.ForeColor = System.Drawing.Color.Silver;
+            this.lbl_qunset5.Location = new System.Drawing.Point(653, 67);
+            this.lbl_qunset5.Name = "lbl_qunset5";
+            this.lbl_qunset5.Size = new System.Drawing.Size(0, 4);
+            this.lbl_qunset5.TabIndex = 25;
+            // 
+            // lbl_qunset3
+            // 
+            this.lbl_qunset3.AutoSize = true;
+            this.lbl_qunset3.BackColor = System.Drawing.Color.DimGray;
+            this.lbl_qunset3.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunset3.ForeColor = System.Drawing.Color.Silver;
+            this.lbl_qunset3.Location = new System.Drawing.Point(653, 39);
+            this.lbl_qunset3.Name = "lbl_qunset3";
+            this.lbl_qunset3.Size = new System.Drawing.Size(0, 4);
+            this.lbl_qunset3.TabIndex = 24;
+            // 
+            // lbl_qunset4
+            // 
+            this.lbl_qunset4.AutoSize = true;
+            this.lbl_qunset4.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunset4.ForeColor = System.Drawing.Color.Silver;
+            this.lbl_qunset4.Location = new System.Drawing.Point(653, 43);
+            this.lbl_qunset4.Name = "lbl_qunset4";
+            this.lbl_qunset4.Size = new System.Drawing.Size(0, 4);
+            this.lbl_qunset4.TabIndex = 23;
+            // 
+            // lbl_qunget3
+            // 
+            this.lbl_qunget3.AutoSize = true;
+            this.lbl_qunget3.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunget3.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_qunget3.Location = new System.Drawing.Point(760, 79);
+            this.lbl_qunget3.Name = "lbl_qunget3";
+            this.lbl_qunget3.Size = new System.Drawing.Size(5, 4);
+            this.lbl_qunget3.TabIndex = 22;
+            this.lbl_qunget3.Text = "1";
+            // 
+            // lbl_qunset2
+            // 
+            this.lbl_qunset2.AutoSize = true;
+            this.lbl_qunset2.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunset2.ForeColor = System.Drawing.Color.Silver;
+            this.lbl_qunset2.Location = new System.Drawing.Point(651, 47);
+            this.lbl_qunset2.Name = "lbl_qunset2";
+            this.lbl_qunset2.Size = new System.Drawing.Size(0, 4);
+            this.lbl_qunset2.TabIndex = 21;
+            // 
+            // lbl_qunget6
+            // 
+            this.lbl_qunget6.AutoSize = true;
+            this.lbl_qunget6.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunget6.ForeColor = System.Drawing.Color.Silver;
+            this.lbl_qunget6.Location = new System.Drawing.Point(651, 59);
+            this.lbl_qunget6.Name = "lbl_qunget6";
+            this.lbl_qunget6.Size = new System.Drawing.Size(5, 4);
+            this.lbl_qunget6.TabIndex = 20;
+            this.lbl_qunget6.Text = "1";
+            // 
+            // lbl_qunget5
+            // 
+            this.lbl_qunget5.AutoSize = true;
+            this.lbl_qunget5.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunget5.ForeColor = System.Drawing.Color.Silver;
+            this.lbl_qunget5.Location = new System.Drawing.Point(651, 55);
+            this.lbl_qunget5.Name = "lbl_qunget5";
+            this.lbl_qunget5.Size = new System.Drawing.Size(5, 4);
+            this.lbl_qunget5.TabIndex = 19;
+            this.lbl_qunget5.Text = "1";
+            // 
+            // lbl_qunget4
+            // 
+            this.lbl_qunget4.AutoSize = true;
+            this.lbl_qunget4.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunget4.ForeColor = System.Drawing.Color.Silver;
+            this.lbl_qunget4.Location = new System.Drawing.Point(651, 51);
+            this.lbl_qunget4.Name = "lbl_qunget4";
+            this.lbl_qunget4.Size = new System.Drawing.Size(5, 4);
+            this.lbl_qunget4.TabIndex = 18;
+            this.lbl_qunget4.Text = "1";
+            // 
+            // lbl_qunget2
+            // 
+            this.lbl_qunget2.AutoSize = true;
+            this.lbl_qunget2.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunget2.ForeColor = System.Drawing.Color.Silver;
+            this.lbl_qunget2.Location = new System.Drawing.Point(653, 63);
+            this.lbl_qunget2.Name = "lbl_qunget2";
+            this.lbl_qunget2.Size = new System.Drawing.Size(5, 4);
+            this.lbl_qunget2.TabIndex = 17;
+            this.lbl_qunget2.Text = "1";
+            // 
+            // lbl_qunset1
+            // 
+            this.lbl_qunset1.AutoSize = true;
+            this.lbl_qunset1.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunset1.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_qunset1.Location = new System.Drawing.Point(762, 71);
+            this.lbl_qunset1.Name = "lbl_qunset1";
+            this.lbl_qunset1.Size = new System.Drawing.Size(13, 4);
+            this.lbl_qunset1.TabIndex = 16;
+            this.lbl_qunset1.Text = "label7";
+            // 
+            // lbl_qunget1
+            // 
+            this.lbl_qunget1.AutoSize = true;
+            this.lbl_qunget1.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunget1.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_qunget1.Location = new System.Drawing.Point(762, 75);
+            this.lbl_qunget1.Name = "lbl_qunget1";
+            this.lbl_qunget1.Size = new System.Drawing.Size(5, 4);
+            this.lbl_qunget1.TabIndex = 15;
+            this.lbl_qunget1.Text = "1";
+            // 
+            // lbl_unit
+            // 
+            this.lbl_unit.AutoSize = true;
+            this.lbl_unit.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_unit.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_unit.Location = new System.Drawing.Point(762, 67);
+            this.lbl_unit.Name = "lbl_unit";
+            this.lbl_unit.Size = new System.Drawing.Size(13, 4);
+            this.lbl_unit.TabIndex = 14;
+            this.lbl_unit.Text = "label7";
+            // 
+            // lbl_get
+            // 
+            this.lbl_get.AutoSize = true;
+            this.lbl_get.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_get.ForeColor = System.Drawing.Color.Silver;
+            this.lbl_get.Location = new System.Drawing.Point(677, 37);
+            this.lbl_get.Name = "lbl_get";
+            this.lbl_get.Size = new System.Drawing.Size(0, 4);
+            this.lbl_get.TabIndex = 13;
             // 
             // btn_clear
             // 
@@ -1222,16 +1411,6 @@ namespace E_mart
             this.label2.Size = new System.Drawing.Size(141, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Product Name";
-            // 
-            // lbl_get
-            // 
-            this.lbl_get.AutoSize = true;
-            this.lbl_get.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_get.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_get.Location = new System.Drawing.Point(995, 9);
-            this.lbl_get.Name = "lbl_get";
-            this.lbl_get.Size = new System.Drawing.Size(0, 4);
-            this.lbl_get.TabIndex = 13;
             // 
             // DashBoard
             // 
@@ -1411,5 +1590,19 @@ namespace E_mart
         private System.Windows.Forms.Label lbl_tot;
         private System.Windows.Forms.Label lbl_dis;
         private System.Windows.Forms.Label lbl_get;
+        private System.Windows.Forms.Label lbl_unit;
+        private System.Windows.Forms.Label lbl_qunget1;
+        private System.Windows.Forms.Label lbl_qunset1;
+        private System.Windows.Forms.Label lbl_qunget3;
+        private System.Windows.Forms.Label lbl_qunset2;
+        private System.Windows.Forms.Label lbl_qunget6;
+        private System.Windows.Forms.Label lbl_qunget5;
+        private System.Windows.Forms.Label lbl_qunget4;
+        private System.Windows.Forms.Label lbl_qunget2;
+        private System.Windows.Forms.Label lbl_qunset6;
+        private System.Windows.Forms.Label lbl_qunset5;
+        private System.Windows.Forms.Label lbl_qunset3;
+        private System.Windows.Forms.Label lbl_qunset4;
+        private System.Windows.Forms.Label lbl_data;
     }
 }
