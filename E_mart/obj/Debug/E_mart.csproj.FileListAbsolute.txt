@@ -36,3 +36,4 @@ F:\ehub\E_mart\E_mart\obj\Debug\E_mart.csproj.CoreCompileInputs.cache
 F:\ehub\E_mart\E_mart\obj\Debug\E_mart.exe
 F:\ehub\E_mart\E_mart\obj\Debug\E_mart.pdb
 F:\ehub\E_mart\E_mart\obj\Debug\E_mart.csproj.AssemblyReference.cache
+C:\Users\natha\Documents\GitHub\E_mart\E_mart\obj\Debug\E_mart.GeneratedMSBuildEditorConfig.editorconfig
