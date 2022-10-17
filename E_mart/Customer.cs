@@ -19,7 +19,7 @@ namespace E_mart
             InitializeComponent();
         }
 
-        DataBase db = new DataBase();
+        //DataBase db = new DataBase();
 
 
         private void Customer_Load(object sender, EventArgs e)
@@ -29,7 +29,7 @@ namespace E_mart
 
         private void btn_reg_Click(object sender, EventArgs e)
         {
-
+            /*
             try
             {
 
@@ -38,47 +38,30 @@ namespace E_mart
                     MessageBox.Show("Name can not be empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_CName.Focus();
                 }
-               
-                else if (!Regex.Match(txt_CName.Text, "^[A-Z][a-zA-Z]*$").Success)
+                else if (txt_CName.Text.Any(char.IsDigit))
                 {
-
-                    MessageBox.Show("Invalid first name", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("First Name cannot have numbers", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_CName.Focus();
-                    return;
                 }
 
-                if (string.IsNullOrEmpty(txt_address.Text))
+                else if (string.IsNullOrEmpty(txt_address.Text))
                 {
                     MessageBox.Show("Address can not be empty or can not have numbers", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_address.Focus();
                 }
-
-                if (!Regex.Match(txt_address.Text   , @"^[0-9]+\s+([a-zA-Z]+|[a-zA-Z]+\s[a-zA-Z]+)$").Success)
+                /*
+                else if (!Regex.IsMatch(txt_tel.Text, @"^\+\d{1,7}$"))
                 {
-                   
-                    MessageBox.Show("Invalid address", "Message", MessageBoxButtons.OK,MessageBoxIcon.Error);
-                    txt_address.Focus();
-                    return;
+                    MessageBox.Show("Enter Valid Telephone number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txt_tel.Focus();
                 }
-                if (!Regex.Match(txt_tel.Text, @"^[1-9]\d{2}-[1-9]\d{2}-\d{4}$").Success)
-                {
-                   
-                    MessageBox.Show("Invalid phone number", "Message", MessageBoxButtons.OK,MessageBoxIcon.Error);
-                    txt_address.Focus();
-                    return;
-                }
-                if (string.IsNullOrEmpty(txt_tel.Text))
-                {
-                    MessageBox.Show("Telephone number can not be empty or can not have numbers", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txt_address.Focus();
-                }
-                if (txt_email.Text.Length == 0)
+                
+                else if (txt_email.Text.Length == 0)
                 {
                     MessageBox.Show("Please Enter Email Address", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_email.Focus();
-
                 }
-                if (!Regex.IsMatch(txt_email.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
+                else if (!Regex.IsMatch(txt_email.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
                 {
                     MessageBox.Show("Enter a valid email. Ex:name@gmail.com", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_email.Focus();
@@ -99,7 +82,7 @@ namespace E_mart
             catch (Exception)
             {
                 MessageBox.Show(this, "Please check again", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            }*/
           
         }
 
