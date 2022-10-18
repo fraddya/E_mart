@@ -39,3 +39,4 @@ F:\ehub\E_mart\E_mart\obj\Debug\E_mart.csproj.CopyComplete
 F:\ehub\E_mart\E_mart\obj\Debug\E_mart.exe
 F:\ehub\E_mart\E_mart\obj\Debug\E_mart.pdb
 F:\ehub\E_mart\E_mart\obj\Debug\E_mart.manager_dash.resources
+F:\ehub\E_mart\E_mart\obj\Debug\E_mart.report.resources

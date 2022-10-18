@@ -29,7 +29,7 @@ namespace E_mart
         private void btn_login_Click(object sender, EventArgs e)
         {
             con.Open();
-            cmd = new SqlCommand("SELECT * FROM Client WHERE Client_username='"+txt_username.Text+"' and Client_psw='"+txt_psw.Text+"'", con);
+            cmd = new SqlCommand("SELECT * FROM Employer WHERE Emp_username='" + txt_username.Text+ "' and Emp_psw='" + txt_psw.Text+"'", con);
             da = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
             da.Fill(ds);
