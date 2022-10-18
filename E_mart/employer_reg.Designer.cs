@@ -43,11 +43,11 @@ namespace E_mart
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Registration = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.rdo_emp = new System.Windows.Forms.RadioButton();
+            this.rdo_manager = new System.Windows.Forms.RadioButton();
+            this.txt_psw = new System.Windows.Forms.TextBox();
+            this.txt_uname = new System.Windows.Forms.TextBox();
+            this.pasw = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -201,59 +201,59 @@ namespace E_mart
             this.Registration.TabIndex = 18;
             this.Registration.Text = "Registration";
             // 
-            // radioButton1
+            // rdo_emp
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(385, 481);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(101, 25);
-            this.radioButton1.TabIndex = 34;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Employer";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdo_emp.AutoSize = true;
+            this.rdo_emp.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdo_emp.Location = new System.Drawing.Point(385, 481);
+            this.rdo_emp.Name = "rdo_emp";
+            this.rdo_emp.Size = new System.Drawing.Size(101, 25);
+            this.rdo_emp.TabIndex = 34;
+            this.rdo_emp.TabStop = true;
+            this.rdo_emp.Text = "Employer";
+            this.rdo_emp.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rdo_manager
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(589, 481);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(96, 25);
-            this.radioButton2.TabIndex = 35;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Manager";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdo_manager.AutoSize = true;
+            this.rdo_manager.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdo_manager.Location = new System.Drawing.Point(589, 481);
+            this.rdo_manager.Name = "rdo_manager";
+            this.rdo_manager.Size = new System.Drawing.Size(96, 25);
+            this.rdo_manager.TabIndex = 35;
+            this.rdo_manager.TabStop = true;
+            this.rdo_manager.Text = "Manager";
+            this.rdo_manager.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txt_psw
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
-            this.textBox1.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(614, 418);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 37);
-            this.textBox1.TabIndex = 39;
+            this.txt_psw.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
+            this.txt_psw.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_psw.Location = new System.Drawing.Point(614, 418);
+            this.txt_psw.Name = "txt_psw";
+            this.txt_psw.Size = new System.Drawing.Size(196, 37);
+            this.txt_psw.TabIndex = 39;
             // 
-            // textBox2
+            // txt_uname
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
-            this.textBox2.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(325, 418);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(196, 37);
-            this.textBox2.TabIndex = 38;
+            this.txt_uname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
+            this.txt_uname.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_uname.Location = new System.Drawing.Point(325, 418);
+            this.txt_uname.Name = "txt_uname";
+            this.txt_uname.Size = new System.Drawing.Size(196, 37);
+            this.txt_uname.TabIndex = 38;
             // 
-            // label7
+            // pasw
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(585, 384);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 21);
-            this.label7.TabIndex = 37;
-            this.label7.Text = "Passworld";
+            this.pasw.AutoSize = true;
+            this.pasw.BackColor = System.Drawing.Color.Transparent;
+            this.pasw.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasw.ForeColor = System.Drawing.Color.White;
+            this.pasw.Location = new System.Drawing.Point(585, 384);
+            this.pasw.Name = "pasw";
+            this.pasw.Size = new System.Drawing.Size(80, 21);
+            this.pasw.TabIndex = 37;
+            this.pasw.Text = "Passworld";
             // 
             // label8
             // 
@@ -273,12 +273,12 @@ namespace E_mart
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1096, 598);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txt_psw);
+            this.Controls.Add(this.txt_uname);
+            this.Controls.Add(this.pasw);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rdo_manager);
+            this.Controls.Add(this.rdo_emp);
             this.Controls.Add(this.DOB_pickerE);
             this.Controls.Add(this.btn_regE);
             this.Controls.Add(this.txt_Eemail);
@@ -317,11 +317,11 @@ namespace E_mart
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Registration;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.RadioButton rdo_emp;
+        private System.Windows.Forms.RadioButton rdo_manager;
+        private System.Windows.Forms.TextBox txt_psw;
+        private System.Windows.Forms.TextBox txt_uname;
+        private System.Windows.Forms.Label pasw;
         private System.Windows.Forms.Label label8;
     }
 }
