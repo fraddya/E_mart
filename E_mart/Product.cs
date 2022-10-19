@@ -23,6 +23,7 @@ namespace E_mart
         SqlConnection con;
         SqlCommand cmd;
         SqlDataAdapter da;
+        
 
         private void btn_productsubmit_Click(object sender, EventArgs e)
         {
@@ -34,8 +35,9 @@ namespace E_mart
                 id = txt_Pid.Text;
                 name = txt_Pname.Text;
                 quantity = Convert.ToInt32(txt_queantity.Text);
+
                 con.Open();
-                cmd = new SqlCommand("Insert into product  values (@id,@name,@quantity", con);
+                cmd = new SqlCommand("Insert into product (Product_ID,)values (@name,@quantity", con);
                 cmd.Parameters.AddWithValue("id", id);
                 cmd.Parameters.AddWithValue("name", name);
                 cmd.Parameters.AddWithValue("quantity", quantity);
@@ -157,6 +159,7 @@ namespace E_mart
         private void Product_Load(object sender, EventArgs e)
         {
             
+
 
         }
     }
