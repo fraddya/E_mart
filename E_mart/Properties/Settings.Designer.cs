@@ -22,5 +22,16 @@ namespace E_mart.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-OVGN370\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated" +
+            " Security=True")]
+        public string e_martlocalhostConnectionString {
+            get {
+                return ((string)(this["e_martlocalhostConnectionString"]));
+            }
+        }
     }
 }
