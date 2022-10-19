@@ -35,8 +35,9 @@ namespace E_mart
                 id = txt_Pid.Text;
                 name = txt_Pname.Text;
                 quantity = Convert.ToInt32(txt_queantity.Text);
+
                 con.Open();
-                cmd = new SqlCommand("Insert into product  values (@id,@name,@quantity", con);
+                cmd = new SqlCommand("Insert into product (Product_ID,)values (@name,@quantity", con);
                 cmd.Parameters.AddWithValue("id", id);
                 cmd.Parameters.AddWithValue("name", name);
                 cmd.Parameters.AddWithValue("quantity", quantity);
