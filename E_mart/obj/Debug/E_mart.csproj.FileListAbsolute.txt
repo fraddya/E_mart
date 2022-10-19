@@ -40,3 +40,6 @@ F:\ehub\E_mart\E_mart\obj\Debug\E_mart.exe
 F:\ehub\E_mart\E_mart\obj\Debug\E_mart.pdb
 F:\ehub\E_mart\E_mart\obj\Debug\E_mart.manager_dash.resources
 F:\ehub\E_mart\E_mart\obj\Debug\E_mart.report.resources
+F:\ehub\E_mart\E_mart\bin\Debug\MetroFramework.Design.dll
+F:\ehub\E_mart\E_mart\bin\Debug\MetroFramework.dll
+F:\ehub\E_mart\E_mart\bin\Debug\MetroFramework.Fonts.dll
