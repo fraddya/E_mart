@@ -19,7 +19,7 @@ namespace E_mart
             InitializeComponent();
         }
 
-        //DataBase db = new DataBase();
+        DataBase db = new DataBase();
 
 
         private void Customer_Load(object sender, EventArgs e)
@@ -29,9 +29,9 @@ namespace E_mart
 
         private void btn_reg_Click(object sender, EventArgs e)
         {
-            /*
-            try
-            {
+
+           // try
+           // {
 
                 if (string.IsNullOrEmpty(txt_CName.Text))
                 {
@@ -49,13 +49,14 @@ namespace E_mart
                     MessageBox.Show("Address can not be empty or can not have numbers", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_address.Focus();
                 }
-                /*
-                else if (!Regex.IsMatch(txt_tel.Text, @"^\+\d{1,7}$"))
+                
+               /*( else if (!Regex.IsMatch(txt_tel.Text, @"^\+\d{1,7}$"))
                 {
                     MessageBox.Show("Enter Valid Telephone number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_tel.Focus();
-                }
+                }*/
                 
+
                 else if (txt_email.Text.Length == 0)
                 {
                     MessageBox.Show("Please Enter Email Address", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -68,7 +69,7 @@ namespace E_mart
                 }
                 else
                 {
-                    string query = "Insert into Member Values('" + txt_CName.Text + "','" + txt_address.Text + "','" + txt_tel.Text + "','" +
+                    string query = "Insert into Member(Client_ID,Client_Name,Client_address,Client_TP,Client_NIC,Client_Email,Client_DOB,Client_regdate) Values('" + txt_CName.Text + "','" + txt_address.Text + "','" + txt_tel.Text + "','" +
                         "" + DOB_picker.Value + "','" + txt_nic.Text + "','" + txt_email.Text + "')";
 
                     int i = db.save_update_delete(query);
@@ -78,16 +79,16 @@ namespace E_mart
                     else
                         MessageBox.Show(this, "Data Cannot Save", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-            }
-            catch (Exception)
+           // }
+           /* catch (Exception)
             {
                 MessageBox.Show(this, "Please check again", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }*/
-          
         }
 
         private void txt_CName_TextChanged(object sender, EventArgs e)
-        {
+        { 
 
         }
     }

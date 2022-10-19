@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Text.RegularExpressions;
 
 namespace E_mart
 {
@@ -66,7 +58,7 @@ namespace E_mart
                 else
                 {
 
-                    string query = "Insert into Client values ('" + txt_EName.Text + "', '" + txt_Eaddress.Text + "', '" + txt_Etel.Text + "',  '" + DOB_pickerE.Value + "', '" + txt_Enic.Text + "', '" + txt_Eemail.Text + "') ";
+                    string query = "Insert into Employer (Emp_username,Emp_psw,Emp_Name,Emp_address,Emp_TP,Emp_NIC,Emp_Email,Emp_DOB,Emp_regdate)values (" + txt_EName.Text + "', '" + txt_Eaddress.Text + "', '" + txt_Etel.Text + "',  '" + DOB_pickerE.Value + "', '" + txt_Enic.Text + "', '" + txt_Eemail.Text + "') ";
                     int i = db.save_update_delete(query);
                     if (i == 1)
                         MetroFramework.MetroMessageBox.Show(this, "Data save Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
