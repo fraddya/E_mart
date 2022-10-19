@@ -49,6 +49,8 @@ namespace E_mart
             this.label1 = new System.Windows.Forms.Label();
             this.btn_view = new FontAwesome.Sharp.IconButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -56,6 +58,8 @@ namespace E_mart
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.btn_add);
             this.panel1.Controls.Add(this.btn_remove);
             this.panel1.Controls.Add(this.btn_refil);
@@ -87,7 +91,7 @@ namespace E_mart
             this.btn_add.IconColor = System.Drawing.Color.Black;
             this.btn_add.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_add.IconSize = 35;
-            this.btn_add.Location = new System.Drawing.Point(239, 465);
+            this.btn_add.Location = new System.Drawing.Point(239, 506);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(37, 37);
             this.btn_add.TabIndex = 20;
@@ -100,7 +104,7 @@ namespace E_mart
             this.btn_remove.IconColor = System.Drawing.Color.Black;
             this.btn_remove.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_remove.IconSize = 35;
-            this.btn_remove.Location = new System.Drawing.Point(69, 465);
+            this.btn_remove.Location = new System.Drawing.Point(69, 506);
             this.btn_remove.Name = "btn_remove";
             this.btn_remove.Size = new System.Drawing.Size(37, 37);
             this.btn_remove.TabIndex = 19;
@@ -114,7 +118,7 @@ namespace E_mart
             this.btn_refil.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn_refil.IconColor = System.Drawing.Color.Black;
             this.btn_refil.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_refil.Location = new System.Drawing.Point(123, 537);
+            this.btn_refil.Location = new System.Drawing.Point(123, 555);
             this.btn_refil.Name = "btn_refil";
             this.btn_refil.Size = new System.Drawing.Size(90, 31);
             this.btn_refil.TabIndex = 18;
@@ -130,7 +134,7 @@ namespace E_mart
             this.btn_productsubmit.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn_productsubmit.IconColor = System.Drawing.Color.Black;
             this.btn_productsubmit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_productsubmit.Location = new System.Drawing.Point(123, 263);
+            this.btn_productsubmit.Location = new System.Drawing.Point(123, 336);
             this.btn_productsubmit.Name = "btn_productsubmit";
             this.btn_productsubmit.Size = new System.Drawing.Size(90, 31);
             this.btn_productsubmit.TabIndex = 17;
@@ -142,7 +146,7 @@ namespace E_mart
             // 
             this.txt_quentity.BackColor = System.Drawing.Color.Silver;
             this.txt_quentity.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_quentity.Location = new System.Drawing.Point(112, 465);
+            this.txt_quentity.Location = new System.Drawing.Point(112, 506);
             this.txt_quentity.Name = "txt_quentity";
             this.txt_quentity.Size = new System.Drawing.Size(121, 37);
             this.txt_quentity.TabIndex = 15;
@@ -170,7 +174,7 @@ namespace E_mart
             // 
             this.txt_refil.BackColor = System.Drawing.Color.Silver;
             this.txt_refil.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_refil.Location = new System.Drawing.Point(80, 375);
+            this.txt_refil.Location = new System.Drawing.Point(80, 439);
             this.txt_refil.Name = "txt_refil";
             this.txt_refil.Size = new System.Drawing.Size(196, 37);
             this.txt_refil.TabIndex = 12;
@@ -189,7 +193,7 @@ namespace E_mart
             this.rdo_product_name.AutoSize = true;
             this.rdo_product_name.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdo_product_name.ForeColor = System.Drawing.SystemColors.Control;
-            this.rdo_product_name.Location = new System.Drawing.Point(154, 345);
+            this.rdo_product_name.Location = new System.Drawing.Point(154, 409);
             this.rdo_product_name.Name = "rdo_product_name";
             this.rdo_product_name.Size = new System.Drawing.Size(142, 24);
             this.rdo_product_name.TabIndex = 10;
@@ -202,7 +206,7 @@ namespace E_mart
             this.rdo_pid.AutoSize = true;
             this.rdo_pid.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdo_pid.ForeColor = System.Drawing.SystemColors.Control;
-            this.rdo_pid.Location = new System.Drawing.Point(37, 345);
+            this.rdo_pid.Location = new System.Drawing.Point(37, 409);
             this.rdo_pid.Name = "rdo_pid";
             this.rdo_pid.Size = new System.Drawing.Size(115, 24);
             this.rdo_pid.TabIndex = 9;
@@ -215,7 +219,7 @@ namespace E_mart
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(33, 427);
+            this.label6.Location = new System.Drawing.Point(33, 479);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(73, 20);
             this.label6.TabIndex = 5;
@@ -226,7 +230,7 @@ namespace E_mart
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(118, 306);
+            this.label5.Location = new System.Drawing.Point(124, 370);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(109, 25);
             this.label5.TabIndex = 4;
@@ -295,11 +299,38 @@ namespace E_mart
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(415, 38);
+            this.dataGridView1.Location = new System.Drawing.Point(416, 38);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(669, 461);
+            this.dataGridView1.Size = new System.Drawing.Size(668, 461);
             this.dataGridView1.TabIndex = 12;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Fruits",
+            "Vagitable",
+            "Medicine",
+            "Meat",
+            "Fish",
+            "Dairy Food"});
+            this.comboBox1.Location = new System.Drawing.Point(80, 290);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(196, 28);
+            this.comboBox1.TabIndex = 21;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.Control;
+            this.label7.Location = new System.Drawing.Point(33, 258);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(114, 20);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Select Catagory";
             // 
             // Product
             // 
@@ -342,5 +373,7 @@ namespace E_mart
         private FontAwesome.Sharp.IconButton btn_add;
         private FontAwesome.Sharp.IconButton btn_remove;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

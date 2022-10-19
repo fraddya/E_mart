@@ -19,6 +19,8 @@ namespace E_mart
 
         private void btn_addemp_Click(object sender, EventArgs e)
         {
+            employer_reg obj = new employer_reg();
+            obj.ShowDialog();
             //OpenChildForm(new employer_reg());
         }
     }
