@@ -49,6 +49,7 @@ namespace E_mart
             // 
             // btn_stock
             // 
+            this.btn_stock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(214)))), ((int)(((byte)(0)))));
             this.btn_stock.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_stock.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn_stock.IconColor = System.Drawing.Color.Black;
@@ -58,10 +59,11 @@ namespace E_mart
             this.btn_stock.Size = new System.Drawing.Size(189, 47);
             this.btn_stock.TabIndex = 1;
             this.btn_stock.Text = "View All Stock";
-            this.btn_stock.UseVisualStyleBackColor = true;
+            this.btn_stock.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.panel1.Controls.Add(this.txt_stock);
             this.panel1.Controls.Add(this.combox_stocktype);
             this.panel1.Controls.Add(this.btn_viewS);
@@ -81,17 +83,19 @@ namespace E_mart
             // 
             // combox_stocktype
             // 
+            this.combox_stocktype.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.combox_stocktype.FormattingEnabled = true;
             this.combox_stocktype.Items.AddRange(new object[] {
             "By Product ID",
             "By Product Name"});
             this.combox_stocktype.Location = new System.Drawing.Point(56, 186);
             this.combox_stocktype.Name = "combox_stocktype";
-            this.combox_stocktype.Size = new System.Drawing.Size(180, 21);
+            this.combox_stocktype.Size = new System.Drawing.Size(180, 29);
             this.combox_stocktype.TabIndex = 5;
             // 
             // btn_viewS
             // 
+            this.btn_viewS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(214)))), ((int)(((byte)(0)))));
             this.btn_viewS.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_viewS.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn_viewS.IconColor = System.Drawing.Color.Black;
@@ -101,12 +105,13 @@ namespace E_mart
             this.btn_viewS.Size = new System.Drawing.Size(180, 37);
             this.btn_viewS.TabIndex = 4;
             this.btn_viewS.Text = "View Stock";
-            this.btn_viewS.UseVisualStyleBackColor = true;
+            this.btn_viewS.UseVisualStyleBackColor = false;
             // 
             // Stock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1096, 598);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_stock);
