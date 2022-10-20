@@ -1,23 +1,27 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace E_mart
 {
     public partial class employer_reg : Form
     {
+        SqlConnection con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True"); //Nathu
+        SqlCommand cmd;
+
         public employer_reg()
         {
             InitializeComponent();
         }
-
-
-        DataBase db = new DataBase();
+        
 
         private void btn_regE_Click(object sender, EventArgs e)
         {
+
             try
             {
+
                 if (string.IsNullOrEmpty(txt_EName.Text))
                 {
                     MetroFramework.MetroMessageBox.Show(this,"Name can not be empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -58,23 +62,30 @@ namespace E_mart
                 else
                 {
 
-                    string query = "Insert into Employer (Emp_username,Emp_psw,Emp_Name,Emp_address,Emp_TP,Emp_NIC,Emp_Email,Emp_DOB,Emp_regdate)values (" + txt_EName.Text + "', '" + txt_Eaddress.Text + "', '" + txt_Etel.Text + "',  '" + DOB_pickerE.Value + "', '" + txt_Enic.Text + "', '" + txt_Eemail.Text + "') ";
-                    int i = db.save_update_delete(query);
+                    cmd = new SqlCommand("Insert into Employer (Emp_username,Emp_psw,Emp_Name,Emp_address,Emp_TP,Emp_NIC,Emp_Email,Emp_DOB,Emp_regdate)Values ('" + txt_uname.Text + "','" + txt_psw + "','" + txt_EName.Text + "', '" + txt_Eaddress.Text + "', '"
+                        + txt_Etel.Text + "',   '" + txt_Enic.Text + "', '" + txt_Eemail.Text + "','" + DOB_pickerE.Value + "') ", con);
+                    int i= cmd.ExecuteNonQuery();
                     if (i == 1)
                         MetroFramework.MetroMessageBox.Show(this, "Data save Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     else
                         MetroFramework.MetroMessageBox.Show(this, "Data Cannot Save", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                con.Close();
+                cmd.Dispose();
             }
+
             catch (Exception)
             {
                 MetroFramework.MetroMessageBox.Show(this, "Please check again", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            
+
         }
 
         private void employer_reg_Load(object sender, EventArgs e)
         {
-
+           
         }
+    }
     }
 }

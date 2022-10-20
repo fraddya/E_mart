@@ -30,7 +30,7 @@ namespace E_mart
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
+           // this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.baseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uses360ModeDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -97,13 +97,15 @@ namespace E_mart
             this.SuspendLayout();
             // 
             // cartesianChart1
-            // 
+            //
+            /*
             this.cartesianChart1.Location = new System.Drawing.Point(59, 28);
             this.cartesianChart1.Name = "cartesianChart1";
             this.cartesianChart1.Size = new System.Drawing.Size(906, 327);
             this.cartesianChart1.TabIndex = 0;
             this.cartesianChart1.Text = "cartesianChart1";
             this.cartesianChart1.ChildChanged += new System.EventHandler<System.Windows.Forms.Integration.ChildChangedEventArgs>(this.cartesianChart1_ChildChanged);
+            */
             // 
             // dataGridView1
             // 
@@ -600,11 +602,11 @@ namespace E_mart
             // 
             // solidGaugeBindingSource
             // 
-            this.solidGaugeBindingSource.DataSource = typeof(LiveCharts.WinForms.SolidGauge);
+      //      this.solidGaugeBindingSource.DataSource = typeof(LiveCharts.WinForms.SolidGauge);
             // 
             // pieUtilsBindingSource
             // 
-            this.pieUtilsBindingSource.DataSource = typeof(LiveCharts.Wpf.Points.PieUtils);
+     //       this.pieUtilsBindingSource.DataSource = typeof(LiveCharts.Wpf.Points.PieUtils);
             // 
             // verticalStackedAreaAlgorithmBindingSource
             // 
@@ -635,7 +637,7 @@ namespace E_mart
             this.ClientSize = new System.Drawing.Size(1461, 736);
             this.Controls.Add(this.btn_load);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.cartesianChart1);
+         // this.Controls.Add(this.cartesianChart1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "manager_dash";
             this.Text = "manager_dash";
@@ -650,7 +652,7 @@ namespace E_mart
 
         #endregion
 
-        private LiveCharts.WinForms.CartesianChart cartesianChart1;
+        //private LiveCharts.WinForms.CartesianChart cartesianChart1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource verticalStackedAreaAlgorithmBindingSource;
         private System.Windows.Forms.BindingSource solidGaugeBindingSource;
