@@ -36,7 +36,7 @@ namespace E_mart
                     return;
                 }
 
-                if (string.IsNullOrEmpty(txt_Eaddress.Text))
+               /* if (string.IsNullOrEmpty(txt_Eaddress.Text))
                 {
                     MetroFramework.MetroMessageBox.Show(this, "Address can not be empty or can not have numbers", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_Eaddress.Focus();
@@ -48,6 +48,7 @@ namespace E_mart
                     txt_Eaddress.Focus();
                     return;
                 }
+               */
 
                 if (txt_Eemail.Text.Length == 0)
                 {
@@ -88,4 +89,4 @@ namespace E_mart
         }
     }
     }
-}
+
