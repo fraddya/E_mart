@@ -117,7 +117,30 @@ namespace E_mart
 
         private void Home_Load(object sender, EventArgs e)
         {
-
+            if(ulog.type == "M")
+            {
+                btn_dash.Visible = false;
+                btn_product.Visible = true;
+                btn_history.Visible = true;
+                btn_customer.Visible = true;
+                btn_manageemp.Visible = true;
+                btn_stock.Visible = true;
+                btn_report.Visible = true;
+                btn_setings.Visible = true;
+                manager_dash.Visible = true;
+            }
+            else if(ulog.type == "E")
+            {
+                btn_dash.Visible = true;
+                btn_product.Visible = true;
+                btn_history.Visible = false;
+                btn_customer.Visible = true;
+                btn_manageemp.Visible = false;
+                btn_stock.Visible = false;
+                btn_report.Visible = true;
+                btn_setings.Visible = true;
+                manager_dash.Visible = false;
+            }
         }
 
         private void btn_dash_Click(object sender, EventArgs e)
@@ -147,7 +170,10 @@ namespace E_mart
         private void btn_setings_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
-           // DialogResult result = FDDMessageBox.Show("This is a sample Text message Box");
+            // DialogResult result = FDDMessageBox.Show("This is a sample Text message Box");
+            login fl = new login();
+            fl.Show();
+            this.Hide();
             
 
         }
@@ -155,6 +181,7 @@ namespace E_mart
         private void btn_report_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
+            //OpenChildForm(new report());
         }
 
         private void btn_view_stock_Click(object sender, EventArgs e)
@@ -223,6 +250,17 @@ namespace E_mart
         {
             ActivateButton(sender, RGBColors.color5);
             OpenChildForm(new Stock());
+        }
+
+        private void manager_dash_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color3);
+            OpenChildForm(new manager_dash());
+        }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+            
         }
     }
 }
