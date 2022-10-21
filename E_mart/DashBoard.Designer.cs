@@ -109,35 +109,42 @@ namespace E_mart
             this.su_pricelable1 = new System.Windows.Forms.Label();
             this.su_itemlable1 = new System.Windows.Forms.Label();
             this.img_1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lbl_data = new System.Windows.Forms.Label();
-            this.lbl_qunset6 = new System.Windows.Forms.Label();
-            this.lbl_qunset5 = new System.Windows.Forms.Label();
-            this.lbl_qunset3 = new System.Windows.Forms.Label();
-            this.lbl_qunset4 = new System.Windows.Forms.Label();
-            this.lbl_qunget3 = new System.Windows.Forms.Label();
-            this.lbl_qunset2 = new System.Windows.Forms.Label();
-            this.lbl_qunget6 = new System.Windows.Forms.Label();
-            this.lbl_qunget5 = new System.Windows.Forms.Label();
-            this.lbl_qunget4 = new System.Windows.Forms.Label();
-            this.lbl_qunget2 = new System.Windows.Forms.Label();
-            this.lbl_qunset1 = new System.Windows.Forms.Label();
-            this.lbl_qunget1 = new System.Windows.Forms.Label();
-            this.lbl_unit = new System.Windows.Forms.Label();
-            this.lbl_get = new System.Windows.Forms.Label();
-            this.btn_clear = new System.Windows.Forms.Button();
-            this.lbl_3 = new System.Windows.Forms.Label();
-            this.lbl_2 = new System.Windows.Forms.Label();
-            this.lbl_1 = new System.Windows.Forms.Label();
-            this.btn_sub = new System.Windows.Forms.Button();
-            this.btn_add = new System.Windows.Forms.Button();
-            this.btn_enter = new System.Windows.Forms.Button();
-            this.txt_qun = new System.Windows.Forms.TextBox();
-            this.txt_pname = new System.Windows.Forms.TextBox();
-            this.txt_pid = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btn_forreg = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_pid = new System.Windows.Forms.TextBox();
+            this.txt_pname = new System.Windows.Forms.TextBox();
+            this.txt_qun = new System.Windows.Forms.TextBox();
+            this.btn_enter = new System.Windows.Forms.Button();
+            this.btn_add = new System.Windows.Forms.Button();
+            this.btn_sub = new System.Windows.Forms.Button();
+            this.lbl_1 = new System.Windows.Forms.Label();
+            this.lbl_2 = new System.Windows.Forms.Label();
+            this.lbl_3 = new System.Windows.Forms.Label();
+            this.btn_clear = new System.Windows.Forms.Button();
+            this.lbl_get = new System.Windows.Forms.Label();
+            this.lbl_unit = new System.Windows.Forms.Label();
+            this.lbl_qunget1 = new System.Windows.Forms.Label();
+            this.lbl_qunset1 = new System.Windows.Forms.Label();
+            this.lbl_qunget2 = new System.Windows.Forms.Label();
+            this.lbl_qunget4 = new System.Windows.Forms.Label();
+            this.lbl_qunget5 = new System.Windows.Forms.Label();
+            this.lbl_qunget6 = new System.Windows.Forms.Label();
+            this.lbl_qunset2 = new System.Windows.Forms.Label();
+            this.lbl_qunget3 = new System.Windows.Forms.Label();
+            this.lbl_qunset4 = new System.Windows.Forms.Label();
+            this.lbl_qunset3 = new System.Windows.Forms.Label();
+            this.lbl_qunset5 = new System.Windows.Forms.Label();
+            this.lbl_qunset6 = new System.Windows.Forms.Label();
+            this.lbl_data = new System.Windows.Forms.Label();
+            this.lbl_gettot = new System.Windows.Forms.Label();
+            this.btn_newbill = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lbl_cid = new System.Windows.Forms.Label();
+            this.lbl_regcus = new System.Windows.Forms.Label();
+            this.btn_freg = new System.Windows.Forms.Button();
+            this.lbl_cid1 = new System.Windows.Forms.Label();
             btn_pay = new FontAwesome.Sharp.IconButton();
             this.panal_Invoice.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -300,9 +307,8 @@ namespace E_mart
             this.lbl_bill6.Location = new System.Drawing.Point(49, 21);
             this.lbl_bill6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_bill6.Name = "lbl_bill6";
-            this.lbl_bill6.Size = new System.Drawing.Size(46, 28);
+            this.lbl_bill6.Size = new System.Drawing.Size(0, 28);
             this.lbl_bill6.TabIndex = 0;
-            this.lbl_bill6.Text = "Text";
             // 
             // panel26
             // 
@@ -374,9 +380,8 @@ namespace E_mart
             this.lbl_bill5.Location = new System.Drawing.Point(49, 21);
             this.lbl_bill5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_bill5.Name = "lbl_bill5";
-            this.lbl_bill5.Size = new System.Drawing.Size(46, 28);
+            this.lbl_bill5.Size = new System.Drawing.Size(0, 28);
             this.lbl_bill5.TabIndex = 0;
-            this.lbl_bill5.Text = "Text";
             // 
             // panel22
             // 
@@ -448,9 +453,8 @@ namespace E_mart
             this.lbl_bill4.Location = new System.Drawing.Point(49, 21);
             this.lbl_bill4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_bill4.Name = "lbl_bill4";
-            this.lbl_bill4.Size = new System.Drawing.Size(46, 28);
+            this.lbl_bill4.Size = new System.Drawing.Size(0, 28);
             this.lbl_bill4.TabIndex = 0;
-            this.lbl_bill4.Text = "Text";
             // 
             // panel18
             // 
@@ -522,9 +526,8 @@ namespace E_mart
             this.lbl_bill3.Location = new System.Drawing.Point(49, 21);
             this.lbl_bill3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_bill3.Name = "lbl_bill3";
-            this.lbl_bill3.Size = new System.Drawing.Size(46, 28);
+            this.lbl_bill3.Size = new System.Drawing.Size(0, 28);
             this.lbl_bill3.TabIndex = 0;
-            this.lbl_bill3.Text = "Text";
             // 
             // panel14
             // 
@@ -596,9 +599,8 @@ namespace E_mart
             this.lbl_bill2.Location = new System.Drawing.Point(49, 21);
             this.lbl_bill2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_bill2.Name = "lbl_bill2";
-            this.lbl_bill2.Size = new System.Drawing.Size(46, 28);
+            this.lbl_bill2.Size = new System.Drawing.Size(0, 28);
             this.lbl_bill2.TabIndex = 0;
-            this.lbl_bill2.Text = "Text";
             // 
             // BillScroBar
             // 
@@ -607,6 +609,7 @@ namespace E_mart
             this.BillScroBar.Name = "BillScroBar";
             this.BillScroBar.Size = new System.Drawing.Size(17, 495);
             this.BillScroBar.TabIndex = 7;
+            this.BillScroBar.Value = 6;
             this.BillScroBar.Scroll += new System.Windows.Forms.ScrollEventHandler(this.BillScroBar_Scroll);
             // 
             // panel9
@@ -679,9 +682,8 @@ namespace E_mart
             this.lbl_bill1.Location = new System.Drawing.Point(49, 21);
             this.lbl_bill1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_bill1.Name = "lbl_bill1";
-            this.lbl_bill1.Size = new System.Drawing.Size(46, 28);
+            this.lbl_bill1.Size = new System.Drawing.Size(0, 28);
             this.lbl_bill1.TabIndex = 0;
-            this.lbl_bill1.Text = "Text";
             // 
             // panel_invoice_footer
             // 
@@ -843,6 +845,7 @@ namespace E_mart
             this.img_5.Margin = new System.Windows.Forms.Padding(4);
             this.img_5.Name = "img_5";
             this.img_5.Size = new System.Drawing.Size(167, 124);
+            this.img_5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.img_5.TabIndex = 0;
             this.img_5.TabStop = false;
             // 
@@ -902,6 +905,7 @@ namespace E_mart
             this.img_4.Margin = new System.Windows.Forms.Padding(4);
             this.img_4.Name = "img_4";
             this.img_4.Size = new System.Drawing.Size(167, 124);
+            this.img_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.img_4.TabIndex = 0;
             this.img_4.TabStop = false;
             // 
@@ -961,6 +965,7 @@ namespace E_mart
             this.img_3.Margin = new System.Windows.Forms.Padding(4);
             this.img_3.Name = "img_3";
             this.img_3.Size = new System.Drawing.Size(167, 124);
+            this.img_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.img_3.TabIndex = 0;
             this.img_3.TabStop = false;
             // 
@@ -1020,6 +1025,7 @@ namespace E_mart
             this.img_2.Margin = new System.Windows.Forms.Padding(4);
             this.img_2.Name = "img_2";
             this.img_2.Size = new System.Drawing.Size(167, 124);
+            this.img_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.img_2.TabIndex = 0;
             this.img_2.TabStop = false;
             // 
@@ -1075,16 +1081,346 @@ namespace E_mart
             // img_1
             // 
             this.img_1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.img_1.Image = global::E_mart.Properties.Resources.fish6;
             this.img_1.Location = new System.Drawing.Point(0, 0);
             this.img_1.Margin = new System.Windows.Forms.Padding(4);
             this.img_1.Name = "img_1";
             this.img_1.Size = new System.Drawing.Size(167, 124);
+            this.img_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.img_1.TabIndex = 0;
             this.img_1.TabStop = false;
+            // 
+            // btn_forreg
+            // 
+            this.btn_forreg.BackColor = System.Drawing.Color.GreenYellow;
+            this.btn_forreg.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_forreg.Location = new System.Drawing.Point(271, 323);
+            this.btn_forreg.Name = "btn_forreg";
+            this.btn_forreg.Size = new System.Drawing.Size(191, 30);
+            this.btn_forreg.TabIndex = 29;
+            this.btn_forreg.Text = "For Registerd  Customer";
+            this.btn_forreg.UseVisualStyleBackColor = false;
+            this.btn_forreg.Click += new System.EventHandler(this.btn_forreg_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(51, 129);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(141, 25);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Product Name";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(56, 188);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 25);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Queantity";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(51, 74);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(107, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Product Id";
+            // 
+            // txt_pid
+            // 
+            this.txt_pid.Location = new System.Drawing.Point(331, 76);
+            this.txt_pid.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_pid.Name = "txt_pid";
+            this.txt_pid.Size = new System.Drawing.Size(132, 22);
+            this.txt_pid.TabIndex = 3;
+            // 
+            // txt_pname
+            // 
+            this.txt_pname.Location = new System.Drawing.Point(331, 132);
+            this.txt_pname.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_pname.Name = "txt_pname";
+            this.txt_pname.ReadOnly = true;
+            this.txt_pname.Size = new System.Drawing.Size(132, 22);
+            this.txt_pname.TabIndex = 4;
+            // 
+            // txt_qun
+            // 
+            this.txt_qun.Location = new System.Drawing.Point(351, 188);
+            this.txt_qun.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_qun.Name = "txt_qun";
+            this.txt_qun.Size = new System.Drawing.Size(80, 22);
+            this.txt_qun.TabIndex = 5;
+            // 
+            // btn_enter
+            // 
+            this.btn_enter.BackColor = System.Drawing.Color.Gold;
+            this.btn_enter.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_enter.Location = new System.Drawing.Point(242, 260);
+            this.btn_enter.Name = "btn_enter";
+            this.btn_enter.Size = new System.Drawing.Size(89, 32);
+            this.btn_enter.TabIndex = 6;
+            this.btn_enter.Text = "ENTER";
+            this.btn_enter.UseVisualStyleBackColor = false;
+            this.btn_enter.Click += new System.EventHandler(this.btn_enter_Click);
+            // 
+            // btn_add
+            // 
+            this.btn_add.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_add.Location = new System.Drawing.Point(310, 190);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(21, 20);
+            this.btn_add.TabIndex = 7;
+            this.btn_add.Text = "+";
+            this.btn_add.UseVisualStyleBackColor = false;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
+            // 
+            // btn_sub
+            // 
+            this.btn_sub.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_sub.Location = new System.Drawing.Point(455, 190);
+            this.btn_sub.Name = "btn_sub";
+            this.btn_sub.Size = new System.Drawing.Size(20, 20);
+            this.btn_sub.TabIndex = 8;
+            this.btn_sub.Text = "-";
+            this.btn_sub.UseVisualStyleBackColor = false;
+            this.btn_sub.Click += new System.EventHandler(this.btn_sub_Click);
+            // 
+            // lbl_1
+            // 
+            this.lbl_1.AutoSize = true;
+            this.lbl_1.ForeColor = System.Drawing.Color.Red;
+            this.lbl_1.Location = new System.Drawing.Point(328, 104);
+            this.lbl_1.Name = "lbl_1";
+            this.lbl_1.Size = new System.Drawing.Size(0, 17);
+            this.lbl_1.TabIndex = 9;
+            // 
+            // lbl_2
+            // 
+            this.lbl_2.AutoSize = true;
+            this.lbl_2.ForeColor = System.Drawing.Color.Red;
+            this.lbl_2.Location = new System.Drawing.Point(331, 162);
+            this.lbl_2.Name = "lbl_2";
+            this.lbl_2.Size = new System.Drawing.Size(0, 17);
+            this.lbl_2.TabIndex = 10;
+            // 
+            // lbl_3
+            // 
+            this.lbl_3.AutoSize = true;
+            this.lbl_3.ForeColor = System.Drawing.Color.Red;
+            this.lbl_3.Location = new System.Drawing.Point(351, 218);
+            this.lbl_3.Name = "lbl_3";
+            this.lbl_3.Size = new System.Drawing.Size(0, 17);
+            this.lbl_3.TabIndex = 11;
+            // 
+            // btn_clear
+            // 
+            this.btn_clear.BackColor = System.Drawing.Color.Gold;
+            this.btn_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_clear.Location = new System.Drawing.Point(423, 260);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(89, 32);
+            this.btn_clear.TabIndex = 12;
+            this.btn_clear.Text = "CLEAR";
+            this.btn_clear.UseVisualStyleBackColor = false;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
+            // 
+            // lbl_get
+            // 
+            this.lbl_get.AutoSize = true;
+            this.lbl_get.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_get.ForeColor = System.Drawing.Color.DarkGray;
+            this.lbl_get.Location = new System.Drawing.Point(677, 37);
+            this.lbl_get.Name = "lbl_get";
+            this.lbl_get.Size = new System.Drawing.Size(0, 4);
+            this.lbl_get.TabIndex = 13;
+            // 
+            // lbl_unit
+            // 
+            this.lbl_unit.AutoSize = true;
+            this.lbl_unit.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_unit.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_unit.Location = new System.Drawing.Point(762, 67);
+            this.lbl_unit.Name = "lbl_unit";
+            this.lbl_unit.Size = new System.Drawing.Size(0, 4);
+            this.lbl_unit.TabIndex = 14;
+            // 
+            // lbl_qunget1
+            // 
+            this.lbl_qunget1.AutoSize = true;
+            this.lbl_qunget1.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunget1.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_qunget1.Location = new System.Drawing.Point(762, 75);
+            this.lbl_qunget1.Name = "lbl_qunget1";
+            this.lbl_qunget1.Size = new System.Drawing.Size(5, 4);
+            this.lbl_qunget1.TabIndex = 15;
+            this.lbl_qunget1.Text = "0";
+            // 
+            // lbl_qunset1
+            // 
+            this.lbl_qunset1.AutoSize = true;
+            this.lbl_qunset1.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunset1.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_qunset1.Location = new System.Drawing.Point(762, 71);
+            this.lbl_qunset1.Name = "lbl_qunset1";
+            this.lbl_qunset1.Size = new System.Drawing.Size(0, 4);
+            this.lbl_qunset1.TabIndex = 16;
+            // 
+            // lbl_qunget2
+            // 
+            this.lbl_qunget2.AutoSize = true;
+            this.lbl_qunget2.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunget2.ForeColor = System.Drawing.Color.DarkGray;
+            this.lbl_qunget2.Location = new System.Drawing.Point(653, 63);
+            this.lbl_qunget2.Name = "lbl_qunget2";
+            this.lbl_qunget2.Size = new System.Drawing.Size(5, 4);
+            this.lbl_qunget2.TabIndex = 17;
+            this.lbl_qunget2.Text = "0";
+            // 
+            // lbl_qunget4
+            // 
+            this.lbl_qunget4.AutoSize = true;
+            this.lbl_qunget4.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunget4.ForeColor = System.Drawing.Color.DarkGray;
+            this.lbl_qunget4.Location = new System.Drawing.Point(651, 51);
+            this.lbl_qunget4.Name = "lbl_qunget4";
+            this.lbl_qunget4.Size = new System.Drawing.Size(5, 4);
+            this.lbl_qunget4.TabIndex = 18;
+            this.lbl_qunget4.Text = "0";
+            // 
+            // lbl_qunget5
+            // 
+            this.lbl_qunget5.AutoSize = true;
+            this.lbl_qunget5.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunget5.ForeColor = System.Drawing.Color.DarkGray;
+            this.lbl_qunget5.Location = new System.Drawing.Point(651, 55);
+            this.lbl_qunget5.Name = "lbl_qunget5";
+            this.lbl_qunget5.Size = new System.Drawing.Size(5, 4);
+            this.lbl_qunget5.TabIndex = 19;
+            this.lbl_qunget5.Text = "0";
+            // 
+            // lbl_qunget6
+            // 
+            this.lbl_qunget6.AutoSize = true;
+            this.lbl_qunget6.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunget6.ForeColor = System.Drawing.Color.DarkGray;
+            this.lbl_qunget6.Location = new System.Drawing.Point(651, 59);
+            this.lbl_qunget6.Name = "lbl_qunget6";
+            this.lbl_qunget6.Size = new System.Drawing.Size(5, 4);
+            this.lbl_qunget6.TabIndex = 20;
+            this.lbl_qunget6.Text = "0";
+            // 
+            // lbl_qunset2
+            // 
+            this.lbl_qunset2.AutoSize = true;
+            this.lbl_qunset2.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunset2.ForeColor = System.Drawing.Color.DarkGray;
+            this.lbl_qunset2.Location = new System.Drawing.Point(651, 47);
+            this.lbl_qunset2.Name = "lbl_qunset2";
+            this.lbl_qunset2.Size = new System.Drawing.Size(0, 4);
+            this.lbl_qunset2.TabIndex = 21;
+            // 
+            // lbl_qunget3
+            // 
+            this.lbl_qunget3.AutoSize = true;
+            this.lbl_qunget3.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunget3.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_qunget3.Location = new System.Drawing.Point(760, 79);
+            this.lbl_qunget3.Name = "lbl_qunget3";
+            this.lbl_qunget3.Size = new System.Drawing.Size(5, 4);
+            this.lbl_qunget3.TabIndex = 22;
+            this.lbl_qunget3.Text = "0";
+            // 
+            // lbl_qunset4
+            // 
+            this.lbl_qunset4.AutoSize = true;
+            this.lbl_qunset4.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunset4.ForeColor = System.Drawing.Color.DarkGray;
+            this.lbl_qunset4.Location = new System.Drawing.Point(653, 43);
+            this.lbl_qunset4.Name = "lbl_qunset4";
+            this.lbl_qunset4.Size = new System.Drawing.Size(0, 4);
+            this.lbl_qunset4.TabIndex = 23;
+            // 
+            // lbl_qunset3
+            // 
+            this.lbl_qunset3.AutoSize = true;
+            this.lbl_qunset3.BackColor = System.Drawing.Color.DimGray;
+            this.lbl_qunset3.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunset3.ForeColor = System.Drawing.Color.DarkGray;
+            this.lbl_qunset3.Location = new System.Drawing.Point(653, 39);
+            this.lbl_qunset3.Name = "lbl_qunset3";
+            this.lbl_qunset3.Size = new System.Drawing.Size(0, 4);
+            this.lbl_qunset3.TabIndex = 24;
+            // 
+            // lbl_qunset5
+            // 
+            this.lbl_qunset5.AutoSize = true;
+            this.lbl_qunset5.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunset5.ForeColor = System.Drawing.Color.DarkGray;
+            this.lbl_qunset5.Location = new System.Drawing.Point(653, 67);
+            this.lbl_qunset5.Name = "lbl_qunset5";
+            this.lbl_qunset5.Size = new System.Drawing.Size(0, 4);
+            this.lbl_qunset5.TabIndex = 25;
+            // 
+            // lbl_qunset6
+            // 
+            this.lbl_qunset6.AutoSize = true;
+            this.lbl_qunset6.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_qunset6.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_qunset6.Location = new System.Drawing.Point(758, 63);
+            this.lbl_qunset6.Name = "lbl_qunset6";
+            this.lbl_qunset6.Size = new System.Drawing.Size(0, 4);
+            this.lbl_qunset6.TabIndex = 26;
+            // 
+            // lbl_data
+            // 
+            this.lbl_data.AutoSize = true;
+            this.lbl_data.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_data.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_data.Location = new System.Drawing.Point(982, 20);
+            this.lbl_data.Name = "lbl_data";
+            this.lbl_data.Size = new System.Drawing.Size(0, 4);
+            this.lbl_data.TabIndex = 27;
+            // 
+            // lbl_gettot
+            // 
+            this.lbl_gettot.AutoSize = true;
+            this.lbl_gettot.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_gettot.ForeColor = System.Drawing.Color.DarkGray;
+            this.lbl_gettot.Location = new System.Drawing.Point(615, 192);
+            this.lbl_gettot.Name = "lbl_gettot";
+            this.lbl_gettot.Size = new System.Drawing.Size(0, 38);
+            this.lbl_gettot.TabIndex = 28;
+            // 
+            // btn_newbill
+            // 
+            this.btn_newbill.BackColor = System.Drawing.Color.Salmon;
+            this.btn_newbill.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_newbill.Location = new System.Drawing.Point(849, 306);
+            this.btn_newbill.Name = "btn_newbill";
+            this.btn_newbill.Size = new System.Drawing.Size(112, 47);
+            this.btn_newbill.TabIndex = 30;
+            this.btn_newbill.Text = "New Bill";
+            this.btn_newbill.UseVisualStyleBackColor = false;
+            this.btn_newbill.Click += new System.EventHandler(this.btn_newbill_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
+            this.panel2.Controls.Add(this.lbl_cid1);
+            this.panel2.Controls.Add(this.lbl_cid);
+            this.panel2.Controls.Add(this.lbl_regcus);
+            this.panel2.Controls.Add(this.btn_freg);
+            this.panel2.Controls.Add(this.btn_newbill);
+            this.panel2.Controls.Add(this.lbl_gettot);
             this.panel2.Controls.Add(this.lbl_data);
             this.panel2.Controls.Add(this.lbl_qunset6);
             this.panel2.Controls.Add(this.lbl_qunset5);
@@ -1121,296 +1457,41 @@ namespace E_mart
             this.panel2.TabIndex = 9;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // lbl_data
+            // lbl_cid
             // 
-            this.lbl_data.AutoSize = true;
-            this.lbl_data.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_data.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_data.Location = new System.Drawing.Point(982, 20);
-            this.lbl_data.Name = "lbl_data";
-            this.lbl_data.Size = new System.Drawing.Size(13, 4);
-            this.lbl_data.TabIndex = 27;
-            this.lbl_data.Text = "label7";
+            this.lbl_cid.AutoSize = true;
+            this.lbl_cid.Location = new System.Drawing.Point(698, 182);
+            this.lbl_cid.Name = "lbl_cid";
+            this.lbl_cid.Size = new System.Drawing.Size(0, 17);
+            this.lbl_cid.TabIndex = 33;
             // 
-            // lbl_qunset6
+            // lbl_regcus
             // 
-            this.lbl_qunset6.AutoSize = true;
-            this.lbl_qunset6.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_qunset6.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_qunset6.Location = new System.Drawing.Point(758, 63);
-            this.lbl_qunset6.Name = "lbl_qunset6";
-            this.lbl_qunset6.Size = new System.Drawing.Size(15, 4);
-            this.lbl_qunset6.TabIndex = 26;
-            this.lbl_qunset6.Text = "label10";
+            this.lbl_regcus.AutoSize = true;
+            this.lbl_regcus.Location = new System.Drawing.Point(598, 214);
+            this.lbl_regcus.Name = "lbl_regcus";
+            this.lbl_regcus.Size = new System.Drawing.Size(0, 17);
+            this.lbl_regcus.TabIndex = 32;
             // 
-            // lbl_qunset5
+            // btn_freg
             // 
-            this.lbl_qunset5.AutoSize = true;
-            this.lbl_qunset5.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_qunset5.ForeColor = System.Drawing.Color.Silver;
-            this.lbl_qunset5.Location = new System.Drawing.Point(653, 67);
-            this.lbl_qunset5.Name = "lbl_qunset5";
-            this.lbl_qunset5.Size = new System.Drawing.Size(0, 4);
-            this.lbl_qunset5.TabIndex = 25;
+            this.btn_freg.BackColor = System.Drawing.Color.Salmon;
+            this.btn_freg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_freg.Location = new System.Drawing.Point(259, 306);
+            this.btn_freg.Name = "btn_freg";
+            this.btn_freg.Size = new System.Drawing.Size(263, 35);
+            this.btn_freg.TabIndex = 31;
+            this.btn_freg.Text = "For Registerd Customer";
+            this.btn_freg.UseVisualStyleBackColor = false;
+            this.btn_freg.Click += new System.EventHandler(this.btn_freg_Click);
             // 
-            // lbl_qunset3
+            // lbl_cid1
             // 
-            this.lbl_qunset3.AutoSize = true;
-            this.lbl_qunset3.BackColor = System.Drawing.Color.DimGray;
-            this.lbl_qunset3.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_qunset3.ForeColor = System.Drawing.Color.Silver;
-            this.lbl_qunset3.Location = new System.Drawing.Point(653, 39);
-            this.lbl_qunset3.Name = "lbl_qunset3";
-            this.lbl_qunset3.Size = new System.Drawing.Size(0, 4);
-            this.lbl_qunset3.TabIndex = 24;
-            // 
-            // lbl_qunset4
-            // 
-            this.lbl_qunset4.AutoSize = true;
-            this.lbl_qunset4.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_qunset4.ForeColor = System.Drawing.Color.Silver;
-            this.lbl_qunset4.Location = new System.Drawing.Point(653, 43);
-            this.lbl_qunset4.Name = "lbl_qunset4";
-            this.lbl_qunset4.Size = new System.Drawing.Size(0, 4);
-            this.lbl_qunset4.TabIndex = 23;
-            // 
-            // lbl_qunget3
-            // 
-            this.lbl_qunget3.AutoSize = true;
-            this.lbl_qunget3.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_qunget3.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_qunget3.Location = new System.Drawing.Point(760, 79);
-            this.lbl_qunget3.Name = "lbl_qunget3";
-            this.lbl_qunget3.Size = new System.Drawing.Size(5, 4);
-            this.lbl_qunget3.TabIndex = 22;
-            this.lbl_qunget3.Text = "1";
-            // 
-            // lbl_qunset2
-            // 
-            this.lbl_qunset2.AutoSize = true;
-            this.lbl_qunset2.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_qunset2.ForeColor = System.Drawing.Color.Silver;
-            this.lbl_qunset2.Location = new System.Drawing.Point(651, 47);
-            this.lbl_qunset2.Name = "lbl_qunset2";
-            this.lbl_qunset2.Size = new System.Drawing.Size(0, 4);
-            this.lbl_qunset2.TabIndex = 21;
-            // 
-            // lbl_qunget6
-            // 
-            this.lbl_qunget6.AutoSize = true;
-            this.lbl_qunget6.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_qunget6.ForeColor = System.Drawing.Color.Silver;
-            this.lbl_qunget6.Location = new System.Drawing.Point(651, 59);
-            this.lbl_qunget6.Name = "lbl_qunget6";
-            this.lbl_qunget6.Size = new System.Drawing.Size(5, 4);
-            this.lbl_qunget6.TabIndex = 20;
-            this.lbl_qunget6.Text = "1";
-            // 
-            // lbl_qunget5
-            // 
-            this.lbl_qunget5.AutoSize = true;
-            this.lbl_qunget5.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_qunget5.ForeColor = System.Drawing.Color.Silver;
-            this.lbl_qunget5.Location = new System.Drawing.Point(651, 55);
-            this.lbl_qunget5.Name = "lbl_qunget5";
-            this.lbl_qunget5.Size = new System.Drawing.Size(5, 4);
-            this.lbl_qunget5.TabIndex = 19;
-            this.lbl_qunget5.Text = "1";
-            // 
-            // lbl_qunget4
-            // 
-            this.lbl_qunget4.AutoSize = true;
-            this.lbl_qunget4.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_qunget4.ForeColor = System.Drawing.Color.Silver;
-            this.lbl_qunget4.Location = new System.Drawing.Point(651, 51);
-            this.lbl_qunget4.Name = "lbl_qunget4";
-            this.lbl_qunget4.Size = new System.Drawing.Size(5, 4);
-            this.lbl_qunget4.TabIndex = 18;
-            this.lbl_qunget4.Text = "1";
-            // 
-            // lbl_qunget2
-            // 
-            this.lbl_qunget2.AutoSize = true;
-            this.lbl_qunget2.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_qunget2.ForeColor = System.Drawing.Color.Silver;
-            this.lbl_qunget2.Location = new System.Drawing.Point(653, 63);
-            this.lbl_qunget2.Name = "lbl_qunget2";
-            this.lbl_qunget2.Size = new System.Drawing.Size(5, 4);
-            this.lbl_qunget2.TabIndex = 17;
-            this.lbl_qunget2.Text = "1";
-            // 
-            // lbl_qunset1
-            // 
-            this.lbl_qunset1.AutoSize = true;
-            this.lbl_qunset1.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_qunset1.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_qunset1.Location = new System.Drawing.Point(762, 71);
-            this.lbl_qunset1.Name = "lbl_qunset1";
-            this.lbl_qunset1.Size = new System.Drawing.Size(13, 4);
-            this.lbl_qunset1.TabIndex = 16;
-            this.lbl_qunset1.Text = "label7";
-            // 
-            // lbl_qunget1
-            // 
-            this.lbl_qunget1.AutoSize = true;
-            this.lbl_qunget1.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_qunget1.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_qunget1.Location = new System.Drawing.Point(762, 75);
-            this.lbl_qunget1.Name = "lbl_qunget1";
-            this.lbl_qunget1.Size = new System.Drawing.Size(5, 4);
-            this.lbl_qunget1.TabIndex = 15;
-            this.lbl_qunget1.Text = "1";
-            // 
-            // lbl_unit
-            // 
-            this.lbl_unit.AutoSize = true;
-            this.lbl_unit.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_unit.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_unit.Location = new System.Drawing.Point(762, 67);
-            this.lbl_unit.Name = "lbl_unit";
-            this.lbl_unit.Size = new System.Drawing.Size(13, 4);
-            this.lbl_unit.TabIndex = 14;
-            this.lbl_unit.Text = "label7";
-            // 
-            // lbl_get
-            // 
-            this.lbl_get.AutoSize = true;
-            this.lbl_get.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_get.ForeColor = System.Drawing.Color.Silver;
-            this.lbl_get.Location = new System.Drawing.Point(677, 37);
-            this.lbl_get.Name = "lbl_get";
-            this.lbl_get.Size = new System.Drawing.Size(0, 4);
-            this.lbl_get.TabIndex = 13;
-            // 
-            // btn_clear
-            // 
-            this.btn_clear.BackColor = System.Drawing.Color.Gold;
-            this.btn_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_clear.Location = new System.Drawing.Point(423, 260);
-            this.btn_clear.Name = "btn_clear";
-            this.btn_clear.Size = new System.Drawing.Size(89, 32);
-            this.btn_clear.TabIndex = 12;
-            this.btn_clear.Text = "CLEAR";
-            this.btn_clear.UseVisualStyleBackColor = false;
-            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
-            // 
-            // lbl_3
-            // 
-            this.lbl_3.AutoSize = true;
-            this.lbl_3.ForeColor = System.Drawing.Color.Red;
-            this.lbl_3.Location = new System.Drawing.Point(351, 218);
-            this.lbl_3.Name = "lbl_3";
-            this.lbl_3.Size = new System.Drawing.Size(0, 17);
-            this.lbl_3.TabIndex = 11;
-            // 
-            // lbl_2
-            // 
-            this.lbl_2.AutoSize = true;
-            this.lbl_2.ForeColor = System.Drawing.Color.Red;
-            this.lbl_2.Location = new System.Drawing.Point(331, 162);
-            this.lbl_2.Name = "lbl_2";
-            this.lbl_2.Size = new System.Drawing.Size(0, 17);
-            this.lbl_2.TabIndex = 10;
-            // 
-            // lbl_1
-            // 
-            this.lbl_1.AutoSize = true;
-            this.lbl_1.ForeColor = System.Drawing.Color.Red;
-            this.lbl_1.Location = new System.Drawing.Point(328, 104);
-            this.lbl_1.Name = "lbl_1";
-            this.lbl_1.Size = new System.Drawing.Size(0, 17);
-            this.lbl_1.TabIndex = 9;
-            // 
-            // btn_sub
-            // 
-            this.btn_sub.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_sub.Location = new System.Drawing.Point(455, 190);
-            this.btn_sub.Name = "btn_sub";
-            this.btn_sub.Size = new System.Drawing.Size(20, 20);
-            this.btn_sub.TabIndex = 8;
-            this.btn_sub.Text = "-";
-            this.btn_sub.UseVisualStyleBackColor = false;
-            this.btn_sub.Click += new System.EventHandler(this.btn_sub_Click);
-            // 
-            // btn_add
-            // 
-            this.btn_add.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_add.Location = new System.Drawing.Point(310, 190);
-            this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(21, 20);
-            this.btn_add.TabIndex = 7;
-            this.btn_add.Text = "+";
-            this.btn_add.UseVisualStyleBackColor = false;
-            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
-            // 
-            // btn_enter
-            // 
-            this.btn_enter.BackColor = System.Drawing.Color.Gold;
-            this.btn_enter.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_enter.Location = new System.Drawing.Point(242, 260);
-            this.btn_enter.Name = "btn_enter";
-            this.btn_enter.Size = new System.Drawing.Size(89, 32);
-            this.btn_enter.TabIndex = 6;
-            this.btn_enter.Text = "ENTER";
-            this.btn_enter.UseVisualStyleBackColor = false;
-            this.btn_enter.Click += new System.EventHandler(this.btn_enter_Click);
-            // 
-            // txt_qun
-            // 
-            this.txt_qun.Location = new System.Drawing.Point(351, 188);
-            this.txt_qun.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_qun.Name = "txt_qun";
-            this.txt_qun.Size = new System.Drawing.Size(80, 22);
-            this.txt_qun.TabIndex = 5;
-            // 
-            // txt_pname
-            // 
-            this.txt_pname.Location = new System.Drawing.Point(331, 132);
-            this.txt_pname.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_pname.Name = "txt_pname";
-            this.txt_pname.Size = new System.Drawing.Size(132, 22);
-            this.txt_pname.TabIndex = 4;
-            // 
-            // txt_pid
-            // 
-            this.txt_pid.Location = new System.Drawing.Point(331, 76);
-            this.txt_pid.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_pid.Name = "txt_pid";
-            this.txt_pid.Size = new System.Drawing.Size(132, 22);
-            this.txt_pid.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(51, 74);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Product Id";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(56, 188);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 25);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Queantity";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(51, 129);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Product Name";
+            this.lbl_cid1.AutoSize = true;
+            this.lbl_cid1.Location = new System.Drawing.Point(678, 203);
+            this.lbl_cid1.Name = "lbl_cid1";
+            this.lbl_cid1.Size = new System.Drawing.Size(0, 17);
+            this.lbl_cid1.TabIndex = 34;
             // 
             // DashBoard
             // 
@@ -1418,6 +1499,7 @@ namespace E_mart
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1461, 736);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.btn_forreg);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panal_Invoice);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -1503,13 +1585,6 @@ namespace E_mart
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbl_4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txt_qun;
-        private System.Windows.Forms.TextBox txt_pname;
-        private System.Windows.Forms.TextBox txt_pid;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label su_itemlable5;
@@ -1580,29 +1655,43 @@ namespace E_mart
         private System.Windows.Forms.Label lbl_quan2;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Label lbl_bill2;
-        private System.Windows.Forms.Button btn_sub;
-        private System.Windows.Forms.Button btn_add;
-        private System.Windows.Forms.Button btn_enter;
-        private System.Windows.Forms.Label lbl_3;
-        private System.Windows.Forms.Label lbl_2;
-        private System.Windows.Forms.Label lbl_1;
-        private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.Label lbl_tot;
         private System.Windows.Forms.Label lbl_dis;
+        private System.Windows.Forms.Button btn_forreg;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txt_pid;
+        private System.Windows.Forms.TextBox txt_pname;
+        private System.Windows.Forms.TextBox txt_qun;
+        private System.Windows.Forms.Button btn_enter;
+        private System.Windows.Forms.Button btn_add;
+        private System.Windows.Forms.Button btn_sub;
+        private System.Windows.Forms.Label lbl_1;
+        private System.Windows.Forms.Label lbl_2;
+        private System.Windows.Forms.Label lbl_3;
+        private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.Label lbl_get;
         private System.Windows.Forms.Label lbl_unit;
         private System.Windows.Forms.Label lbl_qunget1;
         private System.Windows.Forms.Label lbl_qunset1;
-        private System.Windows.Forms.Label lbl_qunget3;
-        private System.Windows.Forms.Label lbl_qunset2;
-        private System.Windows.Forms.Label lbl_qunget6;
-        private System.Windows.Forms.Label lbl_qunget5;
-        private System.Windows.Forms.Label lbl_qunget4;
         private System.Windows.Forms.Label lbl_qunget2;
-        private System.Windows.Forms.Label lbl_qunset6;
-        private System.Windows.Forms.Label lbl_qunset5;
-        private System.Windows.Forms.Label lbl_qunset3;
+        private System.Windows.Forms.Label lbl_qunget4;
+        private System.Windows.Forms.Label lbl_qunget5;
+        private System.Windows.Forms.Label lbl_qunget6;
+        private System.Windows.Forms.Label lbl_qunset2;
+        private System.Windows.Forms.Label lbl_qunget3;
         private System.Windows.Forms.Label lbl_qunset4;
+        private System.Windows.Forms.Label lbl_qunset3;
+        private System.Windows.Forms.Label lbl_qunset5;
+        private System.Windows.Forms.Label lbl_qunset6;
         private System.Windows.Forms.Label lbl_data;
+        private System.Windows.Forms.Label lbl_gettot;
+        private System.Windows.Forms.Button btn_newbill;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btn_freg;
+        private System.Windows.Forms.Label lbl_regcus;
+        private System.Windows.Forms.Label lbl_cid;
+        private System.Windows.Forms.Label lbl_cid1;
     }
 }

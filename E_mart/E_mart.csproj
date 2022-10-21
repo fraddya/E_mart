@@ -182,6 +182,12 @@
     <Compile Include="Customer.Designer.cs">
       <DependentUpon>Customer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Customer_Check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Check.Designer.cs">
+      <DependentUpon>Customer_Check.cs</DependentUpon>
+    </Compile>
     <Compile Include="DashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,6 +201,7 @@
     <Compile Include="employer_reg.Designer.cs">
       <DependentUpon>employer_reg.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fordashboard.cs" />
     <Compile Include="History.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,6 +248,9 @@
     </Compile>
     <EmbeddedResource Include="Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Check.resx">
+      <DependentUpon>Customer_Check.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
@@ -307,6 +317,117 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\Resources\question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Butter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Carrot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cheese.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chicken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Egg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fish2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fresh milk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icecream.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leeks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mango.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panadol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Parasitamol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pineapple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Piriton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pork.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Potato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pumpkin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sausage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tomato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tuna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vitamin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vitaminc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Watermelon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yogurt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zerizine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mutton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Faluda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fish3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fish4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fish5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fish6.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
