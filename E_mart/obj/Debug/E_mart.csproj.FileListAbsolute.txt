@@ -36,3 +36,19 @@ F:\ehub\E_mart\E_mart\obj\Debug\E_mart.employer_reg.resources
 F:\ehub\E_mart\E_mart\obj\Debug\E_mart.Manage_emp.resources
 F:\ehub\E_mart\E_mart\obj\Debug\E_mart.messagebox.resources
 F:\ehub\E_mart\E_mart\obj\Debug\E_mart.Stock.resources
+C:\Users\new\Desktop\e mart\E_mart\E_mart\obj\Debug\E_mart.csproj.AssemblyReference.cache
+C:\Users\new\Desktop\e mart\E_mart\E_mart\obj\Debug\E_mart.Customer.resources
+C:\Users\new\Desktop\e mart\E_mart\E_mart\obj\Debug\E_mart.DashBoard.resources
+C:\Users\new\Desktop\e mart\E_mart\E_mart\obj\Debug\E_mart.employer_reg.resources
+C:\Users\new\Desktop\e mart\E_mart\E_mart\obj\Debug\E_mart.History.resources
+C:\Users\new\Desktop\e mart\E_mart\E_mart\obj\Debug\E_mart.Home.resources
+C:\Users\new\Desktop\e mart\E_mart\E_mart\obj\Debug\E_mart.login.resources
+C:\Users\new\Desktop\e mart\E_mart\E_mart\obj\Debug\E_mart.Manage_emp.resources
+C:\Users\new\Desktop\e mart\E_mart\E_mart\obj\Debug\E_mart.messagebox.resources
+C:\Users\new\Desktop\e mart\E_mart\E_mart\obj\Debug\E_mart.Product.resources
+C:\Users\new\Desktop\e mart\E_mart\E_mart\obj\Debug\E_mart.Properties.Resources.resources
+C:\Users\new\Desktop\e mart\E_mart\E_mart\obj\Debug\E_mart.Stock.resources
+C:\Users\new\Desktop\e mart\E_mart\E_mart\obj\Debug\E_mart.csproj.GenerateResource.cache
+C:\Users\new\Desktop\e mart\E_mart\E_mart\obj\Debug\E_mart.csproj.CoreCompileInputs.cache
+C:\Users\new\Desktop\e mart\E_mart\E_mart\obj\Debug\E_mart.exe
+C:\Users\new\Desktop\e mart\E_mart\E_mart\obj\Debug\E_mart.pdb

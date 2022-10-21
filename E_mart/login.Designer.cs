@@ -66,7 +66,7 @@ namespace E_mart
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(599, 466);
+            this.ClientSize = new System.Drawing.Size(724, 466);
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);

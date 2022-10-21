@@ -16,5 +16,10 @@ namespace E_mart
         {
             InitializeComponent();
         }
+
+        private void btn_regE_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

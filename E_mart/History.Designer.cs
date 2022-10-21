@@ -32,10 +32,10 @@ namespace E_mart
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_viewH = new FontAwesome.Sharp.IconButton();
-            this.combox_H = new System.Windows.Forms.ComboBox();
-            this.txt_invoiceidH = new System.Windows.Forms.TextBox();
             this.dtp_H = new System.Windows.Forms.DateTimePicker();
+            this.txt_invoiceidH = new System.Windows.Forms.TextBox();
+            this.combox_H = new System.Windows.Forms.ComboBox();
+            this.btn_viewH = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -73,18 +73,20 @@ namespace E_mart
             this.panel1.Size = new System.Drawing.Size(311, 598);
             this.panel1.TabIndex = 2;
             // 
-            // btn_viewH
+            // dtp_H
             // 
-            this.btn_viewH.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_viewH.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btn_viewH.IconColor = System.Drawing.Color.Black;
-            this.btn_viewH.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_viewH.Location = new System.Drawing.Point(61, 356);
-            this.btn_viewH.Name = "btn_viewH";
-            this.btn_viewH.Size = new System.Drawing.Size(180, 37);
-            this.btn_viewH.TabIndex = 0;
-            this.btn_viewH.Text = "View History";
-            this.btn_viewH.UseVisualStyleBackColor = true;
+            this.dtp_H.Location = new System.Drawing.Point(61, 255);
+            this.dtp_H.Name = "dtp_H";
+            this.dtp_H.Size = new System.Drawing.Size(180, 20);
+            this.dtp_H.TabIndex = 3;
+            // 
+            // txt_invoiceidH
+            // 
+            this.txt_invoiceidH.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_invoiceidH.Location = new System.Drawing.Point(61, 294);
+            this.txt_invoiceidH.Name = "txt_invoiceidH";
+            this.txt_invoiceidH.Size = new System.Drawing.Size(180, 33);
+            this.txt_invoiceidH.TabIndex = 2;
             // 
             // combox_H
             // 
@@ -97,20 +99,18 @@ namespace E_mart
             this.combox_H.Size = new System.Drawing.Size(180, 21);
             this.combox_H.TabIndex = 1;
             // 
-            // txt_invoiceidH
+            // btn_viewH
             // 
-            this.txt_invoiceidH.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_invoiceidH.Location = new System.Drawing.Point(61, 281);
-            this.txt_invoiceidH.Name = "txt_invoiceidH";
-            this.txt_invoiceidH.Size = new System.Drawing.Size(180, 33);
-            this.txt_invoiceidH.TabIndex = 2;
-            // 
-            // dtp_H
-            // 
-            this.dtp_H.Location = new System.Drawing.Point(61, 255);
-            this.dtp_H.Name = "dtp_H";
-            this.dtp_H.Size = new System.Drawing.Size(180, 20);
-            this.dtp_H.TabIndex = 3;
+            this.btn_viewH.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_viewH.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn_viewH.IconColor = System.Drawing.Color.Black;
+            this.btn_viewH.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_viewH.Location = new System.Drawing.Point(61, 356);
+            this.btn_viewH.Name = "btn_viewH";
+            this.btn_viewH.Size = new System.Drawing.Size(180, 37);
+            this.btn_viewH.TabIndex = 0;
+            this.btn_viewH.Text = "View History";
+            this.btn_viewH.UseVisualStyleBackColor = true;
             // 
             // History
             // 

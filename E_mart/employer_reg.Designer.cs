@@ -58,12 +58,13 @@ namespace E_mart
             this.btn_regE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(214)))), ((int)(((byte)(0)))));
             this.btn_regE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_regE.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_regE.Location = new System.Drawing.Point(444, 510);
+            this.btn_regE.Location = new System.Drawing.Point(450, 504);
             this.btn_regE.Name = "btn_regE";
             this.btn_regE.Size = new System.Drawing.Size(177, 44);
             this.btn_regE.TabIndex = 32;
             this.btn_regE.Text = "Registration";
             this.btn_regE.UseVisualStyleBackColor = false;
+            this.btn_regE.Click += new System.EventHandler(this.btn_regE_Click);
             // 
             // txt_Eemail
             // 

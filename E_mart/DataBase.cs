@@ -32,6 +32,8 @@ namespace E_mart
         public int save_update_delete(string a)
         {
             openConnection();
+           
+
             cmd = new SqlCommand(a, con);
             int i = cmd.ExecuteNonQuery();
             closeConnection();
