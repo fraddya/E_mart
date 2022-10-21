@@ -31,7 +31,6 @@ namespace E_mart
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.manager_dash = new FontAwesome.Sharp.IconButton();
             this.btn_stock = new FontAwesome.Sharp.IconButton();
             this.btn_manageemp = new FontAwesome.Sharp.IconButton();
             this.btn_report = new FontAwesome.Sharp.IconButton();
@@ -63,7 +62,6 @@ namespace E_mart
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelMenu.Controls.Add(this.manager_dash);
             this.panelMenu.Controls.Add(this.btn_stock);
             this.panelMenu.Controls.Add(this.btn_manageemp);
             this.panelMenu.Controls.Add(this.btn_report);
@@ -76,29 +74,8 @@ namespace E_mart
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 721);
+            this.panelMenu.Size = new System.Drawing.Size(220, 749);
             this.panelMenu.TabIndex = 0;
-            this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
-            // 
-            // manager_dash
-            // 
-            this.manager_dash.Dock = System.Windows.Forms.DockStyle.Top;
-            this.manager_dash.FlatAppearance.BorderSize = 0;
-            this.manager_dash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.manager_dash.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manager_dash.ForeColor = System.Drawing.Color.White;
-            this.manager_dash.IconChar = FontAwesome.Sharp.IconChar.ChalkboardTeacher;
-            this.manager_dash.IconColor = System.Drawing.Color.White;
-            this.manager_dash.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.manager_dash.IconSize = 43;
-            this.manager_dash.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.manager_dash.Location = new System.Drawing.Point(0, 452);
-            this.manager_dash.Name = "manager_dash";
-            this.manager_dash.Size = new System.Drawing.Size(220, 52);
-            this.manager_dash.TabIndex = 9;
-            this.manager_dash.Text = "DashBord";
-            this.manager_dash.UseVisualStyleBackColor = true;
-            this.manager_dash.Click += new System.EventHandler(this.manager_dash_Click);
             // 
             // btn_stock
             // 
@@ -152,7 +129,7 @@ namespace E_mart
             this.btn_report.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_report.IconSize = 43;
             this.btn_report.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_report.Location = new System.Drawing.Point(0, 617);
+            this.btn_report.Location = new System.Drawing.Point(0, 645);
             this.btn_report.Name = "btn_report";
             this.btn_report.Size = new System.Drawing.Size(220, 52);
             this.btn_report.TabIndex = 6;
@@ -172,7 +149,7 @@ namespace E_mart
             this.btn_setings.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_setings.IconSize = 43;
             this.btn_setings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_setings.Location = new System.Drawing.Point(0, 669);
+            this.btn_setings.Location = new System.Drawing.Point(0, 697);
             this.btn_setings.Name = "btn_setings";
             this.btn_setings.Size = new System.Drawing.Size(220, 52);
             this.btn_setings.TabIndex = 5;
@@ -384,7 +361,7 @@ namespace E_mart
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 84);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1112, 637);
+            this.panelDesktop.Size = new System.Drawing.Size(1112, 665);
             this.panelDesktop.TabIndex = 3;
             this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
             // 
@@ -392,7 +369,7 @@ namespace E_mart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1332, 721);
+            this.ClientSize = new System.Drawing.Size(1332, 749);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
@@ -434,6 +411,5 @@ namespace E_mart
         private FontAwesome.Sharp.IconPictureBox btn_Exit;
         private FontAwesome.Sharp.IconButton btn_manageemp;
         private FontAwesome.Sharp.IconButton btn_stock;
-        private FontAwesome.Sharp.IconButton manager_dash;
     }
 }

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Costura.Fody.3.3.3\build\Costura.Fody.props" Condition="Exists('..\packages\Costura.Fody.3.3.3\build\Costura.Fody.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -8,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>E_mart</RootNamespace>
     <AssemblyName>E_mart</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -36,20 +37,29 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Costura, Version=3.3.3.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Costura.Fody.3.3.3\lib\net40\Costura.dll</HintPath>
+    </Reference>
     <Reference Include="FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
-      <HintPath>..\packages\FontAwesome.Sharp.6.1.1\lib\net45\FontAwesome.Sharp.dll</HintPath>
+      <HintPath>..\packages\FontAwesome.Sharp.6.1.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
-    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
-      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
     </Reference>
-    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
     </Reference>
-    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
     </Reference>
-    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Win32.Registry, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
@@ -57,8 +67,11 @@
     <Reference Include="Microsoft.Win32.Registry.AccessControl, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Win32.Registry.AccessControl.6.0.0\lib\net461\Microsoft.Win32.Registry.AccessControl.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Microsoft.Win32.SystemEvents, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.SystemEvents.6.0.0\lib\net461\Microsoft.Win32.SystemEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -74,7 +87,13 @@
     </Reference>
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.6.0.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Odbc, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.Odbc.6.0.0\lib\net461\System.Data.Odbc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.OleDb, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.OleDb.6.0.0\lib\net461\System.Data.OleDb.dll</HintPath>
     </Reference>
@@ -85,6 +104,9 @@
     <Reference Include="System.Design" />
     <Reference Include="System.Diagnostics.EventLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Diagnostics.EventLog.6.0.0\lib\net461\System.Diagnostics.EventLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.PerformanceCounter, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.PerformanceCounter.6.0.0\lib\net461\System.Diagnostics.PerformanceCounter.dll</HintPath>
     </Reference>
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.DirectoryServices.AccountManagement" />
@@ -111,8 +133,8 @@
       <HintPath>..\packages\System.IO.Ports.6.0.0\lib\net461\System.IO.Ports.dll</HintPath>
     </Reference>
     <Reference Include="System.Management" />
-    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Memory.4.5.5\lib\netstandard1.1\System.Memory.dll</HintPath>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="System.Net" />
     <Reference Include="System.Numerics" />
@@ -120,6 +142,11 @@
       <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection.Context" />
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
@@ -141,6 +168,9 @@
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Security.Cryptography.Pkcs, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Pkcs.6.0.0\lib\net461\System.Security.Cryptography.Pkcs.dll</HintPath>
+    </Reference>
     <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
       <Private>True</Private>
@@ -149,6 +179,9 @@
     <Reference Include="System.Security.Cryptography.ProtectedData, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Security.Cryptography.ProtectedData.6.0.0\lib\net461\System.Security.Cryptography.ProtectedData.dll</HintPath>
     </Reference>
+    <Reference Include="System.Security.Cryptography.Xml, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Xml.6.0.0\lib\net461\System.Security.Cryptography.Xml.dll</HintPath>
+    </Reference>
     <Reference Include="System.Security.Permissions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Security.Permissions.6.0.0\lib\net461\System.Security.Permissions.dll</HintPath>
     </Reference>
@@ -156,6 +189,21 @@
       <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
     </Reference>
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Duplex, Version=4.9.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ServiceModel.Duplex.4.9.0\lib\net461\System.ServiceModel.Duplex.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Http, Version=4.9.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ServiceModel.Http.4.9.0\lib\net461\System.ServiceModel.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.NetTcp, Version=4.9.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ServiceModel.NetTcp.4.9.0\lib\net461\System.ServiceModel.NetTcp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Primitives, Version=4.9.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ServiceModel.Primitives.4.9.0\lib\net461\System.ServiceModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Security, Version=4.9.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ServiceModel.Security.4.9.0\lib\net461\System.ServiceModel.Security.dll</HintPath>
+    </Reference>
     <Reference Include="System.ServiceModel.Syndication, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ServiceModel.Syndication.6.0.0\lib\net461\System.ServiceModel.Syndication.dll</HintPath>
     </Reference>
@@ -172,6 +220,9 @@
     </Reference>
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web.Services" />
+    <Reference Include="System.Web.Services.Description, Version=4.9.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Web.Services.Description.4.9.0\lib\net461\System.Web.Services.Description.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -183,13 +234,11 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
-    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Button_WOC.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Revenue.cs" />
     <Compile Include="Customer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,7 +251,6 @@
     <Compile Include="DashBoard.Designer.cs">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataBase.cs" />
     <Compile Include="employer_reg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -227,12 +275,6 @@
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
-    <Compile Include="manager_dash.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="manager_dash.Designer.cs">
-      <DependentUpon>manager_dash.cs</DependentUpon>
-    </Compile>
     <Compile Include="Manage_emp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -253,13 +295,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report.Designer.cs">
+      <DependentUpon>report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="static_report.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>static_report.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Stock.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Stock.Designer.cs">
       <DependentUpon>Stock.cs</DependentUpon>
     </Compile>
-    <Compile Include="ulog.cs" />
     <EmbeddedResource Include="Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
     </EmbeddedResource>
@@ -277,9 +330,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="manager_dash.resx">
-      <DependentUpon>manager_dash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manage_emp.resx">
       <DependentUpon>Manage_emp.cs</DependentUpon>
@@ -300,203 +350,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="report.resx">
+      <DependentUpon>report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Stock.resx">
       <DependentUpon>Stock.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
-    <None Include="Properties\DataSources\LiveCharts.AxisCore.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.AxisSectionCore.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.AxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.AxisWindows+EmptyAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.AxisWindows.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.ChartFunctions.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Charting.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.ChartPoint.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Charts.CartesianChartCore.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Charts.ChartCore.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Charts.PieChartCore.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.ChartUpdater.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Configurations.Mappers.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DataLabelViewModel.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisCore.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+CenturyAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+DayAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+DecadeAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+FifteenSecondsAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+HalfHourAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+HourAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+HundredMilliSecondAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+MillenniumAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+MilliSecondAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+MinuteAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+MonthAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+QuarterAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+SecondAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+TenMilliSecondAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+ThirtySecondsAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+WeekAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+YearAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateSeparatorElementCore.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Defaults.DateTimePoint.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Defaults.GanttPoint.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Defaults.HeatPoint.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Defaults.ObservablePoint.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Defaults.ObservableValue.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Defaults.OhlcPoint.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Defaults.PolarPoint.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Defaults.ScatterPoint.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Charts.IAxisSectionView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Charts.IAxisView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Charts.ICartesianChart.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Charts.ICartesianVisualElement.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Charts.IChartView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Charts.IDateAxisView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Charts.ILogarithmicAxisView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Charts.IPieChart.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Charts.ISeparatorElementView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Charts.ISeparatorView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Charts.IWindowAxisView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Points.IBezierPointView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Points.IChartPointView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Points.IHeatPointView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Points.IOhlcPointView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Points.IPieSlicePointView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Points.IRectanglePointView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Points.IScatterPointView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Points.IStepPointView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IAreaPoint.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.ICartesianSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IColumnSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IFinancialSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IHeatSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.ILineSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IPieSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IPieSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IRowSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IScatterSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.ISeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IStackedAreaSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IStackedColumnSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IStackedRowSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IStackModelableSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IVerticalStackedAreaSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Dtos.BezierData.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Dtos.CoreColor.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Dtos.CoreGradientStop.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Dtos.CoreLimit.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Dtos.CoreMargin.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Dtos.CorePoint.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Dtos.CoreRectangle.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Dtos.CoreSize.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Dtos.LabelEvaluation.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Dtos.TooltipDataViewModel.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Events.DataClickHandler.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Events.DataHoverHandler.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Events.PreviewRangeChangedEventArgs.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Events.PreviewRangeChangedHandler.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Events.RangeChangedEventArgs.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Events.RangeChangedHandler.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Events.UpdaterTickHandler.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.FinancialDelegate.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Helpers.Extentions.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Helpers.INoisyCollection.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Helpers.LiveChartsException.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.IAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.IChartValues.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.IObservableChartPoint.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.LogarithmicAxisCore.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Maps.LvcMap.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Maps.MapData.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.PointTracker.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeparatorConfigurationCore.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeparatorElementCore.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.CandleAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.ColumnAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.HeatAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.LineAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.OhlcAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.PieAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.RowAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.ScatterAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.StackedAreaAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.StackedColumnAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.StackedRowAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.StepLineAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.VerticalLineAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.VerticalStackedAreaAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesCollection.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.VisualElementsCollection.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.WindowAxisCore.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.WinForms.AngularGauge.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.WinForms.CartesianChart.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.WinForms.GeoMap.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.WinForms.PieChart.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.WinForms.SolidGauge.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.AngularGauge.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.AngularSection.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.AxesCollection.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Axis.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.AxisSection.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.AxisWindowCollection.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.CandleSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.CartesianChart.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.ChartPointLabelConverter.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Charts.Base.Chart.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.ColorsCollection.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.ColumnSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Components.AxisSeparatorElement.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Components.DefaultXamlReader.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Components.IFondeable.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Components.TooltipDto.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Converters.NumericChartValuesConverter.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Converters.StringCollectionConverter.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.DataPointViewModel.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.DateAxis.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.DefaultAxes.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.DefaultGeoMapTooltip.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.DefaultGeometries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.DefaultLegend.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.DefaultTooltip.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Extentions.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.FinancialColoringRule.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Gauge.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.GeoData.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.GeoDataLabelConverter.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.GeoMap.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.HeatColorRange.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.HeatSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.IChartLegend.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.IChartTooltip.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.LineSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.LogarithmicAxis.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.OhlcSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.OrientationConverter.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.ParticipationVisibilityConverter.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.PieChart.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.PieSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Points.PieSlice.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Points.PieUtils.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.RowSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.ScaleStrokeConverter.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.ScatterSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.SectionsCollection.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Separator.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Series.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.SeriesViewModel.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.SharedConverter.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.SharedVisibilityConverter.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.StackedAreaSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.StackedColumnSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.StackedRowSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.StepLineSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.TooltipData.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.VerticalLineSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.VerticalStackedAreaSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.VisualElement.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.WindowAxis.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -506,6 +366,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="static_report.xsc">
+      <DependentUpon>static_report.xsd</DependentUpon>
+    </None>
+    <None Include="static_report.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>static_report.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="static_report.xss">
+      <DependentUpon>static_report.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -525,5 +396,28 @@
   <ItemGroup>
     <None Include="Properties\Resources\question.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('..\packages\Fody.4.0.2\build\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Fody.4.0.2\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.4.0.2\build\Fody.targets'))" />
+    <Error Condition="!Exists('..\packages\Costura.Fody.3.3.3\build\Costura.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.3.3.3\build\Costura.Fody.props'))" />
+  </Target>
 </Project>

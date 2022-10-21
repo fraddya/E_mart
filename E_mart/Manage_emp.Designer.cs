@@ -31,12 +31,12 @@ namespace E_mart
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_addemp = new FontAwesome.Sharp.IconButton();
             this.txt_emp = new System.Windows.Forms.TextBox();
             this.combox_emp = new System.Windows.Forms.ComboBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btn_addemp = new FontAwesome.Sharp.IconButton();
             this.btn_viewE = new FontAwesome.Sharp.IconButton();
             this.btn_stock = new FontAwesome.Sharp.IconButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -44,7 +44,6 @@ namespace E_mart
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.txt_emp);
             this.panel1.Controls.Add(this.combox_emp);
@@ -64,9 +63,35 @@ namespace E_mart
             this.panel2.Size = new System.Drawing.Size(278, 295);
             this.panel2.TabIndex = 7;
             // 
+            // txt_emp
+            // 
+            this.txt_emp.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_emp.Location = new System.Drawing.Point(43, 121);
+            this.txt_emp.Name = "txt_emp";
+            this.txt_emp.Size = new System.Drawing.Size(180, 33);
+            this.txt_emp.TabIndex = 6;
+            // 
+            // combox_emp
+            // 
+            this.combox_emp.FormattingEnabled = true;
+            this.combox_emp.Items.AddRange(new object[] {
+            "View Employer by ID",
+            "Vive Employer by Name"});
+            this.combox_emp.Location = new System.Drawing.Point(43, 54);
+            this.combox_emp.Name = "combox_emp";
+            this.combox_emp.Size = new System.Drawing.Size(180, 21);
+            this.combox_emp.TabIndex = 5;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(284, 5);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(721, 487);
+            this.dataGridView1.TabIndex = 3;
+            // 
             // btn_addemp
             // 
-            this.btn_addemp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(214)))), ((int)(((byte)(0)))));
             this.btn_addemp.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_addemp.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn_addemp.IconColor = System.Drawing.Color.Black;
@@ -76,73 +101,41 @@ namespace E_mart
             this.btn_addemp.Size = new System.Drawing.Size(180, 83);
             this.btn_addemp.TabIndex = 5;
             this.btn_addemp.Text = "Employer Registration";
-            this.btn_addemp.UseVisualStyleBackColor = false;
+            this.btn_addemp.UseVisualStyleBackColor = true;
             this.btn_addemp.Click += new System.EventHandler(this.btn_addemp_Click);
-            // 
-            // txt_emp
-            // 
-            this.txt_emp.BackColor = System.Drawing.Color.Silver;
-            this.txt_emp.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_emp.Location = new System.Drawing.Point(43, 130);
-            this.txt_emp.Name = "txt_emp";
-            this.txt_emp.Size = new System.Drawing.Size(180, 33);
-            this.txt_emp.TabIndex = 6;
-            // 
-            // combox_emp
-            // 
-            this.combox_emp.BackColor = System.Drawing.Color.Silver;
-            this.combox_emp.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.combox_emp.FormattingEnabled = true;
-            this.combox_emp.Items.AddRange(new object[] {
-            "View Employer by ID",
-            "Vive Employer by Name",
-            "Remove Employer"});
-            this.combox_emp.Location = new System.Drawing.Point(43, 54);
-            this.combox_emp.Name = "combox_emp";
-            this.combox_emp.Size = new System.Drawing.Size(180, 29);
-            this.combox_emp.TabIndex = 5;
             // 
             // btn_viewE
             // 
-            this.btn_viewE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(214)))), ((int)(((byte)(0)))));
             this.btn_viewE.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_viewE.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn_viewE.IconColor = System.Drawing.Color.Black;
             this.btn_viewE.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_viewE.Location = new System.Drawing.Point(43, 221);
+            this.btn_viewE.Location = new System.Drawing.Point(43, 211);
             this.btn_viewE.Name = "btn_viewE";
             this.btn_viewE.Size = new System.Drawing.Size(180, 37);
             this.btn_viewE.TabIndex = 4;
             this.btn_viewE.Text = "View Employer";
-            this.btn_viewE.UseVisualStyleBackColor = false;
+            this.btn_viewE.UseVisualStyleBackColor = true;
+            this.btn_viewE.Click += new System.EventHandler(this.btn_viewE_Click);
             // 
             // btn_stock
             // 
-            this.btn_stock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(214)))), ((int)(((byte)(0)))));
             this.btn_stock.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_stock.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn_stock.IconColor = System.Drawing.Color.Black;
             this.btn_stock.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_stock.Location = new System.Drawing.Point(618, 539);
+            this.btn_stock.Location = new System.Drawing.Point(555, 528);
             this.btn_stock.Name = "btn_stock";
             this.btn_stock.Size = new System.Drawing.Size(189, 47);
             this.btn_stock.TabIndex = 4;
             this.btn_stock.Text = "View All Employer";
-            this.btn_stock.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(299, 35);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(781, 487);
-            this.dataGridView1.TabIndex = 3;
+            this.btn_stock.UseVisualStyleBackColor = true;
+            this.btn_stock.Click += new System.EventHandler(this.btn_stock_Click);
             // 
             // Manage_emp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1096, 598);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_stock);

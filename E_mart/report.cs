@@ -16,5 +16,12 @@ namespace E_mart
         {
             InitializeComponent();
         }
+
+        private void report_Load(object sender, EventArgs e)
+        {
+
+            this.reportViewer1.RefreshReport();
+            this.reportViewer2.RefreshReport();
+        }
     }
 }
