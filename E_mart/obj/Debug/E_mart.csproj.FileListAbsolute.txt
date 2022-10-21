@@ -79,3 +79,16 @@ C:\Users\HP\Documents\GitHub\E_mart\E_mart\obj\Debug\E_mart.csproj.CopyComplete
 C:\Users\HP\Documents\GitHub\E_mart\E_mart\obj\Debug\E_mart.exe
 C:\Users\HP\Documents\GitHub\E_mart\E_mart\obj\Debug\E_mart.pdb
 C:\Users\HP\Documents\GitHub\E_mart\E_mart\obj\Debug\E_mart.Customer_Check.resources
+C:\Users\HP\Documents\GitHub\E_mart\E_mart\bin\Debug\LiveCharts.dll
+C:\Users\HP\Documents\GitHub\E_mart\E_mart\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\HP\Documents\GitHub\E_mart\E_mart\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\HP\Documents\GitHub\E_mart\E_mart\bin\Debug\MetroFramework.Design.dll
+C:\Users\HP\Documents\GitHub\E_mart\E_mart\bin\Debug\MetroFramework.dll
+C:\Users\HP\Documents\GitHub\E_mart\E_mart\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\HP\Documents\GitHub\E_mart\E_mart\bin\Debug\LiveCharts.pdb
+C:\Users\HP\Documents\GitHub\E_mart\E_mart\bin\Debug\LiveCharts.xml
+C:\Users\HP\Documents\GitHub\E_mart\E_mart\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\HP\Documents\GitHub\E_mart\E_mart\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\HP\Documents\GitHub\E_mart\E_mart\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\HP\Documents\GitHub\E_mart\E_mart\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\HP\Documents\GitHub\E_mart\E_mart\obj\Debug\E_mart.manager_dash.resources
