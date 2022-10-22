@@ -40,9 +40,9 @@ namespace E_mart
             // 
             this.btn_enterc.BackColor = System.Drawing.Color.Gold;
             this.btn_enterc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_enterc.Location = new System.Drawing.Point(135, 137);
+            this.btn_enterc.Location = new System.Drawing.Point(309, 159);
             this.btn_enterc.Name = "btn_enterc";
-            this.btn_enterc.Size = new System.Drawing.Size(82, 27);
+            this.btn_enterc.Size = new System.Drawing.Size(99, 34);
             this.btn_enterc.TabIndex = 0;
             this.btn_enterc.Text = "Enter";
             this.btn_enterc.UseVisualStyleBackColor = false;
@@ -51,9 +51,10 @@ namespace E_mart
             // txt_cidc
             // 
             this.txt_cidc.BackColor = System.Drawing.Color.Silver;
-            this.txt_cidc.Location = new System.Drawing.Point(149, 77);
+            this.txt_cidc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cidc.Location = new System.Drawing.Point(273, 90);
             this.txt_cidc.Name = "txt_cidc";
-            this.txt_cidc.Size = new System.Drawing.Size(177, 22);
+            this.txt_cidc.Size = new System.Drawing.Size(197, 28);
             this.txt_cidc.TabIndex = 1;
             // 
             // label1
@@ -61,7 +62,7 @@ namespace E_mart
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 79);
+            this.label1.Location = new System.Drawing.Point(126, 92);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(115, 20);
             this.label1.TabIndex = 2;
@@ -81,7 +82,7 @@ namespace E_mart
             // 
             this.lbl_valid.AutoSize = true;
             this.lbl_valid.ForeColor = System.Drawing.Color.Red;
-            this.lbl_valid.Location = new System.Drawing.Point(143, 107);
+            this.lbl_valid.Location = new System.Drawing.Point(257, 120);
             this.lbl_valid.Name = "lbl_valid";
             this.lbl_valid.Size = new System.Drawing.Size(0, 17);
             this.lbl_valid.TabIndex = 4;
@@ -91,7 +92,7 @@ namespace E_mart
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(368, 267);
+            this.ClientSize = new System.Drawing.Size(645, 267);
             this.Controls.Add(this.lbl_valid);
             this.Controls.Add(this.lbl_1);
             this.Controls.Add(this.label1);
