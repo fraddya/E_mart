@@ -20,8 +20,8 @@ namespace E_mart
         {
             con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True"); //Nathu
             con.Open();
-           // try
-           // {
+            try
+            {
 
                 if (string.IsNullOrEmpty(txt_EName.Text))
                 {
@@ -88,13 +88,13 @@ namespace E_mart
                 }
                 con.Close();
                 cmd.Dispose();
-           // }
+            }
 
-          /*  catch (Exception)
+            catch (Exception)
             {
                 MetroFramework.MetroMessageBox.Show(this, "Please check again", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-           */
+            
 
         }
 
