@@ -39,15 +39,6 @@
     <Reference Include="FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.6.1.1\lib\net45\FontAwesome.Sharp.dll</HintPath>
     </Reference>
-    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
-      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
-    </Reference>
-    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
-      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
-    </Reference>
-    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
-      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
-    </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
@@ -56,6 +47,30 @@
     </Reference>
     <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1537.0\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1537.0\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Win32.Registry, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
@@ -71,7 +86,9 @@
     <Reference Include="RestSharp, Version=100.0.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
       <HintPath>..\packages\RestSharpSigned.105.2.3\lib\net46\RestSharp.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
@@ -188,6 +205,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
     <Reference Include="WindowsBase" />
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
@@ -195,18 +213,19 @@
     <Compile Include="Button_WOC.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Revenue.cs" />
+    <Compile Include="client.cs">
+      <DependentUpon>client.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="client.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>client.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Customer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Customer.Designer.cs">
       <DependentUpon>Customer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Customer_Check.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Customer_Check.Designer.cs">
-      <DependentUpon>Customer_Check.cs</DependentUpon>
     </Compile>
     <Compile Include="DashBoard.cs">
       <SubType>Form</SubType>
@@ -215,13 +234,35 @@
       <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
     <Compile Include="DataBase.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="emp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>emp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="empl.cs">
+      <DependentUpon>empl.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="empl.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>empl.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="employee.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>employee.xsd</DependentUpon>
+    </Compile>
     <Compile Include="employer_reg.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="employer_reg.Designer.cs">
       <DependentUpon>employer_reg.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fordashboard.cs" />
     <Compile Include="History.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -266,6 +307,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report.Designer.cs">
+      <DependentUpon>report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="static_report.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>static_report.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Stock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,15 +325,15 @@
       <DependentUpon>Stock.cs</DependentUpon>
     </Compile>
     <Compile Include="ulog.cs" />
+    <EmbeddedResource Include="client.rdlc" />
     <EmbeddedResource Include="Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Customer_Check.resx">
-      <DependentUpon>Customer_Check.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="display_report.rdlc" />
+    <EmbeddedResource Include="emp.rdlc" />
     <EmbeddedResource Include="employer_reg.resx">
       <DependentUpon>employer_reg.cs</DependentUpon>
     </EmbeddedResource>
@@ -316,203 +368,68 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="report.resx">
+      <DependentUpon>report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="static_report.rdlc" />
     <EmbeddedResource Include="Stock.resx">
       <DependentUpon>Stock.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="client.xsc">
+      <DependentUpon>client.xsd</DependentUpon>
+    </None>
+    <None Include="client.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>client.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="client.xss">
+      <DependentUpon>client.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="emp.xsc">
+      <DependentUpon>emp.xsd</DependentUpon>
+    </None>
+    <None Include="emp.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>emp.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="emp.xss">
+      <DependentUpon>emp.xsd</DependentUpon>
+    </None>
+    <None Include="empl.xsc">
+      <DependentUpon>empl.xsd</DependentUpon>
+    </None>
+    <None Include="empl.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>empl.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="empl.xss">
+      <DependentUpon>empl.xsd</DependentUpon>
+    </None>
+    <None Include="employee.xsc">
+      <DependentUpon>employee.xsd</DependentUpon>
+    </None>
+    <None Include="employee.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>employee.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="employee.xss">
+      <DependentUpon>employee.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
-    <None Include="Properties\DataSources\LiveCharts.AxisCore.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.AxisSectionCore.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.AxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.AxisWindows+EmptyAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.AxisWindows.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.ChartFunctions.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Charting.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.ChartPoint.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Charts.CartesianChartCore.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Charts.ChartCore.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Charts.PieChartCore.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.ChartUpdater.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Configurations.Mappers.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DataLabelViewModel.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisCore.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+CenturyAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+DayAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+DecadeAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+FifteenSecondsAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+HalfHourAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+HourAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+HundredMilliSecondAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+MillenniumAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+MilliSecondAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+MinuteAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+MonthAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+QuarterAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+SecondAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+TenMilliSecondAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+ThirtySecondsAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+WeekAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows+YearAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateAxisWindows.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.DateSeparatorElementCore.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Defaults.DateTimePoint.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Defaults.GanttPoint.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Defaults.HeatPoint.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Defaults.ObservablePoint.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Defaults.ObservableValue.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Defaults.OhlcPoint.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Defaults.PolarPoint.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Defaults.ScatterPoint.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Charts.IAxisSectionView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Charts.IAxisView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Charts.ICartesianChart.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Charts.ICartesianVisualElement.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Charts.IChartView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Charts.IDateAxisView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Charts.ILogarithmicAxisView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Charts.IPieChart.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Charts.ISeparatorElementView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Charts.ISeparatorView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Charts.IWindowAxisView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Points.IBezierPointView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Points.IChartPointView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Points.IHeatPointView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Points.IOhlcPointView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Points.IPieSlicePointView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Points.IRectanglePointView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Points.IScatterPointView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Points.IStepPointView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IAreaPoint.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.ICartesianSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IColumnSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IFinancialSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IHeatSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.ILineSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IPieSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IPieSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IRowSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IScatterSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.ISeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IStackedAreaSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IStackedColumnSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IStackedRowSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IStackModelableSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Definitions.Series.IVerticalStackedAreaSeriesView.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Dtos.BezierData.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Dtos.CoreColor.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Dtos.CoreGradientStop.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Dtos.CoreLimit.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Dtos.CoreMargin.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Dtos.CorePoint.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Dtos.CoreRectangle.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Dtos.CoreSize.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Dtos.LabelEvaluation.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Dtos.TooltipDataViewModel.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Events.DataClickHandler.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Events.DataHoverHandler.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Events.PreviewRangeChangedEventArgs.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Events.PreviewRangeChangedHandler.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Events.RangeChangedEventArgs.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Events.RangeChangedHandler.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Events.UpdaterTickHandler.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.FinancialDelegate.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Helpers.Extentions.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Helpers.INoisyCollection.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Helpers.LiveChartsException.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.IAxisWindow.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.IChartValues.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.IObservableChartPoint.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.LogarithmicAxisCore.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Maps.LvcMap.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Maps.MapData.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.PointTracker.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeparatorConfigurationCore.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeparatorElementCore.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.CandleAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.ColumnAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.HeatAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.LineAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.OhlcAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.PieAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.RowAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.ScatterAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.StackedAreaAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.StackedColumnAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.StackedRowAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.StepLineAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.VerticalLineAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesAlgorithms.VerticalStackedAreaAlgorithm.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.SeriesCollection.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.VisualElementsCollection.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.WindowAxisCore.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.WinForms.AngularGauge.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.WinForms.CartesianChart.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.WinForms.GeoMap.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.WinForms.PieChart.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.WinForms.SolidGauge.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.AngularGauge.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.AngularSection.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.AxesCollection.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Axis.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.AxisSection.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.AxisWindowCollection.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.CandleSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.CartesianChart.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.ChartPointLabelConverter.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Charts.Base.Chart.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.ColorsCollection.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.ColumnSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Components.AxisSeparatorElement.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Components.DefaultXamlReader.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Components.IFondeable.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Components.TooltipDto.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Converters.NumericChartValuesConverter.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Converters.StringCollectionConverter.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.DataPointViewModel.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.DateAxis.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.DefaultAxes.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.DefaultGeoMapTooltip.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.DefaultGeometries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.DefaultLegend.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.DefaultTooltip.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Extentions.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.FinancialColoringRule.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Gauge.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.GeoData.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.GeoDataLabelConverter.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.GeoMap.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.HeatColorRange.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.HeatSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.IChartLegend.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.IChartTooltip.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.LineSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.LogarithmicAxis.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.OhlcSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.OrientationConverter.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.ParticipationVisibilityConverter.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.PieChart.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.PieSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Points.PieSlice.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Points.PieUtils.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.RowSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.ScaleStrokeConverter.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.ScatterSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.SectionsCollection.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Separator.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.Series.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.SeriesViewModel.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.SharedConverter.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.SharedVisibilityConverter.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.StackedAreaSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.StackedColumnSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.StackedRowSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.StepLineSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.TooltipData.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.VerticalLineSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.VerticalStackedAreaSeries.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.VisualElement.datasource" />
-    <None Include="Properties\DataSources\LiveCharts.Wpf.WindowAxis.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -522,6 +439,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="static_report.xsc">
+      <DependentUpon>static_report.xsd</DependentUpon>
+    </None>
+    <None Include="static_report.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>static_report.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="static_report.xss">
+      <DependentUpon>static_report.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -540,117 +468,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\Resources\question.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\beer.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Apple.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Banana.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Bean.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Beef.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Butter.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Carrot.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Cheese.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Chicken.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Egg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fish2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fresh milk.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Icecream.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Leeks.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Mango.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Orange.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Panadol.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Parasitamol.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Pineapple.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Piriton.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Pork.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Potato.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Pumpkin.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Sausage.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Tomato.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Tuna.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Vitamin.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Vitaminc.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Watermelon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Yogurt.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Zerizine.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Mutton.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Faluda.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fish3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fish4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fish5.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fish6.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
