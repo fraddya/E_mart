@@ -30,6 +30,8 @@ namespace E_mart
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btn_add = new FontAwesome.Sharp.IconButton();
             this.btn_remove = new FontAwesome.Sharp.IconButton();
             this.btn_refil = new FontAwesome.Sharp.IconButton();
@@ -49,8 +51,6 @@ namespace E_mart
             this.label1 = new System.Windows.Forms.Label();
             this.btn_view = new FontAwesome.Sharp.IconButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -61,6 +61,8 @@ namespace E_mart
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.btn_add);
+            this.panel1.Controls.Add(this.txt_Pid);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btn_remove);
             this.panel1.Controls.Add(this.btn_refil);
             this.panel1.Controls.Add(this.btn_productsubmit);
@@ -68,14 +70,12 @@ namespace E_mart
             this.panel1.Controls.Add(this.txt_queantity);
             this.panel1.Controls.Add(this.txt_Pname);
             this.panel1.Controls.Add(this.txt_refil);
-            this.panel1.Controls.Add(this.txt_Pid);
             this.panel1.Controls.Add(this.rdo_product_name);
             this.panel1.Controls.Add(this.rdo_pid);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -83,6 +83,33 @@ namespace E_mart
             this.panel1.Size = new System.Drawing.Size(381, 598);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.Control;
+            this.label7.Location = new System.Drawing.Point(33, 258);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(114, 20);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Select Catagory";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Fruits",
+            "Vagitable",
+            "Medicine",
+            "Meat",
+            "Fish",
+            "Dairy Food"});
+            this.comboBox1.Location = new System.Drawing.Point(80, 290);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(196, 28);
+            this.comboBox1.TabIndex = 21;
             // 
             // btn_add
             // 
@@ -155,7 +182,7 @@ namespace E_mart
             // 
             this.txt_queantity.BackColor = System.Drawing.Color.Silver;
             this.txt_queantity.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_queantity.Location = new System.Drawing.Point(80, 209);
+            this.txt_queantity.Location = new System.Drawing.Point(80, 137);
             this.txt_queantity.Name = "txt_queantity";
             this.txt_queantity.Size = new System.Drawing.Size(196, 37);
             this.txt_queantity.TabIndex = 14;
@@ -165,7 +192,7 @@ namespace E_mart
             // 
             this.txt_Pname.BackColor = System.Drawing.Color.Silver;
             this.txt_Pname.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Pname.Location = new System.Drawing.Point(80, 137);
+            this.txt_Pname.Location = new System.Drawing.Point(80, 65);
             this.txt_Pname.Name = "txt_Pname";
             this.txt_Pname.Size = new System.Drawing.Size(196, 37);
             this.txt_Pname.TabIndex = 13;
@@ -183,7 +210,7 @@ namespace E_mart
             // 
             this.txt_Pid.BackColor = System.Drawing.Color.Silver;
             this.txt_Pid.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Pid.Location = new System.Drawing.Point(80, 64);
+            this.txt_Pid.Location = new System.Drawing.Point(80, 207);
             this.txt_Pid.Name = "txt_Pid";
             this.txt_Pid.Size = new System.Drawing.Size(196, 37);
             this.txt_Pid.TabIndex = 11;
@@ -241,7 +268,7 @@ namespace E_mart
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(33, 186);
+            this.label4.Location = new System.Drawing.Point(33, 114);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 20);
             this.label4.TabIndex = 3;
@@ -252,7 +279,7 @@ namespace E_mart
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(33, 114);
+            this.label3.Location = new System.Drawing.Point(33, 42);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 20);
             this.label3.TabIndex = 2;
@@ -263,11 +290,11 @@ namespace E_mart
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(33, 41);
+            this.label2.Location = new System.Drawing.Point(33, 184);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 20);
+            this.label2.Size = new System.Drawing.Size(96, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Product Id";
+            this.label2.Text = "Product Price";
             // 
             // label1
             // 
@@ -298,39 +325,14 @@ namespace E_mart
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(416, 38);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.Size = new System.Drawing.Size(668, 461);
             this.dataGridView1.TabIndex = 12;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Fruits",
-            "Vagitable",
-            "Medicine",
-            "Meat",
-            "Fish",
-            "Dairy Food"});
-            this.comboBox1.Location = new System.Drawing.Point(80, 290);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(196, 28);
-            this.comboBox1.TabIndex = 21;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(33, 258);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(114, 20);
-            this.label7.TabIndex = 22;
-            this.label7.Text = "Select Catagory";
             // 
             // Product
             // 

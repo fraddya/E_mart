@@ -20,7 +20,8 @@ namespace E_mart
         {
             InitializeComponent();
         }
-        SqlConnection con;
+        SqlConnection con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=e_martlocalhost;Integrated Security=True"); //Fraddya
+        //SqlConnection con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True"); //Nathu
         SqlCommand cmd;
         SqlDataAdapter da;
         
@@ -105,8 +106,9 @@ namespace E_mart
         {
             try
             {
-                con.Open();
 
+                con.Open();
+                
                 if (rdo_pid.Checked == true)
                 {
                     cmd = new SqlCommand("Update Product set Product_quantity = '" + txt_quentity.Text + "', where Product_ID = '" + txt_Pid.Text + "' ,con");

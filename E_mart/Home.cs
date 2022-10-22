@@ -117,6 +117,8 @@ namespace E_mart
 
         private void Home_Load(object sender, EventArgs e)
         {
+            timer1.Start();
+
             if(ulog.type == "M")
             {
                 btn_dash.Visible = false;
@@ -181,7 +183,7 @@ namespace E_mart
         private void btn_report_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-            OpenChildForm(new report());
+            //OpenChildForm(new report());
         }
 
         private void btn_view_stock_Click(object sender, EventArgs e)
@@ -261,6 +263,17 @@ namespace E_mart
         private void panelMenu_Paint(object sender, PaintEventArgs e)
         {
             
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Text = DateTime.Now.ToString("hh:mm:ss");
+            label2.Text = DateTime.Now.ToLongDateString();
         }
     }
 }
