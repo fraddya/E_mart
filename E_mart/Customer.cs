@@ -21,10 +21,10 @@ namespace E_mart
             InitializeComponent();
         }
 
-        SqlConnection con;
-        SqlCommand cmd;
+        // SqlConnection con;
+        // SqlCommand cmd;
 
-        
+        DataBase db = new DataBase();
 
 
         private void Customer_Load(object sender, EventArgs e)
@@ -35,17 +35,16 @@ namespace E_mart
         private void btn_reg_Click(object sender, EventArgs e)
         {
 
-            con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=e_martlocalhost;Integrated Security=True");//Fraddya
+           // con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=e_martlocalhost;Integrated Security=True");//Fraddya
             //con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True");//Nathu
-            //try
-             //{
+            
 
             //con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=e_martlocalhost;Integrated Security=True");//Fraddya
-            con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True");//Nathu
+           // con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True");//Nathu
             try
             {
 
-                con.Open();
+               // con.Open();
 
                 if (string.IsNullOrEmpty(txt_CName.Text))
                 {
@@ -83,16 +82,16 @@ namespace E_mart
                 }
                 else
                 {
-                    cmd = new SqlCommand("Insert into Client(Client_Name,Client_address,Client_TP,Client_NIC,Client_Email,Client_DOB) values('" + txt_CName.Text + "','" + txt_address.Text + "','" + txt_tel.Text + "', '" + txt_nic.Text + "','" + txt_email.Text + "', '" + DOB_picker.Value + "')", con);
+                    string query="Insert into Client(Client_Name,Client_address,Client_TP,Client_NIC,Client_Email,Client_DOB) values('" + txt_CName.Text + "','" + txt_address.Text + "','" + txt_tel.Text + "', '" + txt_nic.Text + "','" + txt_email.Text + "', '" + DOB_picker.Value + "')";
                     //cmd = new SqlCommand("Insert into test values ('"+txt_CName.Text+"','"+txt_email.Text+"','"+txt_address+"')", con);
-                    int i = cmd.ExecuteNonQuery();
+                    int i = db.save_update_delete(query);
 
                     if (i == 1)
                         MessageBox.Show(this, "Registration Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     else
                         MessageBox.Show(this, "Registration Unsuccess ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                con.Close();
+                //con.Close();
 
 
                 if (checkBox_email.Checked == true)
