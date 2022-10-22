@@ -33,5 +33,16 @@ namespace E_mart.Properties {
                 return ((string)(this["e_martlocalhostConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-FK0M22U2;Initial Catalog=e_martlocalhost;Integrated Security=T" +
+            "rue")]
+        public string e_martlocalhostConnectionString1 {
+            get {
+                return ((string)(this["e_martlocalhostConnectionString1"]));
+            }
+        }
     }
 }

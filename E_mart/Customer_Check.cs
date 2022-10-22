@@ -22,6 +22,8 @@ namespace E_mart
 
         Fordashboard obj = new Fordashboard();
 
+        //Report_ obj1 = new Report_();
+
         private void btn_enterc_Click(object sender, EventArgs e)
         {
             try
@@ -78,6 +80,6 @@ namespace E_mart
         private void Customer_Check_Load(object sender, EventArgs e)
         {
             lbl_1.Visible = false;
-        }
+        }       
     }
 }
