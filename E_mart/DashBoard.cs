@@ -1442,6 +1442,7 @@ namespace E_mart
             }
 
 
+<<<<<<< Updated upstream
         }
 
         private void DashBoard_Load(object sender, EventArgs e)
@@ -1499,6 +1500,18 @@ namespace E_mart
             try
             {
                 if (lbl_bill2.Text == "")
+=======
+            //con = new SqlConnection(""); enter your string
+            //  con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=Bank;Integrated Security=True");//nadeesha or freddy
+            //con = new SqlConnection("Data Source=LAPTOP-FK0M22U2;Initial Catalog=e_martlocalhost;Integrated Security=True");//my
+            con = new SqlConnection("Data Source=DESKTOP-OVGN370\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True");//banuka
+                con.Open();
+                cmd1 = new SqlCommand("SELECT Product_queantity,Product_Price,Product_Name,Product_category,category_unit_no FROM Product WHERE Product_ID='" + txt_pid.Text + "'", con);//
+                cmd1.Parameters.AddWithValue("Product_ID", txt_pid.Text);
+                SqlDataReader rj;
+                rj = cmd1.ExecuteReader();
+                if (rj.Read())
+>>>>>>> Stashed changes
                 {
                     lbl_bill2.Text = su_itemlable1.Text;
                     lbl_price2.Text = su_pricelable1.Text;

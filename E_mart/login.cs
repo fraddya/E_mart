@@ -13,10 +13,15 @@ namespace E_mart
 {
     public partial class login : Form
     {
+<<<<<<< Updated upstream
         // SqlConnection con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=e_martlocalhost;Integrated Security=True");//fraddya
         //SqlConnection con = new SqlConnection("Data Source=LAPTOP-FK0M22U2;Initial Catalog=e_martlocalhost;Integrated Security=True");//nadiya
         //SqlConnection con = new SqlConnection("Server=tcp:fddemart.database.windows.net,1433;Initial Catalog=Emart;Persist Security Info=False;User ID=Fraddy;Password=Nu@20010128;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30");//AZURE
         SqlConnection con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True"); //Nathu
+=======
+        //SqlConnection con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=e_martlocalhost;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-OVGN370\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True");//banuka
+>>>>>>> Stashed changes
         SqlDataAdapter da;
         SqlCommand cmd;
         public login()
