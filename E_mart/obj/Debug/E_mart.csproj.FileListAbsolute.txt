@@ -102,3 +102,10 @@ F:\ehub\E_mart\E_mart\bin\Debug\LiveCharts.Wpf.pdb
 F:\ehub\E_mart\E_mart\bin\Debug\LiveCharts.Wpf.xml
 F:\ehub\E_mart\E_mart\obj\Debug\E_mart.csproj.AssemblyReference.cache
 F:\ehub\E_mart\E_mart\obj\Debug\E_mart.Customer_Check.resources
+F:\ehub\E_mart\E_mart\bin\Debug\Microsoft.IdentityModel.Logging.dll
+F:\ehub\E_mart\E_mart\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+F:\ehub\E_mart\E_mart\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+F:\ehub\E_mart\E_mart\bin\Debug\Twilio.dll
+F:\ehub\E_mart\E_mart\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+F:\ehub\E_mart\E_mart\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+F:\ehub\E_mart\E_mart\bin\Debug\Twilio.xml
