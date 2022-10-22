@@ -42,9 +42,11 @@ namespace E_mart
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(342, 35);
+            this.dataGridView1.Location = new System.Drawing.Point(456, 43);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(721, 487);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(961, 599);
             this.dataGridView1.TabIndex = 0;
             // 
             // btn_stock
@@ -54,12 +56,14 @@ namespace E_mart
             this.btn_stock.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn_stock.IconColor = System.Drawing.Color.Black;
             this.btn_stock.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_stock.Location = new System.Drawing.Point(601, 539);
+            this.btn_stock.Location = new System.Drawing.Point(801, 663);
+            this.btn_stock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_stock.Name = "btn_stock";
-            this.btn_stock.Size = new System.Drawing.Size(189, 47);
+            this.btn_stock.Size = new System.Drawing.Size(252, 58);
             this.btn_stock.TabIndex = 1;
             this.btn_stock.Text = "View All Stock";
             this.btn_stock.UseVisualStyleBackColor = false;
+            this.btn_stock.Click += new System.EventHandler(this.btn_stock_Click);
             // 
             // panel1
             // 
@@ -69,16 +73,18 @@ namespace E_mart
             this.panel1.Controls.Add(this.btn_viewS);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(278, 598);
+            this.panel1.Size = new System.Drawing.Size(371, 736);
             this.panel1.TabIndex = 2;
             // 
             // txt_stock
             // 
             this.txt_stock.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_stock.Location = new System.Drawing.Point(56, 262);
+            this.txt_stock.Location = new System.Drawing.Point(75, 322);
+            this.txt_stock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_stock.Name = "txt_stock";
-            this.txt_stock.Size = new System.Drawing.Size(180, 33);
+            this.txt_stock.Size = new System.Drawing.Size(239, 39);
             this.txt_stock.TabIndex = 6;
             // 
             // combox_stocktype
@@ -88,9 +94,10 @@ namespace E_mart
             this.combox_stocktype.Items.AddRange(new object[] {
             "By Product ID",
             "By Product Name"});
-            this.combox_stocktype.Location = new System.Drawing.Point(56, 186);
+            this.combox_stocktype.Location = new System.Drawing.Point(75, 229);
+            this.combox_stocktype.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.combox_stocktype.Name = "combox_stocktype";
-            this.combox_stocktype.Size = new System.Drawing.Size(180, 29);
+            this.combox_stocktype.Size = new System.Drawing.Size(239, 36);
             this.combox_stocktype.TabIndex = 5;
             // 
             // btn_viewS
@@ -100,22 +107,25 @@ namespace E_mart
             this.btn_viewS.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn_viewS.IconColor = System.Drawing.Color.Black;
             this.btn_viewS.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_viewS.Location = new System.Drawing.Point(56, 353);
+            this.btn_viewS.Location = new System.Drawing.Point(75, 434);
+            this.btn_viewS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_viewS.Name = "btn_viewS";
-            this.btn_viewS.Size = new System.Drawing.Size(180, 37);
+            this.btn_viewS.Size = new System.Drawing.Size(240, 46);
             this.btn_viewS.TabIndex = 4;
             this.btn_viewS.Text = "View Stock";
             this.btn_viewS.UseVisualStyleBackColor = false;
+            this.btn_viewS.Click += new System.EventHandler(this.btn_viewS_Click);
             // 
             // Stock
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.ClientSize = new System.Drawing.Size(1096, 598);
+            this.ClientSize = new System.Drawing.Size(1461, 736);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_stock);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Stock";
             this.Text = "Stock";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
