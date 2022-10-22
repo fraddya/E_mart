@@ -156,4 +156,10 @@ C:\Users\natha\Documents\GitHub\E_mart\obj\Debug\E_mart.csproj.CoreCompileInputs
 C:\Users\natha\Documents\GitHub\E_mart\obj\Debug\E_mart.csproj.CopyComplete
 C:\Users\natha\Documents\GitHub\E_mart\obj\Debug\E_mart.exe
 C:\Users\natha\Documents\GitHub\E_mart\obj\Debug\E_mart.pdb
-C:\Users\natha\Documents\GitHub\E_mart\obj\Debug\E_mart.Customer_Check.resources
+F:\ehub\E_mart\E_mart\bin\Debug\Microsoft.IdentityModel.Logging.dll
+F:\ehub\E_mart\E_mart\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+F:\ehub\E_mart\E_mart\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+F:\ehub\E_mart\E_mart\bin\Debug\Twilio.dll
+F:\ehub\E_mart\E_mart\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+F:\ehub\E_mart\E_mart\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+F:\ehub\E_mart\E_mart\bin\Debug\Twilio.xml
