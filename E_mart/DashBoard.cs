@@ -12,6 +12,7 @@ using System.Data.SqlClient;
 
 
 
+
 namespace E_mart
 {
     public partial class DashBoard : Form
@@ -43,7 +44,7 @@ namespace E_mart
         {
             try
             {
-                con = new SqlConnection("Data Source=LAPTOP-FK0M22U2;Initial Catalog=e_martlocalhost;Integrated Security=True");
+                con = new SqlConnection("Data Source=LAPTOP-FK0M22U2;Initial Catalog=e_martlocalhost;Integrated Security=True");//Nadya
 
                 if (txt_pid.Text.Length == 0 || txt_pid.Text.Any(char.IsLetter))
                 {
@@ -56,7 +57,7 @@ namespace E_mart
                 }
                 if (txt_pid.Text.Any(char.IsDigit))
                 {
-                    // con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=Bank;Integrated Security=True");
+                   
                    
 
                     con.Open();
@@ -150,12 +151,12 @@ namespace E_mart
                                     }
                                     else
                                     {
-                                        MessageBox.Show("Bill is full now ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                        MetroFramework.MetroMessageBox.Show(this, "Bill is Full", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                     }
                                 }
                                 else
                                 {
-                                    MessageBox.Show("value cannot be minus", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    MetroFramework.MetroMessageBox.Show(this,"value cannot be minus", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                                 }
                             }
@@ -164,12 +165,12 @@ namespace E_mart
                                 lbl_bill1.Text = " ";
                                 lbl_price1.Text = " ";
                                 txt_qun.Clear();
-                                MessageBox.Show("Not enough product ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                MetroFramework.MetroMessageBox.Show(this,"Not enough product ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             }
                         }
                         else
                         {
-                            MessageBox.Show("No Data Found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MetroFramework.MetroMessageBox.Show(this,"No Data Found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         con.Close();
                         lbl_3.Text = "";
@@ -1358,18 +1359,22 @@ namespace E_mart
                     }
                 }
             }
+            catch(NullReferenceException)
+            {
+                MetroFramework.MetroMessageBox.Show(this,"Cannot be null", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             catch (FormatException)
             {
-                MessageBox.Show("Please enter numbers only", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Enter numbers only", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (DivideByZeroException)
             {
-                MessageBox.Show("Cannot divide by ZERO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Cannot divide by ZERO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
             catch (Exception)
             {
-                MessageBox.Show("Check Again", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Check Again", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -1382,18 +1387,22 @@ namespace E_mart
                 a = 1 + Convert.ToInt32(txt_qun.Text);
                 txt_qun.Text = Convert.ToString(a);
             }
+            catch (NullReferenceException)
+            {
+                MetroFramework.MetroMessageBox.Show(this,"Cannot be null", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             catch (FormatException)
             {
-                MessageBox.Show("Please enter numbers only", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Enter numbers only", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (DivideByZeroException)
             {
-                MessageBox.Show("Cannot divide by ZERO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Cannot divide by ZERO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
             catch (Exception)
             {
-                MessageBox.Show("Check Again", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Check Again", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -1410,21 +1419,25 @@ namespace E_mart
                 }
                 else if (a < 0)
                 {
-                    MessageBox.Show("Invalid Value", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MetroFramework.MetroMessageBox.Show(this,"Invalid Value", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+            catch (NullReferenceException)
+            {
+                MetroFramework.MetroMessageBox.Show(this,"Cannot be null", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (FormatException)
             {
-                MessageBox.Show("Please enter numbers only", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Enter numbers only", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (DivideByZeroException)
             {
-                MessageBox.Show("Cannot divide by ZERO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Cannot divide by ZERO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
             catch (Exception)
             {
-                MessageBox.Show("Check Again", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Check Again", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 
@@ -1463,8 +1476,9 @@ namespace E_mart
             lbl_price5.Visible = false;
             lbl_price6.Visible = false;
             panel3.Visible = false;
-            lbl_cid.Visible = false;
-            lbl_cid1.Visible = false;
+            lbl_cid.Visible = false;//customer id
+            lbl_cid1.Visible = false;//total
+            lbl_date.Visible = false;//date
         }
 
         private void btn_clear_Click(object sender, EventArgs e)
@@ -1545,21 +1559,25 @@ namespace E_mart
                 }
                 else
                 {
-                    MessageBox.Show("Bill is full now ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MetroFramework.MetroMessageBox.Show(this,"Bill is full now ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+            }
+            catch (NullReferenceException)
+            {
+                MetroFramework.MetroMessageBox.Show(this,"Cannot be null", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (FormatException)
             {
-                MessageBox.Show("Please enter numbers only", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Enter numbers only", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (DivideByZeroException)
             {
-                MessageBox.Show("Cannot divide by ZERO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Cannot divide by ZERO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
             catch (Exception)
             {
-                MessageBox.Show("Check Again", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Check Again", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 
@@ -1634,21 +1652,25 @@ namespace E_mart
                 }
                 else
                 {
-                    MessageBox.Show("Bill is full now ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MetroFramework.MetroMessageBox.Show(this,"Bill is full now ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+            }
+            catch (NullReferenceException)
+            {
+                MetroFramework.MetroMessageBox.Show(this,"Cannot be null", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (FormatException)
             {
-                MessageBox.Show("Please enter numbers only", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Enter numbers only", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (DivideByZeroException)
             {
-                MessageBox.Show("Cannot divide by ZERO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Cannot divide by ZERO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
             catch (Exception)
             {
-                MessageBox.Show("Check Again", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Check Again", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 
@@ -1720,21 +1742,25 @@ namespace E_mart
                 }
                 else
                 {
-                    MessageBox.Show("Bill is full now ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MetroFramework.MetroMessageBox.Show(this,"Bill is full now ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+            }
+            catch (NullReferenceException)
+            {
+                MetroFramework.MetroMessageBox.Show(this,"Cannot be null", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (FormatException)
             {
-                MessageBox.Show("Please enter numbers only", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Enter numbers only", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (DivideByZeroException)
             {
-                MessageBox.Show("Cannot divide by ZERO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Cannot divide by ZERO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
             catch (Exception)
             {
-                MessageBox.Show("Check Again", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Check Again", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 
@@ -1806,21 +1832,25 @@ namespace E_mart
                 }
                 else
                 {
-                    MessageBox.Show("Bill is full now ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MetroFramework.MetroMessageBox.Show(this,"Bill is full now ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+            }
+            catch (NullReferenceException)
+            {
+                MetroFramework.MetroMessageBox.Show(this,"Cannot be null", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (FormatException)
             {
-                MessageBox.Show("Please enter numbers only", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Enter numbers only", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (DivideByZeroException)
             {
-                MessageBox.Show("Cannot divide by ZERO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Cannot divide by ZERO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
             catch (Exception)
             {
-                MessageBox.Show("Check Again", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Check Again", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 
@@ -1892,21 +1922,25 @@ namespace E_mart
                 }
                 else
                 {
-                    MessageBox.Show("Bill is full", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MetroFramework.MetroMessageBox.Show(this,"Bill is full", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+           }
+           catch (NullReferenceException)
+           {
+                MetroFramework.MetroMessageBox.Show(this,"Cannot be null", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
            }
            catch (FormatException)
            {
-                MessageBox.Show("Please enter numbers only", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Enter numbers only", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
            }
            catch (DivideByZeroException)
            {
-                MessageBox.Show("Cannot divide by ZERO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Cannot divide by ZERO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
            }
            catch (Exception)
            {
-                MessageBox.Show("Check Again", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Check Again", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
            }
 
 
@@ -2064,31 +2098,39 @@ namespace E_mart
                 {
                     lbl_dis.Text = (0).ToString();
                 }
+
+                lbl_date.Text = DateTime.Now.ToShortDateString();
+
+
                 
 
                
                 con.Open();
                 
-                cmd2 = new SqlCommand("INSERT INTO Invoice VALUES('"+lbl_cid.Text+"','"+lbl_tot.Text+"','"+lbl_dis.Text+"','" + lbl_bill1.Text+"','"+lbl_bill2.Text+"','"+lbl_bill3.Text+"','"+lbl_bill4.Text+"','"+lbl_bill5.Text+"','"+lbl_bill6.Text+"','"+lbl_quan1.Text+"','"+lbl_quan2.Text+ "','"+lbl_quan3.Text+"','"+lbl_quan4.Text+"','"+lbl_quan5.Text+"','"+lbl_quan6.Text+"','"+lbl_price1.Text+"','"+lbl_price2.Text+"','"+lbl_price3.Text+"','"+lbl_price4.Text+"','"+lbl_price5.Text+ "','"+lbl_price6.Text+"')", con);
+                cmd2 = new SqlCommand("INSERT INTO Invoice VALUES('"+lbl_cid.Text+ "','" + lbl_date.Text + "','" + lbl_tot.Text+"','"+lbl_dis.Text+"','" + lbl_bill1.Text+"','"+lbl_bill2.Text+"','"+lbl_bill3.Text+"','"+lbl_bill4.Text+"','"+lbl_bill5.Text+"','"+lbl_bill6.Text+"','"+lbl_quan1.Text+"','"+lbl_quan2.Text+ "','"+lbl_quan3.Text+"','"+lbl_quan4.Text+"','"+lbl_quan5.Text+"','"+lbl_quan6.Text+"','"+lbl_price1.Text+"','"+lbl_price2.Text+"','"+lbl_price3.Text+"','"+lbl_price4.Text+"','"+lbl_price5.Text+ "','"+lbl_price6.Text+"')", con);
                 int a= cmd2.ExecuteNonQuery();
                 if(a==1)
                 {
-                    MessageBox.Show("Succesed", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MetroFramework.MetroMessageBox.Show(this,"Succesed", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 con.Close();
            }
-           catch (FormatException)
+           catch (NullReferenceException)
            {
-                MessageBox.Show("Please enter numbers only", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Cannot be null", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+           }
+            catch (FormatException)
+           {
+                MetroFramework.MetroMessageBox.Show(this,"Enter numbers only", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
            }
            catch (DivideByZeroException)
            {
-                MessageBox.Show("Cannot divide by ZERO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Cannot divide by ZERO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
            }
            catch (Exception)
            {
-                MessageBox.Show("Check Again", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,"Check Again", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
            }
         }
     
@@ -2190,6 +2232,8 @@ namespace E_mart
 
             lbl_cid1.Text = "";
 
+            lbl_data.Text = "";
+
         }
 
         private void btn_forreg_Click(object sender, EventArgs e)
@@ -2206,7 +2250,7 @@ namespace E_mart
             }
             else
             {
-                MessageBox.Show("First you fill the value", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MetroFramework.MetroMessageBox.Show(this,"First you fill the value", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

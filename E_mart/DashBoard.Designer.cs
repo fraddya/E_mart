@@ -141,10 +141,11 @@ namespace E_mart
             this.lbl_gettot = new System.Windows.Forms.Label();
             this.btn_newbill = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbl_date = new System.Windows.Forms.Label();
+            this.lbl_cid1 = new System.Windows.Forms.Label();
             this.lbl_cid = new System.Windows.Forms.Label();
             this.lbl_regcus = new System.Windows.Forms.Label();
             this.btn_freg = new System.Windows.Forms.Button();
-            this.lbl_cid1 = new System.Windows.Forms.Label();
             btn_pay = new FontAwesome.Sharp.IconButton();
             this.panal_Invoice.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -1166,7 +1167,7 @@ namespace E_mart
             this.btn_enter.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_enter.Location = new System.Drawing.Point(242, 260);
             this.btn_enter.Name = "btn_enter";
-            this.btn_enter.Size = new System.Drawing.Size(89, 32);
+            this.btn_enter.Size = new System.Drawing.Size(109, 32);
             this.btn_enter.TabIndex = 6;
             this.btn_enter.Text = "ENTER";
             this.btn_enter.UseVisualStyleBackColor = false;
@@ -1175,6 +1176,7 @@ namespace E_mart
             // btn_add
             // 
             this.btn_add.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_add.Location = new System.Drawing.Point(310, 190);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(21, 20);
@@ -1186,6 +1188,7 @@ namespace E_mart
             // btn_sub
             // 
             this.btn_sub.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_sub.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_sub.Location = new System.Drawing.Point(455, 190);
             this.btn_sub.Name = "btn_sub";
             this.btn_sub.Size = new System.Drawing.Size(20, 20);
@@ -1227,7 +1230,7 @@ namespace E_mart
             this.btn_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_clear.Location = new System.Drawing.Point(423, 260);
             this.btn_clear.Name = "btn_clear";
-            this.btn_clear.Size = new System.Drawing.Size(89, 32);
+            this.btn_clear.Size = new System.Drawing.Size(99, 32);
             this.btn_clear.TabIndex = 12;
             this.btn_clear.Text = "CLEAR";
             this.btn_clear.UseVisualStyleBackColor = false;
@@ -1404,7 +1407,7 @@ namespace E_mart
             // 
             this.btn_newbill.BackColor = System.Drawing.Color.Salmon;
             this.btn_newbill.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_newbill.Location = new System.Drawing.Point(849, 306);
+            this.btn_newbill.Location = new System.Drawing.Point(870, 306);
             this.btn_newbill.Name = "btn_newbill";
             this.btn_newbill.Size = new System.Drawing.Size(112, 47);
             this.btn_newbill.TabIndex = 30;
@@ -1415,6 +1418,7 @@ namespace E_mart
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
+            this.panel2.Controls.Add(this.lbl_date);
             this.panel2.Controls.Add(this.lbl_cid1);
             this.panel2.Controls.Add(this.lbl_cid);
             this.panel2.Controls.Add(this.lbl_regcus);
@@ -1457,6 +1461,22 @@ namespace E_mart
             this.panel2.TabIndex = 9;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // lbl_date
+            // 
+            this.lbl_date.AutoSize = true;
+            this.lbl_date.Location = new System.Drawing.Point(622, 213);
+            this.lbl_date.Name = "lbl_date";
+            this.lbl_date.Size = new System.Drawing.Size(0, 17);
+            this.lbl_date.TabIndex = 35;
+            // 
+            // lbl_cid1
+            // 
+            this.lbl_cid1.AutoSize = true;
+            this.lbl_cid1.Location = new System.Drawing.Point(678, 203);
+            this.lbl_cid1.Name = "lbl_cid1";
+            this.lbl_cid1.Size = new System.Drawing.Size(0, 17);
+            this.lbl_cid1.TabIndex = 34;
+            // 
             // lbl_cid
             // 
             this.lbl_cid.AutoSize = true;
@@ -1477,21 +1497,13 @@ namespace E_mart
             // 
             this.btn_freg.BackColor = System.Drawing.Color.Salmon;
             this.btn_freg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_freg.Location = new System.Drawing.Point(259, 306);
+            this.btn_freg.Location = new System.Drawing.Point(242, 306);
             this.btn_freg.Name = "btn_freg";
-            this.btn_freg.Size = new System.Drawing.Size(263, 35);
+            this.btn_freg.Size = new System.Drawing.Size(280, 35);
             this.btn_freg.TabIndex = 31;
             this.btn_freg.Text = "For Registerd Customer";
             this.btn_freg.UseVisualStyleBackColor = false;
             this.btn_freg.Click += new System.EventHandler(this.btn_freg_Click);
-            // 
-            // lbl_cid1
-            // 
-            this.lbl_cid1.AutoSize = true;
-            this.lbl_cid1.Location = new System.Drawing.Point(678, 203);
-            this.lbl_cid1.Name = "lbl_cid1";
-            this.lbl_cid1.Size = new System.Drawing.Size(0, 17);
-            this.lbl_cid1.TabIndex = 34;
             // 
             // DashBoard
             // 
@@ -1693,5 +1705,6 @@ namespace E_mart
         private System.Windows.Forms.Label lbl_regcus;
         private System.Windows.Forms.Label lbl_cid;
         private System.Windows.Forms.Label lbl_cid1;
+        private System.Windows.Forms.Label lbl_date;
     }
 }
