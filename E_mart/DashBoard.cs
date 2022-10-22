@@ -44,7 +44,8 @@ namespace E_mart
         {
             try
             {
-                con = new SqlConnection("Data Source=LAPTOP-FK0M22U2;Initial Catalog=e_martlocalhost;Integrated Security=True");//Nadya
+                con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True"); //Nathu
+                //con = new SqlConnection("Data Source=LAPTOP-FK0M22U2;Initial Catalog=e_martlocalhost;Integrated Security=True");//Nadya
 
                 if (txt_pid.Text.Length == 0 || txt_pid.Text.Any(char.IsLetter))
                 {
