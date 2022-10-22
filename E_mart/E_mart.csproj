@@ -256,6 +256,11 @@
     <Compile Include="report.Designer.cs">
       <DependentUpon>report.cs</DependentUpon>
     </Compile>
+    <Compile Include="static_report.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>static_report.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Stock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -319,6 +324,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="static_report.xsc">
+      <DependentUpon>static_report.xsd</DependentUpon>
+    </None>
+    <None Include="static_report.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>static_report.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="static_report.xss">
+      <DependentUpon>static_report.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
