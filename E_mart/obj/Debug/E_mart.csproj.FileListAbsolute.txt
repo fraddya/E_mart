@@ -156,3 +156,4 @@ C:\Users\natha\Documents\GitHub\E_mart\obj\Debug\E_mart.csproj.CoreCompileInputs
 C:\Users\natha\Documents\GitHub\E_mart\obj\Debug\E_mart.csproj.CopyComplete
 C:\Users\natha\Documents\GitHub\E_mart\obj\Debug\E_mart.exe
 C:\Users\natha\Documents\GitHub\E_mart\obj\Debug\E_mart.pdb
+C:\Users\natha\Documents\GitHub\E_mart\obj\Debug\E_mart.Customer_Check.resources

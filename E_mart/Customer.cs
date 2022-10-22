@@ -34,10 +34,17 @@ namespace E_mart
 
         private void btn_reg_Click(object sender, EventArgs e)
         {
+<<<<<<< Updated upstream
             con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=e_martlocalhost;Integrated Security=True");//Fraddya
             //con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True");//Nathu
             //try
              //{
+=======
+            //con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=e_martlocalhost;Integrated Security=True");//Fraddya
+            con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True");//Nathu
+            try
+            {
+>>>>>>> Stashed changes
             con.Open(); 
                 
                 if (string.IsNullOrEmpty(txt_CName.Text))
@@ -112,16 +119,21 @@ namespace E_mart
             };
 
 
-            //}
+            }
 
+<<<<<<< Updated upstream
 
             /*
+=======
+           
+            
+>>>>>>> Stashed changes
             catch (Exception)
             {
                 MessageBox.Show(this, "Please check again", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
-            */
+            
         }
 
         private void txt_CName_TextChanged(object sender, EventArgs e)
