@@ -53,10 +53,11 @@ namespace E_mart
             // 
             // DOB_pickerE
             // 
+            this.DOB_pickerE.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DOB_pickerE.Location = new System.Drawing.Point(614, 128);
-            this.DOB_pickerE.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DOB_pickerE.Margin = new System.Windows.Forms.Padding(2);
             this.DOB_pickerE.Name = "DOB_pickerE";
-            this.DOB_pickerE.Size = new System.Drawing.Size(196, 20);
+            this.DOB_pickerE.Size = new System.Drawing.Size(196, 25);
             this.DOB_pickerE.TabIndex = 33;
             // 
             // btn_regE
@@ -251,9 +252,9 @@ namespace E_mart
             this.pasw.ForeColor = System.Drawing.Color.White;
             this.pasw.Location = new System.Drawing.Point(585, 384);
             this.pasw.Name = "pasw";
-            this.pasw.Size = new System.Drawing.Size(80, 21);
+            this.pasw.Size = new System.Drawing.Size(76, 21);
             this.pasw.TabIndex = 37;
-            this.pasw.Text = "Passworld";
+            this.pasw.Text = "Password";
             // 
             // label8
             // 

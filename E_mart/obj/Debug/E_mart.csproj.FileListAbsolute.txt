@@ -34,7 +34,6 @@ F:\ehub\E_mart\E_mart\obj\Debug\E_mart.csproj.GenerateResource.cache
 F:\ehub\E_mart\E_mart\obj\Debug\E_mart.csproj.CoreCompileInputs.cache
 F:\ehub\E_mart\E_mart\obj\Debug\E_mart.exe
 F:\ehub\E_mart\E_mart\obj\Debug\E_mart.pdb
-F:\ehub\E_mart\E_mart\obj\Debug\E_mart.csproj.AssemblyReference.cache
 C:\Users\natha\Documents\GitHub\E_mart\E_mart\bin\Debug\LiveCharts.dll
 C:\Users\natha\Documents\GitHub\E_mart\E_mart\bin\Debug\LiveCharts.WinForms.dll
 C:\Users\natha\Documents\GitHub\E_mart\E_mart\bin\Debug\LiveCharts.Wpf.dll
@@ -95,3 +94,10 @@ F:\ehub\E_mart\E_mart\bin\Debug\System.Memory.xml
 F:\ehub\E_mart\E_mart\bin\Debug\System.Numerics.Vectors.xml
 F:\ehub\E_mart\E_mart\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 F:\ehub\E_mart\E_mart\obj\Debug\E_mart.csproj.CopyComplete
+F:\ehub\E_mart\E_mart\bin\Debug\LiveCharts.WinForms.dll
+F:\ehub\E_mart\E_mart\bin\Debug\LiveCharts.Wpf.dll
+F:\ehub\E_mart\E_mart\bin\Debug\LiveCharts.WinForms.pdb
+F:\ehub\E_mart\E_mart\bin\Debug\LiveCharts.WinForms.xml
+F:\ehub\E_mart\E_mart\bin\Debug\LiveCharts.Wpf.pdb
+F:\ehub\E_mart\E_mart\bin\Debug\LiveCharts.Wpf.xml
+F:\ehub\E_mart\E_mart\obj\Debug\E_mart.csproj.AssemblyReference.cache

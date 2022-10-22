@@ -62,5 +62,20 @@ namespace E_mart
         {
             Application.Exit();
         }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_username_Enter(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void txt_username_Leave(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

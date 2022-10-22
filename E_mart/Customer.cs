@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using System.Data.SqlClient;
+using System.Net;
+using System.Net.Mail;
 
 namespace E_mart
 {
@@ -32,10 +34,11 @@ namespace E_mart
 
         private void btn_reg_Click(object sender, EventArgs e)
         {
+
             con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=e_martlocalhost;Integrated Security=True");//Fraddya
             //con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True");//Nathu
-            // try
-            // {
+            //try
+             //{
             con.Open(); 
                 
                 if (string.IsNullOrEmpty(txt_CName.Text))
@@ -84,6 +87,30 @@ namespace E_mart
                         MessageBox.Show(this, "Data Cannot Save", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 con.Close();
+
+
+                  if(checkBox_email.Checked==true)
+                    {
+                string fromMail = "ssisithasiranga@gmail.com";
+                string fromPassword = "zsuzsoiqmkelayye";
+
+                MailMessage message = new MailMessage();
+                message.From = new MailAddress(fromMail);
+                message.Subject = "E mart";
+                message.To.Add(new MailAddress(txt_email.Text));
+                message.Body = "<html><body><H1>Dear "+txt_CName.Text+ ", </H1><br> <br><br>Your sucessfull registerd!! <br> Use "+ txt_nic.Text+" As your Customer ID</body></html>";
+                message.IsBodyHtml = true;
+                var smtpClient = new SmtpClient
+                {
+                    Host="smtp.gmail.com",
+                    Port = 587,
+                    Credentials = new NetworkCredential(fromMail, fromPassword),
+                    EnableSsl = true,
+                };
+                smtpClient.Send(message);
+
+
+                    };
                 
 
             //}
