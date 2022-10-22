@@ -22,7 +22,7 @@ namespace E_mart
 
         Fordashboard obj = new Fordashboard();
 
-        Report_ obj1 = new Report_();
+        //Report_ obj1 = new Report_();
 
         private void btn_enterc_Click(object sender, EventArgs e)
         {

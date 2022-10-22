@@ -183,7 +183,7 @@ namespace E_mart
         private void btn_report_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-            OpenChildForm(new Report_());
+            //OpenChildForm(new Report_());
         }
 
         private void btn_view_stock_Click(object sender, EventArgs e)
