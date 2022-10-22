@@ -13,7 +13,8 @@ namespace E_mart
 {
     public partial class login : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=e_martlocalhost;Integrated Security=True");
+        //SqlConnection con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=e_martlocalhost;Integrated Security=True");//fraddya
+        SqlConnection con = new SqlConnection("Data Source=LAPTOP-FK0M22U2;Initial Catalog=e_martlocalhost;Integrated Security=True");//nadiya
         SqlDataAdapter da;
         SqlCommand cmd;
         public login()
