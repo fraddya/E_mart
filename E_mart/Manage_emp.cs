@@ -111,7 +111,8 @@ namespace E_mart
 
         private void btn_clear_Click(object sender, EventArgs e)
         {
-
+            combox_emp.Text = "";
+            txt_emp.Clear();
         }
     }
 }
