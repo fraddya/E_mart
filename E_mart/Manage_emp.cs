@@ -33,7 +33,8 @@ namespace E_mart
 
         private void btn_viewE_Click(object sender, EventArgs e)
         {
-            con = new SqlConnection("Data Source=LAPTOP-FK0M22U2;Initial Catalog=e_martlocalhost;Integrated Security=True");//Nadiya
+            //con = new SqlConnection("Data Source=LAPTOP-FK0M22U2;Initial Catalog=e_martlocalhost;Integrated Security=True");//Nadiya
+            con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=e_martlocalhost;Integrated Security=True");//Fraddya
             try
             {
                 if (txt_emp.Text.Length == 0)
