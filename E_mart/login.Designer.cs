@@ -53,8 +53,8 @@ namespace E_mart
             this.txt_username.Name = "txt_username";
             this.txt_username.Size = new System.Drawing.Size(196, 26);
             this.txt_username.TabIndex = 0;
-            this.txt_username.Enter += new System.EventHandler(this.txt_username_Enter);
-            this.txt_username.Leave += new System.EventHandler(this.txt_username_Leave);
+              //this.txt_username.Enter += new System.EventHandler(this.txt_username_Enter);
+              //this.txt_username.Leave += new System.EventHandler(this.txt_username_Leave);
             // 
             // txt_psw
             // 
@@ -151,7 +151,7 @@ namespace E_mart
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "login";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.login_Load);
+                    // this.Load += new System.EventHandler(this.login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
