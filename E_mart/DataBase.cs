@@ -20,9 +20,9 @@ namespace E_mart
         public DataBase()
         {
             //con = new SqlConnection("Data Source=e-mart.database.windows.net;Initial Catalog=E_mart;User ID=madse212f-010;Password=********;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-            //con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=Bank;Integrated Security=True");//Fraddy
+            con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=e_martlocalhost;Integrated Security=True");//Fraddy
             //con = new SqlConnection("Data Source=LAPTOP-FK0M22U2;Initial Catalog=e_martlocalhost;Integrated Security=True");//Nadiya
-            con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True"); //Nathu
+            //con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True"); //Nathu
 
         }
         public void OpenConnection()

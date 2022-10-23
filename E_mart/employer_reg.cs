@@ -22,8 +22,8 @@ namespace E_mart
         {
             //con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True"); //Nathu
           //  con.Open();
-            try
-            {
+           // try
+            //{
 
                 if (string.IsNullOrEmpty(txt_EName.Text))
                 {
@@ -31,7 +31,7 @@ namespace E_mart
                     txt_EName.Focus();
                 }
                
-                if (!Regex.Match(txt_EName.Text, "^[A-Z][a-zA-Z]*$").Success)
+                else if (!Regex.Match(txt_EName.Text, "^[A-Z][a-zA-Z]*$").Success)
                 {
 
                     MetroFramework.MetroMessageBox.Show (this, "Invalid first name", "Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -39,7 +39,7 @@ namespace E_mart
                     return;
                 }
 
-                if (string.IsNullOrEmpty(txt_Eaddress.Text))
+                else if (string.IsNullOrEmpty(txt_Eaddress.Text))
                 {
                     MetroFramework.MetroMessageBox.Show(this, "Address can not be empty or can not have numbers", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_Eaddress.Focus();
@@ -54,12 +54,12 @@ namespace E_mart
                 }
               */
                
-                if (txt_Eemail.Text.Length == 0)
+                else if (txt_Eemail.Text.Length == 0)
                 {
                     MetroFramework.MetroMessageBox.Show(this, "Please Enter Email Address", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_Eemail.Focus();
                 }
-                if (!Regex.IsMatch(txt_Eemail.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
+                else if (!Regex.IsMatch(txt_Eemail.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
                 {
                     MetroFramework.MetroMessageBox.Show(this, "Enter a valid email. Ex:name@gmail.com", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_Eemail.Focus();
@@ -70,9 +70,10 @@ namespace E_mart
                    
                     if(rdo_emp.Checked==true)
                     {
-                        string query="Insert into Employer (Emp_username,Emp_psw,Emp_Name,Emp_address,Emp_TP,Emp_NIC,Emp_Email,Emp_DOB,Emp_type)Values ('" + txt_uname.Text + "','" + txt_psw + "','" + txt_EName.Text + "', '" + txt_Eaddress.Text + "', '"
-                         + txt_Etel.Text + "',   '" + txt_Enic.Text + "', '" + txt_Eemail.Text + "','" + DOB_pickerE.Value + "','Employee') ";
-                        int i = db.save_update_delete(query);
+                    //string query="Insert into Employer (Emp_username,Emp_psw,Emp_Name,Emp_address,Emp_TP,Emp_NIC,Emp_Email,Emp_DOB,Emp_type)Values ('" + txt_uname.Text + "','" + txt_psw.Text + "','" + txt_EName.Text + "', '" + txt_Eaddress.Text + "','"+ txt_Etel.Text + "', '" + txt_Eemail.Text + "','" + DOB_pickerE.Value + "','Employee') ";
+                    string query = "Insert into Employer (Emp_username,Emp_psw,Emp_Name,Emp_address,Emp_TP,Emp_NIC,Emp_Email,Emp_type) Values ('" + txt_uname.Text + "','" + txt_psw.Text + "','"+txt_EName.Text+"','"+txt_Eaddress.Text+"','"+txt_Etel.Text+"','"+txt_Enic.Text+"','"+txt_Eemail+"','Employee') ";
+
+                    int i = db.save_update_delete(query);
 
                         if (i == 1)
                             MetroFramework.MetroMessageBox.Show(this, "Registration Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -82,8 +83,7 @@ namespace E_mart
                     }
                     else if(rdo_manager.Checked==true)
                     {
-                        string query="Insert into Employer (Emp_username,Emp_psw,Emp_Name,Emp_address,Emp_TP,Emp_NIC,Emp_Email,Emp_DOB,Emp_type)Values ('" + txt_uname.Text + "','" + txt_psw + "','" + txt_EName.Text + "', '" + txt_Eaddress.Text + "', '"
-                       + txt_Etel.Text + "',   '" + txt_Enic.Text + "', '" + txt_Eemail.Text + "','" + DOB_pickerE.Value + "','Manager') ";
+                        string query="Insert into Employer (Emp_username,Emp_psw,Emp_Name,Emp_address,Emp_TP,Emp_NIC,Emp_Email,Emp_type)Values ('" + txt_uname.Text + "','" + txt_psw.Text + "','" + txt_EName.Text + "', '" + txt_Eaddress.Text + "', '"+ txt_Etel.Text + "',   '" + txt_Enic.Text + "', '" + txt_Eemail.Text + "','Manager') ";
                         int i = db.save_update_delete(query);
 
                         if (i == 1)
@@ -99,12 +99,12 @@ namespace E_mart
                 }
                 //con.Close();
                // cmd.Dispose();
-            }
+            //}
 
-            catch (Exception)
+            /*catch (Exception)
             {
                 MetroFramework.MetroMessageBox.Show(this, "Please check again", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            }*/
             
 
         }

@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Net;
+using System.Net.Mail;
 
 
 
@@ -2102,10 +2104,39 @@ namespace E_mart
 
                 lbl_date.Text = DateTime.Now.ToShortDateString();
 
+/*
+                SqlDataAdapter da;
+                con.Open();
+                cmd2 = new SqlCommand("SELECT * FROM Client WHERE Client_NIC='" + lbl_cid1 + "' and Client_Email='" + txt_psw.Text + "'", con);
+                da = new SqlDataAdapter(cmd2);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                int i = ds.Tables[0].Rows.Count;
+                if (i == 1)
+                {
+                    SqlDataReader dr = cmd2.ExecuteReader();
+                    dr.Read();
+                    if (dr[0].ToString() == "Manager")
+                    {
+                        ulog.type = "M";
+                    }
+                    else if (dr[0].ToString() == "Employer")
+                    {
+                        ulog.type = "E";
+                    }
+                    Home fh = new Home();
+                    fh.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Please check your Name or Password", "message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                con.Close();
 
-                
 
-               
+
+
                 con.Open();
                 
                 cmd2 = new SqlCommand("INSERT INTO Invoice VALUES('"+lbl_cid.Text+ "','" + lbl_date.Text + "','" + lbl_tot.Text+"','"+lbl_dis.Text+"','" + lbl_bill1.Text+"','"+lbl_bill2.Text+"','"+lbl_bill3.Text+"','"+lbl_bill4.Text+"','"+lbl_bill5.Text+"','"+lbl_bill6.Text+"','"+lbl_quan1.Text+"','"+lbl_quan2.Text+ "','"+lbl_quan3.Text+"','"+lbl_quan4.Text+"','"+lbl_quan5.Text+"','"+lbl_quan6.Text+"','"+lbl_price1.Text+"','"+lbl_price2.Text+"','"+lbl_price3.Text+"','"+lbl_price4.Text+"','"+lbl_price5.Text+ "','"+lbl_price6.Text+"')", con);
@@ -2113,8 +2144,25 @@ namespace E_mart
                 if(a==1)
                 {
                     MetroFramework.MetroMessageBox.Show(this,"Succesed", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    string fromMail = "ssisithasiranga@gmail.com";
+                    string fromPassword = "zsuzsoiqmkelayye";
+
+                    MailMessage message = new MailMessage();
+                    message.From = new MailAddress(fromMail);
+                    message.Subject = "E mart";
+                    //message.To.Add(new MailAddress(.Text));
+                    message.Body = "<html><body><H1>Dear " + txt_CName.Text + ", </H1><br> <br><br>Your sucessfull registerd!! <br> Use <p>" + txt_nic.Text + "</p> As your Customer ID</body></html>";
+                    message.IsBodyHtml = true;
+                    var smtpClient = new SmtpClient
+                    {
+                        Host = "smtp.gmail.com",
+                        Port = 587,
+                        Credentials = new NetworkCredential(fromMail, fromPassword),
+                        EnableSsl = true,
+                    };
+                    smtpClient.Send(message);
                 }
-                con.Close();
+                con.Close();*/
            }
            catch (NullReferenceException)
            {
