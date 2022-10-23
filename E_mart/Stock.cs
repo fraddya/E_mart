@@ -31,7 +31,7 @@ namespace E_mart
                 if (combox_stocktype.SelectedIndex == 0)
                 {
 
-                    //dataGridView1.DataSource = db.getData("Select * from Product where Product_ID='" + txt_stock.Text + "' ");
+                    dataGridView1.DataSource = db.getData("Select * from Product where Product_ID='" + txt_stock.Text + "' ");
                     
                 }
                 if (combox_stocktype.SelectedIndex == 1)

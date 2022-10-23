@@ -31,35 +31,41 @@ namespace E_mart
                     txt_EName.Focus();
                 }
                
-                if (!Regex.Match(txt_EName.Text, "^[A-Z][a-zA-Z]*$").Success)
+               else if (!Regex.Match(txt_EName.Text, "^[A-Z][a-zA-Z]*$").Success)
                 {
 
-                    MetroFramework.MetroMessageBox.Show (this, "Invalid first name", "Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MetroFramework.MetroMessageBox.Show (this,"First Letter should be Capital and Cannot Add symbols", "Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_EName.Focus();
                     return;
                 }
 
-                if (string.IsNullOrEmpty(txt_Eaddress.Text))
+                if (string.IsNullOrEmpty(txt_Eaddress.Text)) 
                 {
                     MetroFramework.MetroMessageBox.Show(this, "Address can not be empty or can not have numbers", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_Eaddress.Focus();
                 }
-                
-              /*  if (!Regex.Match(txt_Eaddress.Text, @"^[0-9]+\s+([a-zA-Z]+|[a-zA-Z]+\s[a-zA-Z]+)$").Success)
+               /* else if (txt_Eaddress.Text.(char.IsDigit))
                 {
-
-                    MetroFramework.MetroMessageBox.Show(this, "Invalid address", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MetroFramework.MetroMessageBox.Show = (this,"First Name cannot have numbers","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
                     txt_Eaddress.Focus();
-                    return;
                 }
-              */
-               
+
+                */
+                /*  if (!Regex.Match(txt_Eaddress.Text, @"^[0-9]+\s+([a-zA-Z]+|[a-zA-Z]+\s[a-zA-Z]+)$").Success)
+                  {
+
+                      MetroFramework.MetroMessageBox.Show(this, "Invalid address", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                      txt_Eaddress.Focus();
+                      return;
+                  }
+                */
+
                 if (txt_Eemail.Text.Length == 0)
                 {
                     MetroFramework.MetroMessageBox.Show(this, "Please Enter Email Address", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_Eemail.Focus();
                 }
-                if (!Regex.IsMatch(txt_Eemail.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
+                else if (!Regex.IsMatch(txt_Eemail.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
                 {
                     MetroFramework.MetroMessageBox.Show(this, "Enter a valid email. Ex:name@gmail.com", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_Eemail.Focus();
@@ -92,7 +98,7 @@ namespace E_mart
                             MetroFramework.MetroMessageBox.Show(this, "Registration Unsuccess", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                     }
-
+                    
 
 
 

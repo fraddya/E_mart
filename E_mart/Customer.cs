@@ -51,7 +51,7 @@ namespace E_mart
                     MetroFramework.MetroMessageBox.Show(this, "Name can not be empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_CName.Focus();
                 }
-                if (txt_CName.Text.Any(char.IsDigit))
+               else if (txt_CName.Text.Any(char.IsDigit))
                 {
                     MetroFramework.MetroMessageBox.Show(this, "First Name cannot have numbers", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_CName.Focus();
@@ -62,6 +62,10 @@ namespace E_mart
                     MetroFramework.MetroMessageBox.Show(this, "Address can not be empty or can not have numbers", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_address.Focus();
                 }
+                if((!Regex.IsMatch(txt_tel.Text, @"^(?:7|0|(?:\+94))[0-9]{8,9}$")))
+                {
+                    MetroFramework.MetroMessageBox.Show(this, "Invalid Telephone number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
                 /*else if (!Regex.IsMatch(txt_tel.Text, @"^\+\d{1,7}$"))
                  {
@@ -70,7 +74,7 @@ namespace E_mart
                  }
                 */
 
-                else if (txt_email.Text.Length == 0)
+                if (txt_email.Text.Length == 0)
                 {
                     MetroFramework.MetroMessageBox.Show(this, "Please Enter Email Address", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_email.Focus();
@@ -80,6 +84,7 @@ namespace E_mart
                     MetroFramework.MetroMessageBox.Show(this, "Enter a valid email. Ex:name@gmail.com", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_email.Focus();
                 }
+
                 else
                 {
                     string query="Insert into Client(Client_Name,Client_address,Client_TP,Client_NIC,Client_Email,Client_DOB) values('" + txt_CName.Text + "','" + txt_address.Text + "','" + txt_tel.Text + "', '" + txt_nic.Text + "','" + txt_email.Text + "', '" + DOB_picker.Value + "')";
