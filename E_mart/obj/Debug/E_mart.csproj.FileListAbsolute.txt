@@ -233,3 +233,4 @@ C:\Users\natha\Documents\GitHub\E_mart\bin\Debug\pt\Microsoft.ReportViewer.WinFo
 C:\Users\natha\Documents\GitHub\E_mart\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\natha\Documents\GitHub\E_mart\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\natha\Documents\GitHub\E_mart\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+F:\ehub\E_mart\E_mart\obj\Debug\E_mart.Report_.resources
