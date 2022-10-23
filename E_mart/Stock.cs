@@ -17,33 +17,30 @@ namespace E_mart
         {
             InitializeComponent();
         }
-        SqlConnection con;
-        SqlDataAdapter da;
+        // SqlConnection con;
+        // SqlDataAdapter da;
+
+        DataBase db = new DataBase();
 
 
         private void btn_viewS_Click(object sender, EventArgs e)
         {
-            //con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True"); //Nathu
-            con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=e_martlocalhost;Integrated Security=True");//fraddya
+           // con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True"); //Nathu
             try
             {
                 if (combox_stocktype.SelectedIndex == 0)
                 {
 
-                    da = new SqlDataAdapter("Select * from Product where Product_ID='" + txt_stock.Text + "' ", con);
-                    DataTable dt = new DataTable();
-                    da.Fill(dt);
-                    dataGridView1.DataSource = dt;
-                    con.Close();
-
+                    dataGridView1.DataSource = db.getData("Select (Product_ID,Product_Name,Product_quentity,Product_Price,Product_category)from Product where Product_ID='" + txt_stock.Text + "' ");
+                    
                 }
                 if (combox_stocktype.SelectedIndex == 1)
                 {
-                    da = new SqlDataAdapter("Select * from Product where Product_Name = '" + txt_stock.Text + "'", con);
-                    DataTable dt = new DataTable();
-                    da.Fill(dt);
-                    dataGridView1.DataSource = dt;
-                    con.Close();
+                    dataGridView1.DataSource = db.getData("Select * from Product(Product_ID,Product_Name,Product_quentity,Product_Price,Product_category) where Product_Name = '" + txt_stock.Text + "'");
+                   // DataTable dt = new DataTable();
+                   // da.Fill(dt);
+                    //dataGridView1.DataSource = dt;
+                    //con.Close();
                 }
 
             }
@@ -60,15 +57,14 @@ namespace E_mart
         private void btn_stock_Click(object sender, EventArgs e)
         {
                 //con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True"); //Nathu
-                con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=e_martlocalhost;Integrated Security=True");//fraddya
             try
             {
 
-                da = new SqlDataAdapter("Select * from Product ", con);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                dataGridView1.DataSource = dt;
-                con.Close();
+                dataGridView1.DataSource = db.getData("Select (Product_ID,Product_Name,Product_quentity,Product_Price,Product_category)from Product ");
+               // DataTable dt = new DataTable();
+               // da.Fill(dt);
+               // dataGridView1.DataSource = dt;
+               // con.Close();
             }
             catch(SqlException)
             {
