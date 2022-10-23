@@ -7,8 +7,10 @@ namespace E_mart
 {
     public partial class employer_reg : Form
     {
-        SqlConnection con;
-        SqlCommand cmd;
+        // SqlConnection con;
+        //SqlCommand cmd;
+
+        DataBase db = new DataBase();
 
         public employer_reg()
         {
@@ -19,8 +21,7 @@ namespace E_mart
         private void btn_regE_Click(object sender, EventArgs e)
         {
             //con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True"); //Nathu
-            con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=e_martlocalhost;Integrated Security=True"); //fraddya
-            con.Open();
+          //  con.Open();
             try
             {
 
@@ -69,26 +70,35 @@ namespace E_mart
                    
                     if(rdo_emp.Checked==true)
                     {
-                        cmd = new SqlCommand("Insert into Employer (Emp_username,Emp_psw,Emp_Name,Emp_address,Emp_TP,Emp_NIC,Emp_Email,Emp_DOB,Emp_type)Values ('" + txt_uname.Text + "','" + txt_psw + "','" + txt_EName.Text + "', '" + txt_Eaddress.Text + "', '"
-                         + txt_Etel.Text + "',   '" + txt_Enic.Text + "', '" + txt_Eemail.Text + "','" + DOB_pickerE.Value + "','Employee') ", con);
+                        string query="Insert into Employer (Emp_username,Emp_psw,Emp_Name,Emp_address,Emp_TP,Emp_NIC,Emp_Email,Emp_DOB,Emp_type)Values ('" + txt_uname.Text + "','" + txt_psw + "','" + txt_EName.Text + "', '" + txt_Eaddress.Text + "', '"
+                         + txt_Etel.Text + "',   '" + txt_Enic.Text + "', '" + txt_Eemail.Text + "','" + DOB_pickerE.Value + "','Employee') ";
+                        int i = db.save_update_delete(query);
+
+                        if (i == 1)
+                            MetroFramework.MetroMessageBox.Show(this, "Registration Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        else
+                            MetroFramework.MetroMessageBox.Show(this, "Registration Unsuccess", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                     }
                     else if(rdo_manager.Checked==true)
                     {
-                        cmd = new SqlCommand("Insert into Employer (Emp_username,Emp_psw,Emp_Name,Emp_address,Emp_TP,Emp_NIC,Emp_Email,Emp_DOB,Emp_type)Values ('" + txt_uname.Text + "','" + txt_psw + "','" + txt_EName.Text + "', '" + txt_Eaddress.Text + "', '"
-                       + txt_Etel.Text + "',   '" + txt_Enic.Text + "', '" + txt_Eemail.Text + "','" + DOB_pickerE.Value + "','Manager') ", con);
+                        string query="Insert into Employer (Emp_username,Emp_psw,Emp_Name,Emp_address,Emp_TP,Emp_NIC,Emp_Email,Emp_DOB,Emp_type)Values ('" + txt_uname.Text + "','" + txt_psw + "','" + txt_EName.Text + "', '" + txt_Eaddress.Text + "', '"
+                       + txt_Etel.Text + "',   '" + txt_Enic.Text + "', '" + txt_Eemail.Text + "','" + DOB_pickerE.Value + "','Manager') ";
+                        int i = db.save_update_delete(query);
+
+                        if (i == 1)
+                            MetroFramework.MetroMessageBox.Show(this, "Registration Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        else
+                            MetroFramework.MetroMessageBox.Show(this, "Registration Unsuccess", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                     }
 
-                    int i= cmd.ExecuteNonQuery();
-                    if (i == 1)
-                        MetroFramework.MetroMessageBox.Show(this, "Registration Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    else
-                        MetroFramework.MetroMessageBox.Show(this, "Registration Unsuccess", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+
 
                 }
-                con.Close();
-                cmd.Dispose();
+                //con.Close();
+               // cmd.Dispose();
             }
 
             catch (Exception)
