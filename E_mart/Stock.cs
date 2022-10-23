@@ -26,8 +26,8 @@ namespace E_mart
         private void btn_viewS_Click(object sender, EventArgs e)
         {
            // con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True"); //Nathu
-            try
-            {
+           // try
+            //{
                 if (combox_stocktype.SelectedIndex == 0)
                 {
 
@@ -43,7 +43,7 @@ namespace E_mart
                     //con.Close();
                 }
 
-            }
+           /* }
             catch(SqlException)
             {
                 MetroFramework.MetroMessageBox.Show(this, "Something Wrong", "Error", MessageBoxButtons.OK);
@@ -51,21 +51,21 @@ namespace E_mart
             catch(Exception)
             {
                 MetroFramework.MetroMessageBox.Show(this, "Check Again", "Error", MessageBoxButtons.OK);
-            }
+            }*/
         }
 
         private void btn_stock_Click(object sender, EventArgs e)
         {
                 //con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True"); //Nathu
-            try
-            {
+           // try
+           // {
 
                 dataGridView1.DataSource = db.getData("Select (Product_ID,Product_Name,Product_quentity,Product_Price,Product_category)from Product ");
                // DataTable dt = new DataTable();
                // da.Fill(dt);
                // dataGridView1.DataSource = dt;
                // con.Close();
-            }
+           /* }
             catch(SqlException)
             {
                 MetroFramework.MetroMessageBox.Show(this, "Something Wrong", "Error", MessageBoxButtons.OK);
@@ -73,7 +73,7 @@ namespace E_mart
             catch (Exception)
             {
                 MetroFramework.MetroMessageBox.Show(this, "Check Again", "Error", MessageBoxButtons.OK);
-            }
+            }*/
         
 
         }
