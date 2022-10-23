@@ -21,10 +21,10 @@ namespace E_mart
             InitializeComponent();
         }
 
-        // SqlConnection con;
-        // SqlCommand cmd;
+        SqlConnection con;
+        SqlCommand cmd;
 
-        DataBase db = new DataBase();
+        
 
 
         private void Customer_Load(object sender, EventArgs e)
@@ -35,16 +35,13 @@ namespace E_mart
         private void btn_reg_Click(object sender, EventArgs e)
         {
 
-           // con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=e_martlocalhost;Integrated Security=True");//Fraddya
-            //con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True");//Nathu
-            
-
+           
             //con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=e_martlocalhost;Integrated Security=True");//Fraddya
-           // con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True");//Nathu
+            con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True");//Nathu
             try
             {
 
-               // con.Open();
+                con.Open();
 
                 if (string.IsNullOrEmpty(txt_CName.Text))
                 {
@@ -87,16 +84,16 @@ namespace E_mart
 
                 else
                 {
-                    string query="Insert into Client(Client_Name,Client_address,Client_TP,Client_NIC,Client_Email,Client_DOB) values('" + txt_CName.Text + "','" + txt_address.Text + "','" + txt_tel.Text + "', '" + txt_nic.Text + "','" + txt_email.Text + "', '" + DOB_picker.Value + "')";
+                    cmd = new SqlCommand("Insert into Client(Client_Name,Client_address,Client_TP,Client_NIC,Client_Email,Client_DOB) values('" + txt_CName.Text + "','" + txt_address.Text + "','" + txt_tel.Text + "', '" + txt_nic.Text + "','" + txt_email.Text + "', '" + DOB_picker.Value + "')", con);
                     //cmd = new SqlCommand("Insert into test values ('"+txt_CName.Text+"','"+txt_email.Text+"','"+txt_address+"')", con);
-                    int i = db.save_update_delete(query);
+                    int i = cmd.ExecuteNonQuery();
 
                     if (i == 1)
                         MessageBox.Show(this, "Registration Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     else
                         MessageBox.Show(this, "Registration Unsuccess ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                //con.Close();
+                con.Close();
 
 
                 if (checkBox_email.Checked == true)
@@ -108,7 +105,7 @@ namespace E_mart
                     message.From = new MailAddress(fromMail);
                     message.Subject = "E mart";
                     message.To.Add(new MailAddress(txt_email.Text));
-                    message.Body = "<html><body><H1>Dear " + txt_CName.Text + ", </H1><br> <br><br>Your sucessfull registerd!! <br> Use " + txt_nic.Text + " As your Customer ID</body></html>";
+                    message.Body = "<html><body><H1>Dear " + txt_CName.Text + ", </H1><br> <br><br>Your sucessfull registerd!! <br> Use <p>" + txt_nic.Text + "</p> As your Customer ID</body></html>";
                     message.IsBodyHtml = true;
                     var smtpClient = new SmtpClient
                     {
