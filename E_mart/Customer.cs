@@ -35,11 +35,7 @@ namespace E_mart
         private void btn_reg_Click(object sender, EventArgs e)
         {
 
-            con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=e_martlocalhost;Integrated Security=True");//Fraddya
-            //con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True");//Nathu
-            //try
-             //{
-
+           
             //con = new SqlConnection("Data Source=VIVOBOOK;Initial Catalog=e_martlocalhost;Integrated Security=True");//Fraddya
             con = new SqlConnection("Data Source=LAPTOP-MNKQHADG\\SQLEXPRESS;Initial Catalog=e_martlocalhost;Integrated Security=True");//Nathu
             try
@@ -104,7 +100,7 @@ namespace E_mart
                     message.From = new MailAddress(fromMail);
                     message.Subject = "E mart";
                     message.To.Add(new MailAddress(txt_email.Text));
-                    message.Body = "<html><body><H1>Dear " + txt_CName.Text + ", </H1><br> <br><br>Your sucessfull registerd!! <br> Use " + txt_nic.Text + " As your Customer ID</body></html>";
+                    message.Body = "<html><body><H1>Dear " + txt_CName.Text + ", </H1><br> <br><br>Your sucessfull registerd!! <br> Use <p>" + txt_nic.Text + "</p> As your Customer ID</body></html>";
                     message.IsBodyHtml = true;
                     var smtpClient = new SmtpClient
                     {
