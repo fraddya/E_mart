@@ -48,24 +48,33 @@ namespace E_mart
                     MetroFramework.MetroMessageBox.Show(this, "Name can not be empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_CName.Focus();
                 }
-                if (txt_CName.Text.Any(char.IsDigit))
+               else if (txt_CName.Text.Any(char.IsDigit))
                 {
                     MetroFramework.MetroMessageBox.Show(this, "First Name cannot have numbers", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_CName.Focus();
                 }
 
-                if (string.IsNullOrEmpty(txt_address.Text))
+                else if (string.IsNullOrEmpty(txt_address.Text))
                 {
                     MetroFramework.MetroMessageBox.Show(this, "Address can not be empty or can not have numbers", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_address.Focus();
                 }
+                else if((!Regex.IsMatch(txt_tel.Text, @"^(?:7|0|(?:\+94))[0-9]{8,9}$")))
+                {
+                    MetroFramework.MetroMessageBox.Show(this, "Invalid Telephone number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txt_tel.Focus();
+                }
 
-                /*else if (!Regex.IsMatch(txt_tel.Text, @"^\+\d{1,7}$"))
+                else if (txt_nic.Text.Length!=12)
                  {
-                     MessageBox.Show("Enter Valid Telephone number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                     txt_tel.Focus();
+                     MetroFramework.MetroMessageBox.Show(this,"Enter Valid NIC number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                     txt_nic.Focus();
                  }
-                */
+                else if(string.IsNullOrEmpty(txt_nic.Text))
+                {
+                    MetroFramework.MetroMessageBox.Show(this, "NIC number cannot be Empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txt_nic.Focus();
+                }
 
                 else if (txt_email.Text.Length == 0)
                 {
@@ -77,6 +86,7 @@ namespace E_mart
                     MetroFramework.MetroMessageBox.Show(this, "Enter a valid email. Ex:name@gmail.com", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_email.Focus();
                 }
+
                 else
                 {
                     cmd = new SqlCommand("Insert into Client(Client_Name,Client_address,Client_TP,Client_NIC,Client_Email,Client_DOB) values('" + txt_CName.Text + "','" + txt_address.Text + "','" + txt_tel.Text + "', '" + txt_nic.Text + "','" + txt_email.Text + "', '" + DOB_picker.Value + "')", con);
