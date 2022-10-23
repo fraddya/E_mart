@@ -8,7 +8,10 @@ namespace E_mart
 {
     class Fordashboard
     {
-        public static string value;
-        public static string value1;          
+        public static string cid; // get client id
+                                  // public static string value1;
+        public static string pid;
+        
+        
     }
 }
