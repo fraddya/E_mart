@@ -76,7 +76,7 @@ namespace E_mart
                    
                     if(rdo_emp.Checked==true)
                     {
-                        string query="Insert into Employer (Emp_username,Emp_psw,Emp_Name,Emp_address,Emp_TP,Emp_NIC,Emp_Email,Emp_DOB,Emp_type)Values ('" + txt_uname.Text + "','" + txt_psw + "','" + txt_EName.Text + "', '" + txt_Eaddress.Text + "', '"
+                        string query="Insert into Employer (Emp_username,Emp_psw,Emp_Name,Emp_address,Emp_TP,Emp_NIC,Emp_Email,Emp_DOB,Emp_type)Values ('" + txt_uname.Text + "','" + txt_psw.Text + "','" + txt_EName.Text + "', '" + txt_Eaddress.Text + "', '"
                          + txt_Etel.Text + "',   '" + txt_Enic.Text + "', '" + txt_Eemail.Text + "','" + DOB_pickerE.Value + "','Employee') ";
                         int i = db.save_update_delete(query);
 
@@ -88,7 +88,7 @@ namespace E_mart
                     }
                     else if(rdo_manager.Checked==true)
                     {
-                        string query="Insert into Employer (Emp_username,Emp_psw,Emp_Name,Emp_address,Emp_TP,Emp_NIC,Emp_Email,Emp_DOB,Emp_type)Values ('" + txt_uname.Text + "','" + txt_psw + "','" + txt_EName.Text + "', '" + txt_Eaddress.Text + "', '"
+                        string query="Insert into Employer (Emp_username,Emp_psw,Emp_Name,Emp_address,Emp_TP,Emp_NIC,Emp_Email,Emp_DOB,Emp_type)Values ('" + txt_uname.Text + "','" + txt_psw.Text + "','" + txt_EName.Text + "', '" + txt_Eaddress.Text + "', '"
                        + txt_Etel.Text + "',   '" + txt_Enic.Text + "', '" + txt_Eemail.Text + "','" + DOB_pickerE.Value + "','Manager') ";
                         int i = db.save_update_delete(query);
 
