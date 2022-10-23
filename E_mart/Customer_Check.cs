@@ -22,7 +22,7 @@ namespace E_mart
 
         Fordashboard obj = new Fordashboard();
 
-        Report_ obj1 = new Report_();
+        
 
         private void btn_enterc_Click(object sender, EventArgs e)
         {
@@ -47,7 +47,7 @@ namespace E_mart
                     lbl_1.Text = ab5["Client_ID"].ToString();
                     if (lbl_1.Text != "")
                     {
-                        Fordashboard.value1 = lbl_1.Text;
+                        Fordashboard.cid = lbl_1.Text;
                         MetroFramework.MetroMessageBox.Show(this,"You are Registerd Customer", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
@@ -59,7 +59,7 @@ namespace E_mart
                 con.Close();
 
 
-                Fordashboard.value = txt_cidc.Text;
+             /
                 this.Close();
             }
             catch (FormatException)

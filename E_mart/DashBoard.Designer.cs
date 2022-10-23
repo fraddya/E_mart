@@ -141,11 +141,13 @@ namespace E_mart
             this.lbl_gettot = new System.Windows.Forms.Label();
             this.btn_newbill = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbl_firstquan = new System.Windows.Forms.Label();
             this.lbl_date = new System.Windows.Forms.Label();
             this.lbl_cid1 = new System.Windows.Forms.Label();
             this.lbl_cid = new System.Windows.Forms.Label();
             this.lbl_regcus = new System.Windows.Forms.Label();
             this.btn_freg = new System.Windows.Forms.Button();
+            this.lbl_forgmail = new System.Windows.Forms.Label();
             btn_pay = new FontAwesome.Sharp.IconButton();
             this.panal_Invoice.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -1418,6 +1420,8 @@ namespace E_mart
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
+            this.panel2.Controls.Add(this.lbl_forgmail);
+            this.panel2.Controls.Add(this.lbl_firstquan);
             this.panel2.Controls.Add(this.lbl_date);
             this.panel2.Controls.Add(this.lbl_cid1);
             this.panel2.Controls.Add(this.lbl_cid);
@@ -1460,6 +1464,14 @@ namespace E_mart
             this.panel2.Size = new System.Drawing.Size(998, 367);
             this.panel2.TabIndex = 9;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // lbl_firstquan
+            // 
+            this.lbl_firstquan.AutoSize = true;
+            this.lbl_firstquan.Location = new System.Drawing.Point(685, 203);
+            this.lbl_firstquan.Name = "lbl_firstquan";
+            this.lbl_firstquan.Size = new System.Drawing.Size(0, 17);
+            this.lbl_firstquan.TabIndex = 36;
             // 
             // lbl_date
             // 
@@ -1504,6 +1516,14 @@ namespace E_mart
             this.btn_freg.Text = "For Registerd Customer";
             this.btn_freg.UseVisualStyleBackColor = false;
             this.btn_freg.Click += new System.EventHandler(this.btn_freg_Click);
+            // 
+            // lbl_forgmail
+            // 
+            this.lbl_forgmail.AutoSize = true;
+            this.lbl_forgmail.Location = new System.Drawing.Point(651, 260);
+            this.lbl_forgmail.Name = "lbl_forgmail";
+            this.lbl_forgmail.Size = new System.Drawing.Size(0, 17);
+            this.lbl_forgmail.TabIndex = 37;
             // 
             // DashBoard
             // 
@@ -1706,5 +1726,7 @@ namespace E_mart
         private System.Windows.Forms.Label lbl_cid;
         private System.Windows.Forms.Label lbl_cid1;
         private System.Windows.Forms.Label lbl_date;
+        private System.Windows.Forms.Label lbl_firstquan;
+        private System.Windows.Forms.Label lbl_forgmail;
     }
 }
