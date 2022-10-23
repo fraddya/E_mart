@@ -67,7 +67,7 @@ namespace E_mart
 
                 else if (txt_nic.Text.Length!=12)
                  {
-                     MessageBox.Show("Enter Valid NIC number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                     MetroFramework.MetroMessageBox.Show(this,"Enter Valid NIC number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                      txt_nic.Focus();
                  }
                 else if(string.IsNullOrEmpty(txt_nic.Text))

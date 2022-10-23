@@ -31,12 +31,12 @@ namespace E_mart
                 if (combox_stocktype.SelectedIndex == 0)
                 {
 
-                    dataGridView1.DataSource = db.getData("Select (Product_ID,Product_Name,Product_quentity,Product_Price,Product_category)from Product where Product_ID='" + txt_stock.Text + "' ");
+                    dataGridView1.DataSource = db.getData("Select * from Product where Product_ID='" + txt_stock.Text + "' ");
                     
                 }
                 if (combox_stocktype.SelectedIndex == 1)
                 {
-                    dataGridView1.DataSource = db.getData("Select * from Product(Product_ID,Product_Name,Product_quentity,Product_Price,Product_category) where Product_Name = '" + txt_stock.Text + "'");
+                    dataGridView1.DataSource = db.getData("Select * from Product where Product_Name = '" + txt_stock.Text + "'");
                    // DataTable dt = new DataTable();
                    // da.Fill(dt);
                     //dataGridView1.DataSource = dt;
@@ -60,7 +60,7 @@ namespace E_mart
            // try
            // {
 
-                dataGridView1.DataSource = db.getData("Select (Product_ID,Product_Name,Product_quentity,Product_Price,Product_category)from Product ");
+                dataGridView1.DataSource = db.getData("Select * from Product ");
                // DataTable dt = new DataTable();
                // da.Fill(dt);
                // dataGridView1.DataSource = dt;
